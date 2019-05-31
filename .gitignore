@@ -1,0 +1,13 @@
+.DS_Store
+dist
+node_modules
+npm-debug.log
+
+yarn.lock
+package-lock.json
+
+.env.development
+.env.production
+
+tasks/migrations/logs/*
+!tasks/migrations/logs/.gitkeep
