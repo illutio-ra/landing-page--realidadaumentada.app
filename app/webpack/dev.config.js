@@ -7,12 +7,12 @@ module.exports = {
   entry: [
     'babel-polyfill',
     'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
-    '../frontend/index.js'
+    '../frontend/index.js',
   ],
   output: {
     path: __dirname,
     publicPath: '/assets',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     rules: [
@@ -21,42 +21,42 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
-          presets: ['es2015', 'stage-0', 'react']
-        }
+          presets: ['es2015', 'stage-0', 'react'],
+        },
       },
       {
-        test: /\.(css|scss)/,
+        test: /\.(css|scss)$/,
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },
-          { loader: 'sass-loader' }
-        ]
+          { loader: 'sass-loader' },
+        ],
       },
       {
         test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/,
-        loader: 'file-loader'
-      }
-    ]
+        loader: 'file-loader',
+      },
+    ],
   },
   devtool: '#source-map',
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new webpack.DefinePlugin({
-      'ENV': JSON.stringify(config.env),
-      'PREFIX': JSON.stringify(''),
-      'API_HOST': JSON.stringify(config.server.apiHost),
-      'EMAIL_SEND': JSON.stringify(config.mailer.active),
-      'BASE_TITLE': JSON.stringify(config.server.adminTitle),
-      'STORAGE_PREFIX': JSON.stringify(config.storage.prefix)
-    })
+      ENV: JSON.stringify(config.env),
+      PREFIX: JSON.stringify(''),
+      API_HOST: JSON.stringify(config.server.apiHost),
+      EMAIL_SEND: JSON.stringify(config.mailer.active),
+      BASE_TITLE: JSON.stringify(config.server.adminTitle),
+      STORAGE_PREFIX: JSON.stringify(config.storage.prefix),
+    }),
   ],
   resolve: {
     modules: ['node_modules'],
     alias: {
       '~base': path.resolve('./lib/frontend/'),
       '~core': path.resolve('./app/frontend/core'),
-      '~components': path.resolve('./app/frontend/components')
-    }
-  }
+      '~components': path.resolve('./app/frontend/components'),
+    },
+  },
 }

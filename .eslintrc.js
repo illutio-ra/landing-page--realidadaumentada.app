@@ -10,6 +10,7 @@ module.exports = {
   plugins: ['react', 'import', 'jsx-a11y'],
   rules: {
     'arrow-parens': ['error', 'always'],
+    'class-methods-use-this': ['off'],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
     'func-names': ['error', 'as-needed'],

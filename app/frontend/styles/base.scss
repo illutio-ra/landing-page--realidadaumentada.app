@@ -119,3 +119,7 @@ body {
 .notification.is-warning {
   color: white;
 }
+
+.modal  {
+  z-index: 99999999 !important;
+}
