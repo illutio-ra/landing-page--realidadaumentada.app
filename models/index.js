@@ -7,7 +7,6 @@ const Group = require('./group')
 const AppConfig = require('./app-config')
 const Translation = require('./translation')
 const Email = require('./email')
-const Article = require('./article')
 
 // #Import
 
@@ -20,6 +19,5 @@ module.exports = {
   Group,
   AppConfig,
   Translation,
-  Email,
-  Article, // #Exports
+  Email// #Exports
 }

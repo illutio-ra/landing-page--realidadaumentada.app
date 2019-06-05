@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom'
 
 import ErrorPage from '~base/components/error-page'
 import AdminLayout from '~components/admin-layout'
@@ -19,8 +23,6 @@ import Roles from './pages/roles/list'
 import RoleDetail from './pages/roles/detail'
 import Groups from './pages/groups/list'
 import GroupDetail from './pages/groups/detail'
-import Articles from './pages/articles/list'
-import ArticlesDetail from './pages/articles/detail'
 import RequestLogs from './pages/developer-tools/request-logs'
 import Translations from './pages/translations/list'
 import AppConfig from './pages/developer-tools/app-config'
@@ -31,21 +33,21 @@ import EmailDetail from './pages/developer-tools/email-builder/detail'
 // #Import
 
 class NotFoundPage extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
 
     this.state = {}
   }
 
-  render() {
-    return <ErrorPage message="Not found" />
+  render () {
+    return <ErrorPage message='Not found' />
   }
 }
 
-const AppRouter = () => (
-  <Router>
+const AppRouter = () => {
+  return (<Router>
     <AdminLayout>
-      <div className="c-flex-1 is-flex is-flex-column is-relative">
+      <div className='c-flex-1 is-flex is-flex-column is-relative'>
         <Switch>
           {LogIn.asRouterItem()}
           {ResetPassword.asRouterItem()}
@@ -67,9 +69,6 @@ const AppRouter = () => (
           {Groups.asRouterItem()}
           {GroupDetail.asRouterItem()}
 
-          {Articles.asRouterItem()}
-          {ArticlesDetail.asRouterItem()}
-
           {RequestLogs.asRouterItem()}
           {AppConfig.asRouterItem()}
           {Buttons.asRouterItem()}
@@ -84,7 +83,7 @@ const AppRouter = () => (
         </Switch>
       </div>
     </AdminLayout>
-  </Router>
-)
+  </Router>)
+}
 
 export default AppRouter
