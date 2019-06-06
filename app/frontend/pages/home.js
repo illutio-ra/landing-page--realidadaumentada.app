@@ -1,11 +1,24 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable jsx-quotes */
 import React from 'react'
 import PageComponent from '~base/page-component'
 import { FormattedMessage, injectIntl } from 'react-intl'
 
 import { forcePublic } from '~base/middlewares/'
 
+import phone from '../../public/img/phone.png'
+import planets from '../../public/img/planets.png'
+import planet1 from '../../public/img/planet1.png'
+import astronaut from '../../public/img/astronaut.png'
+import planet2 from '../../public/img/planet2.png'
+import planet3 from '../../public/img/planet3.png'
+import arrow from '../../public/img/arrow.png'
+
 class Home extends PageComponent {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       ...this.baseState,
@@ -14,41 +27,59 @@ class Home extends PageComponent {
     }
   }
 
-  render () {
+  render() {
     const basicStates = super.getBasicStates()
-    if (basicStates) { return basicStates }
-
-    const { name, unreadCount } = this.state
-    const { formatMessage } = this.props.intl
+    if (basicStates) {
+      return basicStates
+    }
 
     return (
-      <section className='home hero is-info bsa'>
-        <div className='container'>
-          <div className='columns is-vcentered'>
-            <div className='column is-4'>
-              <p className='title'>
-                <FormattedMessage id="general.home" />
-              </p>
-              <p className='subtitle'>
-                <FormattedMessage id='general.marbleseeds'/>
-              </p>
-              <p className='subtitle'>
-                <FormattedMessage
-                  id="general.regards"
-                  values={{ name: <b>{name}</b> }}
-                />
-              </p>
+      <section className="app section">
+        <div className="container" align="center">
+          <p className="title">
+            Let your customers <i className="fa fa-heart heart" /> your brand
+          </p>
+          <p className="title">
+            with <span>Augmented Reality</span> experiences.
+          </p>
+          <a href="#" className="button is-primary">
+            Try it now! &nbsp;
+            <i className="fa fa-rocket" />
+          </a>
+        </div>
+        <div className="phone">
+          <img src={phone} id="phone" />
+          <img src={planets} id="planets" />
+        </div>
+        <div className="planets">
+          <img src={planet1} id="planet1" />
+          <img src={astronaut} id="astronaut" />
+          <img src={planet2} id="planet2" />
+          <img src={planet3} id="planet3" />
+        </div>
+        <div className="container">
+          <div className="columns">
+            <div className="column">
               <p>
-                <FormattedMessage id="general.welcome" />
+                <strong>Create</strong>, <strong>publish</strong> and{' '}
+                <strong>measure</strong>
+                <br />
+                awesome Augmented Reality
+                <br />
+                campaigns
               </p>
-
             </div>
-
-            <div className='column is-8'>
-              <div className='bsa-cpc' />
+            <div className="column" align="center">
+              <p>
+                <strong>See how it works</strong>
+              </p>
+              <a href="#" className="button is-primary">
+                Play video &nbsp;
+                <i className="fa fa-play" />
+              </a>
             </div>
-
           </div>
+          <img src={arrow} id="arrow" />
         </div>
       </section>
     )
@@ -59,7 +90,7 @@ Home.config({
   path: '/',
   title: 'Home',
   validate: forcePublic,
-  exact: true
+  exact: true,
 })
 
 export default injectIntl(Home)
