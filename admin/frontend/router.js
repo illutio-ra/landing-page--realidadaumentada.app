@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import ErrorPage from '~base/components/error-page'
 import AdminLayout from '~components/admin-layout'
@@ -30,24 +26,28 @@ import Buttons from './pages/ui-components/buttons'
 import FormBuilder from './pages/developer-tools/form-builder'
 import EmailBuilder from './pages/developer-tools/email-builder/list'
 import EmailDetail from './pages/developer-tools/email-builder/detail'
+
+import Articles from './pages/articles/list'
+import ArticleDetail from './pages/articles/detail'
+
 // #Import
 
 class NotFoundPage extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
 
     this.state = {}
   }
 
-  render () {
-    return <ErrorPage message='Not found' />
+  render() {
+    return <ErrorPage message="Not found" />
   }
 }
 
-const AppRouter = () => {
-  return (<Router>
+const AppRouter = () => (
+  <Router>
     <AdminLayout>
-      <div className='c-flex-1 is-flex is-flex-column is-relative'>
+      <div className="c-flex-1 is-flex is-flex-column is-relative">
         <Switch>
           {LogIn.asRouterItem()}
           {ResetPassword.asRouterItem()}
@@ -77,13 +77,14 @@ const AppRouter = () => {
           {EmailBuilder.asRouterItem()}
           {EmailDetail.asRouterItem()}
 
-          {/* Add routes here */}
+          {Articles.asRouterItem()}
+          {ArticleDetail.asRouterItem()}
 
           <Route component={NotFoundPage} />
         </Switch>
       </div>
     </AdminLayout>
-  </Router>)
-}
+  </Router>
+)
 
 export default AppRouter
