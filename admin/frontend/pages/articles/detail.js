@@ -16,7 +16,7 @@ const richContent = {
   blocks: [
     {
       key: 'ag6qs',
-      text: 'Alchemy code',
+      text: 'Titulo',
       type: 'header-one',
       depth: 0,
       inlineStyleRanges: [],
@@ -66,6 +66,10 @@ class ArticlesDetailPage extends PageComponent {
       },
       editorState: content,
       article: body.data,
+    }, () => {
+      if (!body.data.content) {
+        this.submitHandler()
+      }
     })
   }
 

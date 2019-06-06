@@ -51,16 +51,6 @@ class KitForm extends Component {
         label: 'Descripción',
         required: true,
       },
-      category: {
-        widget: 'SelectWidget',
-        label: 'Categoría',
-        allowEmpty: true,
-        options: [
-          { label: 'Marketing', value: 'marketing' },
-          { label: 'Referencia médica', value: 'medical_reference' },
-        ],
-        required: true,
-      },
     }
     const data = {
       title: formData.title,
