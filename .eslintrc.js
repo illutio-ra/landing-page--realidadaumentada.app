@@ -9,6 +9,7 @@ module.exports = {
   parser: 'babel-eslint',
   plugins: ['react', 'import', 'jsx-a11y'],
   rules: {
+    'class-methods-use-this': ['off'],
     'arrow-parens': ['error', 'always'],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
