@@ -12,7 +12,7 @@ import Loader from '~base/components/spinner'
 import FontAwesome from 'react-fontawesome'
 import { success } from '~base/components/toast'
 
-let richContent = {
+const richContent = {
   blocks: [
     {
       key: 'ag6qs',
@@ -53,9 +53,9 @@ class ArticlesDetailPage extends PageComponent {
   }
 
   async loadDetail() {
-    var url = '/admin/articles/' + this.props.match.params.uuid
+    const url = `/admin/articles/${this.props.match.params.uuid}`
     const body = await api.get(url)
-    let content = body.data.content
+    const content = body.data.content
       ? editorStateFromRaw(JSON.parse(body.data.content))
       : editorStateFromRaw(richContent)
     this.setState({
@@ -87,15 +87,13 @@ class ArticlesDetailPage extends PageComponent {
     const { editorState, formData } = this.state
     formData.content = editorStateToJSON(editorState)
     formData.tags = formData.tags.map((l) => l.value)
-    var url = '/admin/articles/' + this.props.match.params.uuid
+    const url = `/admin/articles/${this.props.match.params.uuid}`
     await api.post(url, formData)
     this.loadDetail()
     success()
   }
 
-  toolbar = () => {
-    return <div />
-  }
+  toolbar = () => <div />
 
   render() {
     const { formData } = this.state
@@ -171,8 +169,7 @@ class ArticlesDetailPage extends PageComponent {
                 <div className="card">
                   <div
                     className="card-header header-color"
-                    onClick={() =>
-                      this.setState({ showDetails: !this.state.showDetails })
+                    onClick={() => this.setState({ showDetails: !this.state.showDetails })
                     }
                   >
                     <p className="card-header-title header-color">Detalles</p>

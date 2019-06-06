@@ -43,7 +43,9 @@ class Blog extends PageComponent {
       return basicStates
     }
 
-    const { name, unreadCount, post, content } = this.state
+    const {
+      name, unreadCount, post, content,
+    } = this.state
     const { formatMessage } = this.props.intl
 
     return (
@@ -53,7 +55,7 @@ class Blog extends PageComponent {
             {content && (
               <MegadraftEditor
                 plugins={[]}
-                readOnly={true}
+                readOnly
                 editorState={content}
               />
             )}
