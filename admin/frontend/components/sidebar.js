@@ -18,25 +18,30 @@ import RequestLogs from '../pages/developer-tools/request-logs'
 import Translations from '../pages/translations/list'
 import FormBuilder from '../pages/developer-tools/form-builder'
 import EmailBuilder from '../pages/developer-tools/email-builder/list'
+import Articles from '../pages/articles/list'
 
 // #Import
 
 class Sidebar extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       dropdown: true,
       active: '',
       collapsed: false,
-      menuItems: []
+      menuItems: [],
     }
     this.handleActiveLink = this.handleActiveLink.bind(this)
   }
 
-  componentWillMount () {
-    const activeItem = window.location.pathname.split('/').filter(String).slice(1).join('')
-    let menuItems = this.getMenuItems()
-    let IndexOfActive = menuItems.findIndex(function (item) {
+  componentWillMount() {
+    const activeItem = window.location.pathname
+      .split('/')
+      .filter(String)
+      .slice(1)
+      .join('')
+    const menuItems = this.getMenuItems()
+    const IndexOfActive = menuItems.findIndex((item) => {
       const mainPath = new RegExp(item.to.replace(/\//g, ''))
       if (!item.hasOwnProperty('dropdown')) return false
       return mainPath.test(activeItem)
@@ -49,9 +54,10 @@ class Sidebar extends Component {
     })
   }
 
-  getMenuItems () {
+  getMenuItems() {
     return [
       Dashboard.asSidebarItem(),
+      Articles.asSidebarItem(),
       {
         title: 'Manage Your Team',
         icon: 'users',
@@ -61,8 +67,8 @@ class Sidebar extends Component {
           Users.asSidebarItem(),
           Organizations.asSidebarItem(),
           Roles.asSidebarItem(),
-          Groups.asSidebarItem()
-        ]
+          Groups.asSidebarItem(),
+        ],
       },
       // #Modules
       {
@@ -70,10 +76,9 @@ class Sidebar extends Component {
         icon: 'cloud-upload',
         to: '/import',
         open: false,
-        dropdown: [
-          UsersImport.asSidebarItem()
-        ]
-      }, {
+        dropdown: [UsersImport.asSidebarItem()],
+      },
+      {
         title: 'Developer Tools',
         icon: 'github',
         to: '/devtools',
@@ -83,108 +88,130 @@ class Sidebar extends Component {
           AppConfig.asSidebarItem(),
           FormBuilder.asSidebarItem(),
           Translations.asSidebarItem(),
-          EmailBuilder.asSidebarItem()
-        ]
-      }, {
+          EmailBuilder.asSidebarItem(),
+        ],
+      },
+      {
         title: 'Restore data',
         icon: 'trash-o',
         to: '/restore',
         open: false,
         dropdown: [
-          DeletedUsers.asSidebarItem()// #Restore
-        ]
+          DeletedUsers.asSidebarItem(), // #Restore
+        ],
       },
       {
         title: 'UI Components',
         icon: 'object-group',
         to: '/ui-components',
         open: false,
-        dropdown: [
-          Buttons.asSidebarItem()
-        ]
-      }
+        dropdown: [Buttons.asSidebarItem()],
+      },
     ]
   }
 
-  handleActiveLink (item, title) {
+  handleActiveLink(item, title) {
     if (title && this.props.handleBurguer) {
       this.props.handleBurguer()
     }
     this.setState({ active: item })
   }
 
-  handleCollapse () {
+  handleCollapse() {
     const menuItems = [...this.state.menuItems]
     this.setState({
       collapsed: !this.state.collapsed,
-      menuItems: menuItems.map(item => {
+      menuItems: menuItems.map((item) => {
         item.open = false
         return item
-      })
+      }),
     })
   }
 
-  handleToggle (index) {
+  handleToggle(index) {
     const menuItems = [...this.state.menuItems]
     menuItems[index].open = !menuItems[index].open
     this.setState({ menuItems })
   }
 
-  render () {
+  render() {
     let divClass = 'offcanvas column is-narrow is-narrow-mobile is-narrow-tablet is-narrow-desktop  is-paddingless'
     const menuClass = classNames('menu', {
-      'menu-collapsed': this.state.collapsed
+      'menu-collapsed': this.state.collapsed,
     })
     const imgClass = classNames('img-logo', {
       'icon-img': this.state.collapsed,
-      'icon-img-text': !this.state.collapsed
+      'icon-img-text': !this.state.collapsed,
     })
 
     const sidebarClass = classNames('is-flex is-flex-column', {
-      'sidebar-container': !this.state.collapsed
+      'sidebar-container': !this.state.collapsed,
     })
 
     const collapseBtn = classNames('fa', {
       'fa-expand': this.state.collapsed,
-      'fa-compress': !this.state.collapsed
+      'fa-compress': !this.state.collapsed,
     })
-    let fileImg = (this.state.collapsed) ? 'icono-white.svg' : 'horizontal-white.svg'
+    const fileImg = this.state.collapsed
+      ? 'icono-white.svg'
+      : 'horizontal-white.svg'
 
     if (!this.props.burgerState) {
-      divClass = divClass + ' is-hidden-touch'
+      divClass += ' is-hidden-touch'
     }
 
-    return (<div className={sidebarClass}><div className={divClass}>
-      <aside className={menuClass}>
-        <Link to='/' className='navbar-item c-flex-1 is-dark is-paddingless'>
-          <Image className={imgClass} src={'/public/img/' + fileImg} width='200' height='100' alt='Logotipo' />
-        </Link>
-        <a onClick={() => this.handleCollapse()} className='button is-primary collapse-btn'>
-          <span className='icon is-small'>
-            <i className={collapseBtn} />
-          </span>
-        </a>
-        <div className='menu-container'>
-          <ul className='menu-list'>
-            {this.state.menuItems.map((item, index) => {
-              if (!item) { return }
-              return <SidebarItem
-                title={item.title}
-                index={index}
-                status={item.open}
-                collapsed={this.state.collapsed}
-                icon={item.icon}
-                to={item.to}
-                dropdown={item.dropdown}
-                onClick={this.handleActiveLink}
-                dropdownOnClick={(i) => this.handleToggle(i)}
-                activeItem={this.state.active}
-                key={item.title.toLowerCase().replace(/\s/g, '')} />
-            })}
-          </ul>
+    return (
+      <div className={sidebarClass}>
+        <div className={divClass}>
+          <aside className={menuClass}>
+            <Link
+              to="/"
+              className="navbar-item c-flex-1 is-dark is-paddingless"
+            >
+              <Image
+                className={imgClass}
+                src={`/public/img/${fileImg}`}
+                width="200"
+                height="100"
+                alt="Logotipo"
+              />
+            </Link>
+            <a
+              onClick={() => this.handleCollapse()}
+              className="button is-primary collapse-btn"
+            >
+              <span className="icon is-small">
+                <i className={collapseBtn} />
+              </span>
+            </a>
+            <div className="menu-container">
+              <ul className="menu-list">
+                {this.state.menuItems.map((item, index) => {
+                  if (!item) {
+                    return
+                  }
+                  return (
+                    <SidebarItem
+                      title={item.title}
+                      index={index}
+                      status={item.open}
+                      collapsed={this.state.collapsed}
+                      icon={item.icon}
+                      to={item.to}
+                      dropdown={item.dropdown}
+                      onClick={this.handleActiveLink}
+                      dropdownOnClick={(i) => this.handleToggle(i)}
+                      activeItem={this.state.active}
+                      key={item.title.toLowerCase().replace(/\s/g, '')}
+                    />
+                  )
+                })}
+              </ul>
+            </div>
+          </aside>
         </div>
-      </aside>
-    </div></div>)
+      </div>
+    )
   }
 }
 
