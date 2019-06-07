@@ -1,24 +1,11 @@
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable react/jsx-tag-spacing */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable no-script-url */
-/* eslint-disable jsx-quotes */
-/* eslint-disable no-undef */
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable no-console */
-/* eslint-disable react/no-unused-state */
 import React, { Component } from 'react'
 import { NavLink } from '~base/router'
 import { branch } from 'baobab-react/higher-order'
 import { withRouter } from 'react-router'
-
 import storage from '~base/storage'
 import api from '~base/api'
 import tree from '~core/tree'
-
-import raCamLogo from '../../public/img/racam.png'
+import Image from '~base/components/image'
 
 class NavBar extends Component {
   constructor(props) {
@@ -165,7 +152,7 @@ class NavBar extends Component {
 
       navMainLink = (
         <NavLink exact className="navbar-item" to="/app">
-          <img src={raCamLogo} alt="ra cam" />
+          <Image src={'/public/img/racam.png'} alt='ra cam' />
         </NavLink>
       )
     } else {
@@ -201,7 +188,7 @@ class NavBar extends Component {
 
       navMainLink = (
         <NavLink className="navbar-item" exact to="/">
-          <img src={raCamLogo} alt="ra cam" />
+          <Image src={'/public/img/racam.png'} alt='ra cam' />
         </NavLink>
       )
     }
