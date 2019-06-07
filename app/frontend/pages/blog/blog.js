@@ -1,6 +1,6 @@
 import React from 'react'
 import PageComponent from '~base/page-component'
-import { FormattedMessage, injectIntl } from 'react-intl'
+import { injectIntl } from 'react-intl'
 import api from '~base/api'
 import { forcePublic } from '~base/middlewares/'
 import Link from '~base/router/link'
@@ -34,14 +34,13 @@ class Blog extends PageComponent {
       return basicStates
     }
 
-    const { name, unreadCount, items } = this.state
-    const { formatMessage } = this.props.intl
+    const { items } = this.state
 
     return (
       <div className="section">
         <div className="columns is-vcentered is-multiline">
-          {items.map((item, index) => (
-            <div className="column is-4" key={index}>
+          {items.map((item, i) => (
+            <div className="column is-4" key={i}>
               <div className="card">
                 <div className="card-header">
                   <p className="card-header-title">{item.title}</p>

@@ -12,8 +12,8 @@ import Profile from './pages/profile'
 import EmailInviteLanding from './pages/emails/invited'
 import EmailResetLanding from './pages/emails/reset'
 import ResetPassword from './pages/reset-password'
-import Blog from './pages/blog'
-import BlogDetail from './pages/blog-detail'
+import Blog from './pages/blog/blog'
+import BlogDetail from './pages/blog/blog-detail'
 
 import App from './pages/app'
 

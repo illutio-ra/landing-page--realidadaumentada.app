@@ -11,6 +11,7 @@ import api from '~base/api'
 import Loader from '~base/components/spinner'
 import FontAwesome from 'react-fontawesome'
 import { success } from '~base/components/toast'
+import PluginImage from './plugins/image'
 
 const richContent = {
   blocks: [
@@ -58,19 +59,22 @@ class ArticlesDetailPage extends PageComponent {
     const content = body.data.content
       ? editorStateFromRaw(JSON.parse(body.data.content))
       : editorStateFromRaw(richContent)
-    this.setState({
-      loading: false,
-      formData: {
-        ...body.data,
-        tags: body.data.tags.map((l) => ({ value: l, label: l })),
+    this.setState(
+      {
+        loading: false,
+        formData: {
+          ...body.data,
+          tags: body.data.tags.map((l) => ({ value: l, label: l })),
+        },
+        editorState: content,
+        article: body.data,
       },
-      editorState: content,
-      article: body.data,
-    }, () => {
-      if (!body.data.content) {
-        this.submitHandler()
-      }
-    })
+      () => {
+        if (!body.data.content) {
+          this.submitHandler()
+        }
+      },
+    )
   }
 
   onChange(editorState) {
@@ -206,7 +210,7 @@ class ArticlesDetailPage extends PageComponent {
                   <div className="card-content">
                     {this.state.editorState && (
                       <MegadraftEditor
-                        plugins={[]}
+                        plugins={[PluginImage]}
                         editorState={this.state.editorState}
                         onChange={(e) => this.onChange(e)}
                       />
