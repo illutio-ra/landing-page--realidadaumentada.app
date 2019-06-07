@@ -1,14 +1,11 @@
 import React from 'react'
 import PageComponent from '~base/page-component'
-import { FormattedMessage, injectIntl } from 'react-intl'
+import { injectIntl } from 'react-intl'
 import api from '~base/api'
 import { forcePublic } from '~base/middlewares/'
-import Link from '~base/router/link'
-import {
-  MegadraftEditor,
-  editorStateFromRaw,
-  editorStateToJSON,
-} from 'megadraft'
+import { MegadraftEditor, editorStateFromRaw } from 'megadraft'
+
+import PluginImage from './plugins/image'
 
 class Blog extends PageComponent {
   constructor(props) {
@@ -45,19 +42,19 @@ class Blog extends PageComponent {
       return basicStates
     }
 
-    const {
-      name, unreadCount, post, content,
-    } = this.state
-    const { formatMessage } = this.props.intl
+    const { post, content } = this.state
 
     return (
       <div className="container">
         <div className="section">
           <div className="card">
             <div className="card-content">
+              <div className="card-header">
+                <p className="card-header-title">{post.title}</p>
+              </div>
               {content && (
                 <MegadraftEditor
-                  plugins={[]}
+                  plugins={[PluginImage]}
                   readOnly
                   editorState={content}
                   onChange={(e) => this.onChange(e)}
