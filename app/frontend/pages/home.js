@@ -1,7 +1,4 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable jsx-quotes */
 import React from 'react'
 import PageComponent from '~base/page-component'
@@ -32,7 +29,7 @@ class Home extends PageComponent {
     if (basicStates) {
       return basicStates
     }
-
+    
     return (
       <section className="app section">
         <div className="container" align="center">
@@ -88,7 +85,7 @@ class Home extends PageComponent {
 
 Home.config({
   path: '/',
-  title: 'Home',
+  title: 'RA CAM',
   validate: forcePublic,
   exact: true,
 })

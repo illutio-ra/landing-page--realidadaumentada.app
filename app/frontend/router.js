@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import ErrorPage from '~base/components/error-page'
 import Layout from '~components/layout'
@@ -16,25 +12,27 @@ import Profile from './pages/profile'
 import EmailInviteLanding from './pages/emails/invited'
 import EmailResetLanding from './pages/emails/reset'
 import ResetPassword from './pages/reset-password'
+import Blog from './pages/blog/blog'
+import BlogDetail from './pages/blog/blog-detail'
 
 import App from './pages/app'
 
 // #Import
 
 class NotFoundPage extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
 
     this.state = {}
   }
 
-  render () {
-    return <ErrorPage message='Not found' />
+  render() {
+    return <ErrorPage message="Not found" />
   }
 }
 
-const AppRouter = () => {
-  return (<Router>
+const AppRouter = () => (
+  <Router>
     <Layout>
       <Switch>
         {Home.asRouterItem()}
@@ -49,12 +47,12 @@ const AppRouter = () => {
         {App.asRouterItem()}
         {Profile.asRouterItem()}
 
-        {/* Add routes here */}
-
+        {Blog.asRouterItem()}
+        {BlogDetail.asRouterItem()}
         <Route component={NotFoundPage} />
       </Switch>
     </Layout>
-  </Router>)
-}
+  </Router>
+)
 
 export default AppRouter
