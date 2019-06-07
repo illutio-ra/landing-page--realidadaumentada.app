@@ -32,11 +32,15 @@ if (config.env === 'development') {
   app.use('/assets', expressStaticGzip('app/dist'))
 }
 
+app.use('/public', express.static(path.resolve(__dirname, 'public')))
+
 app.get('*', function (req, res) {
   res.render('index', {
     env: config.env,
     title: config.server.appTitle
   })
 })
+
+
 
 module.exports = app
