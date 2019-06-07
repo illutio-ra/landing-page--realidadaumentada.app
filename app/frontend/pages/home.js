@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable jsx-quotes */
 import React from 'react'
 import PageComponent from '~base/page-component'
 import { FormattedMessage, injectIntl } from 'react-intl'
@@ -5,7 +7,7 @@ import { FormattedMessage, injectIntl } from 'react-intl'
 import { forcePublic } from '~base/middlewares/'
 
 class Home extends PageComponent {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       ...this.baseState,
@@ -14,25 +16,27 @@ class Home extends PageComponent {
     }
   }
 
-  render () {
+  render() {
     const basicStates = super.getBasicStates()
-    if (basicStates) { return basicStates }
+    if (basicStates) {
+      return basicStates
+    }
 
     const { name, unreadCount } = this.state
     const { formatMessage } = this.props.intl
 
     return (
-      <section className='home hero is-info bsa'>
-        <div className='container'>
-          <div className='columns is-vcentered'>
-            <div className='column is-4'>
-              <p className='title'>
+      <section className="home hero is-info bsa">
+        <div className="container">
+          <div className="columns is-vcentered">
+            <div className="column is-4">
+              <p className="title">
                 <FormattedMessage id="general.home" />
               </p>
-              <p className='subtitle'>
-                <FormattedMessage id='general.marbleseeds'/>
+              <p className="subtitle">
+                <FormattedMessage id="general.marbleseeds" />
               </p>
-              <p className='subtitle'>
+              <p className="subtitle">
                 <FormattedMessage
                   id="general.regards"
                   values={{ name: <b>{name}</b> }}
@@ -41,13 +45,11 @@ class Home extends PageComponent {
               <p>
                 <FormattedMessage id="general.welcome" />
               </p>
-
             </div>
 
-            <div className='column is-8'>
-              <div className='bsa-cpc' />
+            <div className="column is-8">
+              <div className="bsa-cpc" />
             </div>
-
           </div>
         </div>
       </section>
@@ -57,9 +59,9 @@ class Home extends PageComponent {
 
 Home.config({
   path: '/',
-  title: 'Home',
+  title: 'RA CAM',
   validate: forcePublic,
-  exact: true
+  exact: true,
 })
 
 export default injectIntl(Home)
