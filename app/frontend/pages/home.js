@@ -1,8 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable react/jsx-one-expression-per-line */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable no-unused-vars */
-/* eslint-disable jsx-quotes */
 import React from 'react'
 import PageComponent from '~base/page-component'
 import { FormattedMessage, injectIntl } from 'react-intl'
@@ -31,10 +26,18 @@ class Home extends PageComponent {
       <section className="app section">
         <div className="container" align="center">
           <p className="title">
-            Let your customers <i className="fa fa-heart heart" /> your brand
+            Let your customers
+            {' '}
+            <i className="fa fa-heart heart" />
+            {' '}
+your brand
           </p>
           <p className="title">
-            with <span>Augmented Reality</span> experiences.
+            with
+            {' '}
+            <span>Augmented Reality</span>
+            {' '}
+experiences.
           </p>
           <a href="#" className="button is-primary">
             Try it now! &nbsp;
@@ -58,7 +61,12 @@ class Home extends PageComponent {
           <div className="columns">
             <div className="column">
               <p>
-                <strong>Create</strong>, <strong>publish</strong> and{' '}
+                <strong>Create</strong>
+,
+                <strong>publish</strong>
+                {' '}
+and
+                {' '}
                 <strong>measure</strong>
                 <br />
                 awesome Augmented Reality
