@@ -42,25 +42,17 @@ class Home extends PageComponent {
           </a>
         </div>
         <div className="phone">
-          <Image src={'../../public/img/phone.png'} id="phone" alt="ra cam" />
+          <Image src="../../public/img/phone.png" id="phone" alt="ra cam" />
         </div>
         <div className="planets">
+          <Image src="../../public/img/planet1.png" id="planet1" alt="ra cam" />
           <Image
-            src={'../../public/img/planet1.png'}
-            id="planet1"
-            alt="ra cam"
-          />
-          <Image
-            src={'../../public/img/astronaut.png'}
+            src="../../public/img/astronaut.png"
             id="astronaut"
             alt="ra cam"
           />
-          <Image
-            src={'../../public/img/planet2.png'}
-            id="planet2"
-            alt="ra cam"
-          />
-          <Image src={'../../public/img/arrow.png'} id="planet3" alt="ra cam" />
+          <Image src="../../public/img/planet2.png" id="planet2" alt="ra cam" />
+          <Image src="../../public/img/arrow.png" id="planet3" alt="ra cam" />
         </div>
         <div className="container">
           <div className="columns">
@@ -84,7 +76,7 @@ class Home extends PageComponent {
               </a>
             </div>
           </div>
-          <Image src={'../../public/img/arrow.png'} id="arrow" alt="ra cam" />
+          <Image src="../../public/img/arrow.png" id="arrow" alt="ra cam" />
         </div>
       </section>
     )
