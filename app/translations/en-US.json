@@ -1,0 +1,198 @@
+[
+  {
+    "id": "marbleseeds",
+    "modules": [
+      "general"
+    ],
+    "content": "Welcome to marbleseed"
+  },
+  {
+    "id": "welcome",
+    "modules": [
+      "general"
+    ],
+    "content": "Welcome"
+  },
+  {
+    "id": "home",
+    "modules": [
+      "general"
+    ],
+    "content": "Dashboard"
+  },
+  {
+    "id": "regards",
+    "modules": [
+      "general"
+    ],
+    "content": "Hi {name}!"
+  },
+  {
+    "id": "postsListTitle",
+    "modules": [
+      "general"
+    ],
+    "content": "List of posts"
+  },
+  {
+    "id": "profile",
+    "modules": [
+      "general"
+    ],
+    "content": "Profile"
+  },
+  {
+    "id": "security",
+    "modules": [
+      "general"
+    ],
+    "content": "Security"
+  },
+  {
+    "id": "name",
+    "modules": [
+      "general"
+    ],
+    "content": "Name"
+  },
+  {
+    "id": "email",
+    "modules": [
+      "general"
+    ],
+    "content": "Email"
+  },
+  {
+    "id": "lang",
+    "modules": [
+      "general"
+    ],
+    "content": "Language"
+  },
+  {
+    "id": "intro",
+    "modules": [
+      "general"
+    ],
+    "content": "Let your customers {icon} your brand"
+  },
+  {
+    "id": "subtitle",
+    "modules": [
+      "general"
+    ],
+    "content": "with {span} experiences."
+  },
+  {
+    "id": "augmented_reality",
+    "modules": [
+      "general"
+    ],
+    "content": "Augmented Reality"
+  },
+  {
+    "id": "try_now",
+    "modules": [
+      "general"
+    ],
+    "content": "Try it now!"
+  },
+  {
+    "id": "create",
+    "modules": [
+      "general"
+    ],
+    "content": "create"
+  },
+  {
+    "id": "publish",
+    "modules": [
+      "general"
+    ],
+    "content": "publish"
+  },
+  {
+    "id": "and",
+    "modules": [
+      "general"
+    ],
+    "content": "and"
+  },
+  {
+    "id": "measure",
+    "modules": [
+      "general"
+    ],
+    "content": "measure"
+  },
+  {
+    "id": "awesome_campaigns",
+    "modules": [
+      "general"
+    ],
+    "content": "awesome {augmented_reality} campaigns"
+  },
+  {
+    "id": "campaigns",
+    "modules": [
+      "general"
+    ],
+    "content": "campaigns"
+  },
+  {
+    "id": "see_how_works",
+    "modules": [
+      "general"
+    ],
+    "content": "See how it works"
+  },
+  {
+    "id": "play_video",
+    "modules": [
+      "general"
+    ],
+    "content": "Play video"
+  },
+  {
+    "id": "link_home",
+    "modules": [
+      "general"
+    ],
+    "content": "Home"
+  },
+  {
+    "id": "link_app",
+    "modules": [
+      "general"
+    ],
+    "content": "AR app"
+  },
+  {
+    "id": "link_solutions",
+    "modules": [
+      "general"
+    ],
+    "content": "Solutions"
+  },
+  {
+    "id": "link_pricing",
+    "modules": [
+      "general"
+    ],
+    "content": "Pricing"
+  },
+  {
+    "id": "link_blog",
+    "modules": [
+      "general"
+    ],
+    "content": "Blog"
+  },
+  {
+    "id": "link_login",
+    "modules": [
+      "general"
+    ],
+    "content": "Login"
+  }
+]
