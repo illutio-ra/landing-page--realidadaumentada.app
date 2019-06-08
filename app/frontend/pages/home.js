@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-quotes */
 import React from 'react'
@@ -6,13 +9,7 @@ import { FormattedMessage, injectIntl } from 'react-intl'
 
 import { forcePublic } from '~base/middlewares/'
 
-import phone from '../../public/img/phone.png'
-import planets from '../../public/img/planets.png'
-import planet1 from '../../public/img/planet1.png'
-import astronaut from '../../public/img/astronaut.png'
-import planet2 from '../../public/img/planet2.png'
-import planet3 from '../../public/img/planet3.png'
-import arrow from '../../public/img/arrow.png'
+import Image from '~base/componets/image'
 
 class Home extends PageComponent {
   constructor(props) {
@@ -29,7 +26,7 @@ class Home extends PageComponent {
     if (basicStates) {
       return basicStates
     }
-    
+
     return (
       <section className="app section">
         <div className="container" align="center">
@@ -45,14 +42,25 @@ class Home extends PageComponent {
           </a>
         </div>
         <div className="phone">
-          <img src={phone} id="phone" />
-          <img src={planets} id="planets" />
+          <Image src={'../../public/img/phone.png'} id="phone" alt="ra cam" />
         </div>
         <div className="planets">
-          <img src={planet1} id="planet1" />
-          <img src={astronaut} id="astronaut" />
-          <img src={planet2} id="planet2" />
-          <img src={planet3} id="planet3" />
+          <Image
+            src={'../../public/img/planet1.png'}
+            id="planet1"
+            alt="ra cam"
+          />
+          <Image
+            src={'../../public/img/astronaut.png'}
+            id="astronaut"
+            alt="ra cam"
+          />
+          <Image
+            src={'../../public/img/planet2.png'}
+            id="planet2"
+            alt="ra cam"
+          />
+          <Image src={'../../public/img/arrow.png'} id="planet3" alt="ra cam" />
         </div>
         <div className="container">
           <div className="columns">
@@ -76,7 +84,7 @@ class Home extends PageComponent {
               </a>
             </div>
           </div>
-          <img src={arrow} id="arrow" />
+          <Image src={'../../public/img/arrow.png'} id="arrow" alt="ra cam" />
         </div>
       </section>
     )
