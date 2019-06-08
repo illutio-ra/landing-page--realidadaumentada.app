@@ -9,7 +9,7 @@ import { FormattedMessage, injectIntl } from 'react-intl'
 
 import { forcePublic } from '~base/middlewares/'
 
-import Image from '~base/componets/image'
+import Image from '~base/components/image'
 
 class Home extends PageComponent {
   constructor(props) {
