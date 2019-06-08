@@ -1,1 +1,125 @@
 // Add your app styles here
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.app {
+    background-color: #ffffff;
+    padding-left: 0;
+    padding-right: 0;
+    .title {
+        font-size: 45px;
+        .heart {
+            color: #b71c1c;
+        }
+        span {
+            color: #2b78fa;
+        }
+    }
+    .is-primary {
+        background-color: #2b78fa;
+        font-weight: lighter;
+        font-size: 18px;
+    }
+    .column {
+        p {
+            font-size: 36px;
+        }
+    }
+    .phone {
+        #planets {
+            width: 35%;
+            float: right;
+            margin-top: -23%;
+        }
+    }
+    .planets {
+        margin-top: -23%;
+        padding-bottom: 28%;
+        #planet1 {
+            position: absolute;
+            padding-left: 10%;
+            padding-top: 3%;
+            animation: animate 5s linear;
+        }
+        @keyframes animate {
+            0% {
+                opacity: 0;
+                padding-left: 80%;
+                padding-top: 3%;
+            }
+            5% {
+                opacity: 1;
+            }
+            25% {
+                margin-left: -1%;
+                margin-top: -7%;
+            }
+            65% {
+                margin-left: -15%;
+                margin-top: 3%;
+            }
+        }
+        #astronaut {
+            position: absolute;
+            padding-left: 27%;
+            margin-top: 7%;
+            animation: animate2 4s linear 1.8s 1 normal backwards, forwards;
+        }
+        @keyframes animate2 {
+            0% {
+                opacity: 0;
+                margin-left: 48%;
+                margin-top: 3%;
+            }
+            10% {
+                opacity: 1;
+            }
+            35% {
+                margin-left: 35%;
+                margin-top: -10%;
+            }
+        }
+        #planet2 {
+            position: absolute;
+            padding-left: 50%;
+            animation: animate3 3s linear 3.5s 1 normal backwards, forwards;
+        }
+        @keyframes animate3 {
+            0% {
+                opacity: 0;
+                margin-left: 25%;
+                margin-top: 3%;
+            }
+            10% {
+                opacity: 1;
+            }
+            45% {
+                margin-left: 10%;
+                margin-top: -5%;
+            }
+        }
+        #planet3 {
+            position: absolute;
+            padding-left: 72%;
+            animation: animate4 2s linear 5s 1 normal backwards, forwards;
+        }
+        @keyframes animate4 {
+            0% {
+                opacity: 0;
+                margin-left: 6%;
+                margin-top: 3%;
+            }
+            10% {
+                opacity: 1;
+            }
+            45% {
+                margin-left: 3%;
+            }
+        }
+    }
+    #arrow {
+        display: block;
+        margin: auto;
+    }
+}
