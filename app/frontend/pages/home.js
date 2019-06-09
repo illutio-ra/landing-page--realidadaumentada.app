@@ -1,91 +1,104 @@
 import React from 'react'
 import PageComponent from '~base/page-component'
 import { FormattedMessage, injectIntl } from 'react-intl'
-
 import { forcePublic } from '~base/middlewares/'
-
 import Image from '~base/components/image'
+import PreviewPortfolio from './portfolio/preview-portfolio'
+import PreviewBlog from './blog/components/preview-blog'
 
 class Home extends PageComponent {
   constructor(props) {
     super(props)
     this.state = {
       ...this.baseState,
-      name: 'Eric',
-      unreadCount: 1000,
     }
   }
 
   render() {
-    const basicStates = super.getBasicStates()
-    if (basicStates) {
-      return basicStates
-    }
-
+    const { formatMessage } = this.props.intl
     return (
       <section className="app section">
         <div className="container" align="center">
-          <p className="title">
-            Let your customers
-            {' '}
-            <i className="fa fa-heart heart" />
-            {' '}
-your brand
+          <p className="title has-text-black">
+            <FormattedMessage
+              id="general.intro"
+              values={{
+                icon: <i className="fa fa-heart heart margin-sides-icon" />,
+              }}
+            />
           </p>
           <p className="title">
-            with
-            {' '}
-            <span>Augmented Reality</span>
-            {' '}
-experiences.
+            <FormattedMessage
+              id="general.subtitle"
+              values={{
+                span: (
+                  <span className="is-font-blue">
+                    {formatMessage({ id: 'general.augmented_reality' })}
+                  </span>
+                ),
+              }}
+            />
           </p>
-          <a href="#" className="button is-primary">
-            Try it now! &nbsp;
-            <i className="fa fa-rocket" />
-          </a>
+          <button type="button" className="button is-primary">
+            <FormattedMessage id="general.try_now" />
+            <i className="fa fa-rocket margin-sides-icon" />
+          </button>
         </div>
         <div className="phone">
-          <Image src="../../public/img/phone.png" id="phone" alt="ra cam" />
+          <Image src="/public/img/phone.png" id="phone" alt="ra cam" />
         </div>
         <div className="planets">
-          <Image src="../../public/img/planet1.png" id="planet1" alt="ra cam" />
-          <Image
-            src="../../public/img/astronaut.png"
-            id="astronaut"
-            alt="ra cam"
-          />
-          <Image src="../../public/img/planet2.png" id="planet2" alt="ra cam" />
-          <Image src="../../public/img/arrow.png" id="planet3" alt="ra cam" />
+          <Image src="/public/img/planet1.png" id="planet1" alt="ra cam" />
+          <Image src="/public/img/astronaut.png" id="astronaut" alt="ra cam" />
+          <Image src="/public/img/planet2.png" id="planet2" alt="ra cam" />
+          <Image src="/public/img/arrow.png" id="planet3" alt="ra cam" />
         </div>
         <div className="container">
           <div className="columns">
             <div className="column">
               <p>
-                <strong>Create</strong>
-,
-                <strong>publish</strong>
-                {' '}
-and
-                {' '}
-                <strong>measure</strong>
+                <strong>
+                  <FormattedMessage id="general.create" />
+                </strong>
+                {', '}
+                <strong>
+                  <FormattedMessage id="general.publish" />{' '}
+                </strong>
+                <FormattedMessage id="general.and" />{' '}
+                <strong>
+                  <FormattedMessage id="general.measure" />
+                </strong>
                 <br />
-                awesome Augmented Reality
+                <FormattedMessage
+                  id="general.awesome_campaigns"
+                  values={{
+                    augmented_reality: (
+                      <span>
+                        {formatMessage({ id: 'general.augmented_reality' })}
+                      </span>
+                    ),
+                  }}
+                />
                 <br />
-                campaigns
               </p>
             </div>
             <div className="column" align="center">
               <p>
-                <strong>See how it works</strong>
+                <strong>
+                  <FormattedMessage id="general.see_how_works" />
+                </strong>
               </p>
-              <a href="#" className="button is-primary">
-                Play video &nbsp;
-                <i className="fa fa-play" />
-              </a>
+              <button type="button" className="button is-primary">
+                <FormattedMessage id="general.play_video" />
+                <i className="fa fa-play margin-sides-icon" />
+              </button>
             </div>
           </div>
-          <Image src="../../public/img/arrow.png" id="arrow" alt="ra cam" />
+          <Image src="/public/img/arrow.png" id="arrow" alt="ra cam" />
         </div>
+
+        <PreviewPortfolio />
+        <PreviewBlog />
       </section>
     )
   }

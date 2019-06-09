@@ -10,52 +10,52 @@ import api from '~base/api'
 addLocaleData([...es, ...en])
 
 class App extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
+    const locale = window.localStorage.getItem('lang') || 'es-MX'
     this.state = {
-      locale: localStorage.getItem('lang') || 'es-MX',
-      messages: null
+      locale,
+      messages: null,
     }
-    window.addEventListener('lang', this.changeLanguage);
+    window.addEventListener('lang', this.changeLanguage)
+    window.localStorage.setItem('lang', locale)
   }
 
-  changeLanguage = e => {
+  changeLanguage = (e) => {
     this.setState({ locale: e.detail.lang }, this.loadTranslations)
     localStorage.setItem('lang', e.detail.lang)
   }
 
-  async componentWillMount () {
+  async componentWillMount() {
     await this.loadTranslations()
   }
 
-  async loadTranslations () {
+  async loadTranslations() {
     const { locale } = this.state
     const config = await api.get(`/app-config/translations/${locale}`)
     if (config) {
       this.setState({
-        messages: config.data
+        messages: config.data,
       })
     }
   }
 
-  formatMessages (messages) {
-    let format = {}
+  formatMessages(messages) {
+    const format = {}
     if (!messages) return format
-    for (let message of messages) {
-      for (let module of message.modules) {
+    for (const message of messages) {
+      for (const module of message.modules) {
         format[`${module}.${message.id}`] = message.content
       }
     }
     return format
   }
 
-  render () {
-    let { messages, locale } = this.state
+  render() {
+    const { messages, locale } = this.state
     const { Root } = this.props
     return (
-      <IntlProvider
-        messages={this.formatMessages(messages)}
-        locale={locale}>
+      <IntlProvider messages={this.formatMessages(messages)} locale={locale}>
         <Root />
       </IntlProvider>
     )
@@ -63,13 +63,13 @@ class App extends Component {
 }
 
 if (module.hot) {
-  module.hot.accept('./router.js', function (Root) {
+  module.hot.accept('./router.js', (Root) => {
     const Router = require('./router')
     ReactDOM.render(
       <App Root={Router.default} />,
-      document.getElementById('root')
-    );
-  });
+      document.getElementById('root'),
+    )
+  })
 }
 
 ReactDOM.render(<App Root={Router} />, document.getElementById('root'))

@@ -110,19 +110,25 @@ class ArticlesDetailPage extends PageComponent {
         widget: 'TextWidget',
         label: 'Título',
         required: true,
-        className: 'is-4',
+        className: 'is-6',
       },
       status: {
         widget: 'SelectWidget',
         label: 'Status',
         allowEmpty: true,
-        className: 'is-4',
+        className: 'is-6',
         options: [
           { label: 'Publicado', value: 'published' },
           { label: 'Revisión', value: 'review' },
           { label: 'Edición', value: 'draft' },
         ],
         required: true,
+      },
+      imagePreview: {
+        widget: 'TextWidget',
+        label: 'Image preview',
+        required: true,
+        className: 'is-12',
       },
       description: {
         widget: 'TextareaWidget',
@@ -148,6 +154,7 @@ class ArticlesDetailPage extends PageComponent {
       status: formData.status,
       description: formData.description,
       tags: formData.tags,
+      imagePreview: formData.imagePreview,
       isTop: formData.isTop,
     }
 
@@ -165,7 +172,8 @@ class ArticlesDetailPage extends PageComponent {
                 <div className="card">
                   <div
                     className="card-header header-color"
-                    onClick={() => this.setState({ showDetails: !this.state.showDetails })
+                    onClick={() =>
+                      this.setState({ showDetails: !this.state.showDetails })
                     }
                   >
                     <p className="card-header-title header-color">Detalles</p>

@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 import { NavLink } from '~base/router'
-import { branch } from 'baobab-react/higher-order'
 import { withRouter } from 'react-router'
 import storage from '~base/storage'
 import api from '~base/api'
 import tree from '~core/tree'
 import Image from '~base/components/image'
+import { FormattedMessage, injectIntl } from 'react-intl'
 
 class NavBar extends Component {
   constructor(props) {
     super(props)
     this.state = {
       mobileMenu: 'close',
-      redirect: false,
       profileDropdown: 'is-hidden',
       dropCaret: 'fa fa-caret-down',
+      lang: window.localStorage.getItem('lang'),
     }
 
     this.setWrapperRef = this.setWrapperRef.bind(this)
@@ -23,6 +23,17 @@ class NavBar extends Component {
 
   componentDidMount() {
     document.addEventListener('mousedown', this.handleClickOutside)
+  }
+
+  languageSettingDispatcher(lang) {
+    this.setState({
+      lang,
+    })
+    window.dispatchEvent(
+      new CustomEvent('lang', {
+        detail: { lang },
+      }),
+    )
   }
 
   componentWillUnmount() {
@@ -104,7 +115,8 @@ class NavBar extends Component {
       navButtons = (
         <div className="navbar-end">
           <div className="navbar-item is-size-7 has-text-grey is-capitalized">
-            Welcome {username}
+            Welcome
+            {username}
           </div>
           <div className="is-flex is-align-center">
             <img
@@ -152,7 +164,7 @@ class NavBar extends Component {
 
       navMainLink = (
         <NavLink exact className="navbar-item" to="/app">
-          <Image src={'/public/img/racam.png'} alt='ra cam' />
+          <Image src="/public/img/racam.png" alt="ra cam" />
         </NavLink>
       )
     } else {
@@ -160,27 +172,43 @@ class NavBar extends Component {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="field is-grouped">
-              {/* <p className='control'>
-              <NavLink className='bd-tw-button button' to='/log-in'>Log in</NavLink>
-            </p>
-            <p className='control'>
-              <NavLink className='bd-tw-button button is-primary' to='/sign-up'>Sign up</NavLink>
-            </p> */}
-              <NavLink className="navbar-item" exact to="#">
-                Home
+              <NavLink className="navbar-item" exact to="/">
+                <FormattedMessage id="general.link_home" />
               </NavLink>
-              <NavLink className="navbar-item" exact to="#">
-                AR app
+              <NavLink className="navbar-item" exact to="/#app">
+                <FormattedMessage id="general.link_app" />
               </NavLink>
-              <NavLink className="navbar-item" exact to="#">
-                Solutions
+              <NavLink className="navbar-item" exact to="/#soluctions">
+                <FormattedMessage id="general.link_solutions" />
               </NavLink>
-              <NavLink className="navbar-item" exact to="#">
-                Pricing
+              <NavLink className="navbar-item" exact to="/#pricing">
+                <FormattedMessage id="general.link_pricing" />
+              </NavLink>
+              <NavLink className="navbar-item" exact to="/blog">
+                <FormattedMessage id="general.link_blog" />
               </NavLink>
               <NavLink className="navbar-item" exact to="/log-in">
-                Login
+                <FormattedMessage id="general.link_login" />
               </NavLink>
+
+              <div className="navbar-item has-dropdown is-hoverable">
+                <a className="navbar-link">{this.state.lang}</a>
+
+                <div className="navbar-dropdown">
+                  <a
+                    className="navbar-item"
+                    onClick={() => this.languageSettingDispatcher('es-MX')}
+                  >
+                    es-MX
+                  </a>
+                  <a
+                    className="navbar-item"
+                    onClick={() => this.languageSettingDispatcher('en-US')}
+                  >
+                    en-US
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -188,7 +216,7 @@ class NavBar extends Component {
 
       navMainLink = (
         <NavLink className="navbar-item" exact to="/">
-          <Image src={'/public/img/racam.png'} alt='ra cam' />
+          <Image src="/public/img/racam.png" alt="ra cam" />
         </NavLink>
       )
     }
@@ -207,24 +235,10 @@ class NavBar extends Component {
             <span />
           </div>
         </div>
-        <div className={navbarMenuClassName}>
-          <div className="navbar-start">
-            {/* <NavLink className='navbar-item' to='/about'>
-              About
-            </NavLink> */}
-          </div>
-          {navButtons}
-        </div>
+        <div className={navbarMenuClassName}>{navButtons}</div>
       </nav>
     )
   }
 }
 
-export default withRouter(
-  branch(
-    {
-      loggedIn: 'loggedIn',
-    },
-    NavBar,
-  ),
-)
+export default withRouter(injectIntl(NavBar))

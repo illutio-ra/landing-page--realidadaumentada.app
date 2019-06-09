@@ -12,9 +12,6 @@ body {
         .heart {
             color: #b71c1c;
         }
-        span {
-            color: #2b78fa;
-        }
     }
     .is-primary {
         background-color: #2b78fa;
@@ -121,5 +118,22 @@ body {
     #arrow {
         display: block;
         margin: auto;
+    }
+}
+
+
+.blog {
+    .card-shadow {
+        box-shadow: 0 23px 41px 0 #dee1f1 !important;
+    }
+    .rectangle {
+        width: 33px;
+        height: 4px;
+        border-radius: 2.5px;
+        background-color: #0058ff;
+    }
+
+    .card-item-preview{
+        max-height: 295px;
     }
 }

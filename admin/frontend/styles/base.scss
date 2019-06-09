@@ -445,3 +445,9 @@ pre.json {
 .notification.is-warning {
   color: white;
 }
+
+.card-content-treeview {
+   li {
+      z-index: 0 !important;
+   }
+}

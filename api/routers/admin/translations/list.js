@@ -6,19 +6,19 @@ const queryParams = new QueryParams()
 module.exports = new Route({
   method: 'get',
   path: '/:lang',
-  handler: async function (ctx) {
-    const {lang} = ctx.params
+  handler: async function(ctx) {
+    const { lang } = ctx.params
 
     const filters = await queryParams.toFilters(ctx.request.query)
 
     const translations = await Translation.dataTables({
-      limit: ctx.request.query.limit || 20,
+      limit: ctx.request.query.limit || 100,
       skip: ctx.request.query.start,
       find: { isDeleted: false, ...filters, lang },
       sort: ctx.request.query.sort || '-dateCreated',
-      formatter: 'toAdmin'
+      formatter: 'toAdmin',
     })
 
     ctx.body = translations
-  }
+  },
 })
