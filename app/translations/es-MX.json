@@ -229,5 +229,33 @@
       "general"
     ],
     "content": "Iniciar sesión"
+  },
+  {
+    "id": "see_all",
+    "modules": [
+      "general"
+    ],
+    "content": "Ver todos"
+  },
+  {
+    "id": "dont_miss",
+    "modules": [
+      "general"
+    ],
+    "content": "No te pierdas"
+  },
+  {
+    "id": "latest_news",
+    "modules": [
+      "general"
+    ],
+    "content": "nuestras últimas noticias"
+  },
+  {
+    "id": "detail",
+    "modules": [
+      "general"
+    ],
+    "content": "Detalle"
   }
 ]
