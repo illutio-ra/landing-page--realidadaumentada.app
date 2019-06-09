@@ -120,11 +120,20 @@ body {
         margin: auto;
     }
 }
-.is-font-blue {
-    color: #2b78fa;
-}
 
-.margin-sides-icon {
-  margin-left: 3px;
-  margin-right: 3px;
+
+.blog {
+    .card-shadow {
+        box-shadow: 0 23px 41px 0 #dee1f1 !important;
+    }
+    .rectangle {
+        width: 33px;
+        height: 4px;
+        border-radius: 2.5px;
+        background-color: #0058ff;
+    }
+
+    .card-item-preview{
+        max-height: 295px;
+    }
 }

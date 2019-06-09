@@ -1,10 +1,10 @@
 import React from 'react'
 import PageComponent from '~base/page-component'
 import { FormattedMessage, injectIntl } from 'react-intl'
-
 import { forcePublic } from '~base/middlewares/'
-
 import Image from '~base/components/image'
+import PreviewPortfolio from './portfolio/preview-portfolio'
+import PreviewBlog from './blog/components/preview-blog'
 
 class Home extends PageComponent {
   constructor(props) {
@@ -98,6 +98,9 @@ class Home extends PageComponent {
           </div>
           <Image src="/public/img/arrow.png" id="arrow" alt="ra cam" />
         </div>
+
+        <PreviewPortfolio />
+        <PreviewBlog />
       </section>
     )
   }

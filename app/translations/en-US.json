@@ -194,5 +194,33 @@
       "general"
     ],
     "content": "Login"
+  },
+  {
+    "id": "see_all",
+    "modules": [
+      "general"
+    ],
+    "content": "See all"
+  },
+  {
+    "id": "dont_miss",
+    "modules": [
+      "general"
+    ],
+    "content": "Don’t miss"
+  },
+  {
+    "id": "latest_news",
+    "modules": [
+      "general"
+    ],
+    "content": "the latest news\n"
+  },
+  {
+    "id": "detail",
+    "modules": [
+      "general"
+    ],
+    "content": "Detail"
   }
 ]
