@@ -1,12 +1,13 @@
 const Route = require('lib/router/route')
 const QueryParams = require('lib/router/query-params')
 const { Translation } = require('models')
+
 const queryParams = new QueryParams()
 
 module.exports = new Route({
   method: 'get',
   path: '/:lang',
-  handler: async function(ctx) {
+  async handler(ctx) {
     const { lang } = ctx.params
 
     const filters = await queryParams.toFilters(ctx.request.query)
