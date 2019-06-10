@@ -4,6 +4,6 @@ module.exports = {
   emailKey: process.env.EMAIL_KEY,
   sender: {
     email: process.env.EMAIL_FROM,
-    name: 'Marble seeds app'
+    name: 'RA CAM app'
   }
 }

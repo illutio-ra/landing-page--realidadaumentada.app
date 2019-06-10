@@ -63,7 +63,7 @@ class AdminNavBar extends Component {
       <nav className='navbar'>
         <div className='navbar-brand'>
           <Link className='navbar-item' to='/'>
-            <h1>Marble Seeds</h1>
+            <h1>RA CAM</h1>
           </Link>
 
           <div className='navbar-burger burger' onClick={(e) => this.handleNavbarBurgerClick(e)}>

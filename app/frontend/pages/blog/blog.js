@@ -37,7 +37,7 @@ class Blog extends PageComponent {
     const { items } = this.state
 
     return (
-      <div className="section">
+      <div className="section blog has-background-white">
         <div className="columns is-vcentered is-multiline">
           {items.map((item, i) => (
             <div className="column is-4" key={i}>
