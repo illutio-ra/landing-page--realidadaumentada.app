@@ -5,8 +5,9 @@ import Image from '~base/components/image'
 import api from '~base/api'
 import { FormattedMessage, injectIntl } from 'react-intl'
 import Link from '~base/router/link'
+import PropTypes from 'prop-types'
 
-class PreviewBlog extends Component {
+class PreviewPortfolio extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -32,7 +33,8 @@ class PreviewBlog extends Component {
       1024: { items: 3 },
     }
     const { items } = this.state
-    const { formatMessage } = this.props.intl
+    const { intl } = this.props
+    const { formatMessage } = intl
 
     return (
       <section className="hero is-light">
@@ -46,15 +48,19 @@ class PreviewBlog extends Component {
                     <FormattedMessage
                       id="general.portfolio_preview"
                       values={{
-                        discover: (<span className='is-font-blue'>
-                        <span className="is-font-blue">
-                          {formatMessage({ id: 'general.discover' })}
-                        </span>
-                        </span>), experiences: (<span className='is-font-blue'>
+                        discover: (
                           <span className="is-font-blue">
-                            {formatMessage({ id: 'general.experiences' })}
-                          </span>
-                        </span>) }}
+                            <span className="is-font-blue">
+                              {formatMessage({ id: 'general.discover' })}
+                            </span>
+                          </span>),
+                        experiences: (
+                          <span className="is-font-blue">
+                            <span className="is-font-blue">
+                              {formatMessage({ id: 'general.experiences' })}
+                            </span>
+                          </span>),
+                      }}
                     />
                     <br />
                   </span>
@@ -94,4 +100,8 @@ class PreviewBlog extends Component {
   }
 }
 
-export default injectIntl(PreviewBlog)
+PreviewPortfolio.propTypes = {
+  intl: PropTypes.shape.isRequired,
+}
+
+export default injectIntl(PreviewPortfolio)
