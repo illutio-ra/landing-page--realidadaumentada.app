@@ -4,13 +4,12 @@ import Link from '~base/router/link'
 import { FormattedMessage } from 'react-intl'
 
 const Card = ({ item, showLink }) => (
-  <div className="card card-shadow is-border-radius">
+  <div className="item-blog card card-shadow is-border-radius">
     <div className="card-content">
       <div className="columns">
-        <div className="column is-paddingless">
+        <div className="column is-paddingless has-text-centered">
           <Image
             className="is-border-radius"
-            style={{ height: 273, width: 240 }}
             src={item.imagePreview}
           />
         </div>

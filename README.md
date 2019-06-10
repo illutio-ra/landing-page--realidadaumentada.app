@@ -1,8 +1,8 @@
-# Marble Seeds
+# RA CAM
 
-Marble seeds it's a mixture of Koa, React and Node that allows you to create fast web-enabled applications. Out of the box, you get 3 applications, an **API server**, a **React client** and a **React Administrator**.
+RA CAM it's a mixture of Koa, React and Node that allows you to create fast web-enabled applications. Out of the box, you get 3 applications, an **API server**, a **React client** and a **React Administrator**.
 
-Marble Seeds also comes with a facility of scaffoldings, task, queues and more!
+RA CAM also comes with a facility of scaffoldings, task, queues and more!
 
 As a dependency you have to have up and running Mongo, Redis, Node and NPM.
 
@@ -44,7 +44,7 @@ You need run this task for generate initial translations.
 node tasks/translations/synchronize-translations.js
 ```
 
-By default, Marble Seeds have an admin application that will allow to visualize the database, users and more.
+By default, RA CAM have an admin application that will allow to visualize the database, users and more.
 
 The easiest way to create your first user in the database is:
 
@@ -60,7 +60,7 @@ node tasks/seed-data.js --file tasks/base-data/seed-data.json
 
 Now, you can go point your browser to http://localhost:5000/admin/ and log in with that user, and start using the admin application.
 
-By default, Marble Seeds have 3 different and powerfull tools to augment the user objects:
+By default, RA CAM have 3 different and powerfull tools to augment the user objects:
 
 - Roles - Which will allow you to create and guard for permissions.
 - Organizations - A user can only be part of one organization
