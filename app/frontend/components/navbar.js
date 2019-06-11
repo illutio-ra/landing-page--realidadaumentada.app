@@ -171,7 +171,6 @@ class NavBar extends Component {
       navButtons = (
         <div className="navbar-end">
           <div className="navbar-item">
-            <div className="field is-grouped">
               <NavLink className="navbar-item" exact to="/">
                 <FormattedMessage id="general.link_home" />
               </NavLink>
@@ -192,24 +191,33 @@ class NavBar extends Component {
               </NavLink>
 
               <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link">{this.state.lang}</a>
+                <a className="navbar-link">
+                {}
+                <Image src={`/public/img/lang/${this.state.lang}.png`} alt="ra cam" />
+                </a>
 
                 <div className="navbar-dropdown">
                   <a
                     className="navbar-item"
                     onClick={() => this.languageSettingDispatcher('es-MX')}
                   >
-                    es-MX
+                  <Image src="/public/img/lang/es-MX.png" alt="ra cam" />
+                  <span className="margin-sides-icon">
+                    Es
+                  </span>
+
                   </a>
                   <a
                     className="navbar-item"
                     onClick={() => this.languageSettingDispatcher('en-US')}
                   >
-                    en-US
+                  <Image src="/public/img/lang/en-US.png" alt="ra cam" />
+                  <span className="margin-sides-icon">
+                    En
+                  </span>
                   </a>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       )
