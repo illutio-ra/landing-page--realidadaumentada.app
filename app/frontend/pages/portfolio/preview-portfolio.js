@@ -3,8 +3,11 @@ import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 import Image from '~base/components/image'
 import api from '~base/api'
+import { FormattedMessage, injectIntl } from 'react-intl'
+import Link from '~base/router/link'
+import PropTypes from 'prop-types'
 
-export default class PreviewBlog extends Component {
+class PreviewPortfolio extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -30,12 +33,43 @@ export default class PreviewBlog extends Component {
       1024: { items: 3 },
     }
     const { items } = this.state
+    const { intl } = this.props
+    const { formatMessage } = intl
+
     return (
       <section className="hero is-light">
         <div className="hero-body">
           <div className="container">
             <div className="columns">
-              <div className="column is-4" />
+              <div className="column is-4">
+                <p className="is-font-size-32px">
+                  <span>
+
+                    <FormattedMessage
+                      id="general.portfolio_preview"
+                      values={{
+                        discover: (
+                          <span className="is-font-blue">
+                            <span className="is-font-blue">
+                              {formatMessage({ id: 'general.discover' })}
+                            </span>
+                          </span>),
+                        experiences: (
+                          <span className="is-font-blue">
+                            <span className="is-font-blue">
+                              {formatMessage({ id: 'general.experiences' })}
+                            </span>
+                          </span>),
+                      }}
+                    />
+                    <br />
+                  </span>
+                </p>
+                <Link className="button is-primary" to="/blog">
+                  <FormattedMessage id="general.see_all" />
+                  <i className="fa fa-eye margin-sides-icon" />
+                </Link>
+              </div>
               <div className="column">
                 <AliceCarousel
                   dotsDisabled
@@ -65,3 +99,9 @@ export default class PreviewBlog extends Component {
     )
   }
 }
+
+PreviewPortfolio.propTypes = {
+  intl: PropTypes.shape.isRequired,
+}
+
+export default injectIntl(PreviewPortfolio)
