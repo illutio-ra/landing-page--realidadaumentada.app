@@ -75,7 +75,7 @@ class NavBar extends Component {
     try {
       await api.del('/user')
     } catch (err) {
-      console.log('Error removing token, logging out anyway ...')
+      console.error('Error removing token, logging out anyway ...')
     }
 
     storage.remove('jwt')
@@ -101,11 +101,19 @@ class NavBar extends Component {
       navbarMenuClassName = 'navbar-menu is-active'
     }
 
+    const {
+      lang,
+    } = this.state
+
+    const {
+      loggedIn,
+    } = this.props
+
     let navButtons
     let navMainLink
     let avatar
     let username
-    if (this.props.loggedIn) {
+    if (loggedIn) {
       avatar = 'http://1bigappstore.com/images/avt-default.jpg'
 
       if (tree.get('user')) {
@@ -130,7 +138,7 @@ class NavBar extends Component {
           <div className="dropdown is-active is-right" ref={this.setWrapperRef}>
             <div className="dropdown-trigger is-flex">
               <a
-                href="javascript:undefined"
+                href="#"
                 className="navbar-item"
                 onClick={() => this.toggleBtnClass()}
               >
@@ -171,53 +179,52 @@ class NavBar extends Component {
       navButtons = (
         <div className="navbar-end">
           <div className="navbar-item">
-              <NavLink className="navbar-item" exact to="/">
-                <FormattedMessage id="general.link_home" />
-              </NavLink>
-              <NavLink className="navbar-item" exact to="/#app">
-                <FormattedMessage id="general.link_app" />
-              </NavLink>
-              <NavLink className="navbar-item" exact to="/#soluctions">
-                <FormattedMessage id="general.link_solutions" />
-              </NavLink>
-              <NavLink className="navbar-item" exact to="/#pricing">
-                <FormattedMessage id="general.link_pricing" />
-              </NavLink>
-              <NavLink className="navbar-item" exact to="/blog">
-                <FormattedMessage id="general.link_blog" />
-              </NavLink>
-              <NavLink className="navbar-item" exact to="/log-in">
-                <FormattedMessage id="general.link_login" />
-              </NavLink>
+            <NavLink className="navbar-item" exact to="/">
+              <FormattedMessage id="general.link_home" />
+            </NavLink>
+            <NavLink className="navbar-item" exact to="/#app">
+              <FormattedMessage id="general.link_app" />
+            </NavLink>
+            <NavLink className="navbar-item" exact to="/#soluctions">
+              <FormattedMessage id="general.link_solutions" />
+            </NavLink>
+            <NavLink className="navbar-item" exact to="/#pricing">
+              <FormattedMessage id="general.link_pricing" />
+            </NavLink>
+            <NavLink className="navbar-item" exact to="/blog">
+              <FormattedMessage id="general.link_blog" />
+            </NavLink>
+            <NavLink className="navbar-item" exact to="/log-in">
+              <FormattedMessage id="general.link_login" />
+            </NavLink>
 
-              <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link">
-                {}
-                <Image src={`/public/img/lang/${this.state.lang}.png`} alt="ra cam" />
+            <div className="navbar-item has-dropdown is-hoverable">
+              <a className="navbar-link">
+                <Image src={`/public/img/lang/${lang}.png`} alt="ra cam" />
+              </a>
+
+              <div className="navbar-dropdown">
+                <a
+                  className="navbar-item"
+                  onClick={() => this.languageSettingDispatcher('es-MX')}
+                >
+                <Image src="/public/img/lang/es-MX.png" alt="ra cam" />
+                <span className="margin-sides-icon">
+                  Es
+                </span>
+
                 </a>
-
-                <div className="navbar-dropdown">
-                  <a
-                    className="navbar-item"
-                    onClick={() => this.languageSettingDispatcher('es-MX')}
-                  >
-                  <Image src="/public/img/lang/es-MX.png" alt="ra cam" />
-                  <span className="margin-sides-icon">
-                    Es
-                  </span>
-
-                  </a>
-                  <a
-                    className="navbar-item"
-                    onClick={() => this.languageSettingDispatcher('en-US')}
-                  >
-                  <Image src="/public/img/lang/en-US.png" alt="ra cam" />
-                  <span className="margin-sides-icon">
-                    En
-                  </span>
-                  </a>
-                </div>
+                <a
+                  className="navbar-item"
+                  onClick={() => this.languageSettingDispatcher('en-US')}
+                >
+                <Image src="/public/img/lang/en-US.png" alt="ra cam" />
+                <span className="margin-sides-icon">
+                  En
+                </span>
+                </a>
               </div>
+            </div>
           </div>
         </div>
       )
