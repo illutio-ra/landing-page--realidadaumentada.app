@@ -9,19 +9,20 @@ import ErrorPage from '~base/components/error-page'
 import Loader from '~base/components/spinner'
 
 import NavBar from '~components/navbar'
+import Footer from '~components/footer'
 
 class Layout extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       user: {},
       loaded: false,
       hasLoadError: false,
-      error: ''
+      error: '',
     }
   }
 
-  async componentWillMount () {
+  async componentWillMount() {
     const userCursor = tree.select('user')
 
     userCursor.on('update', ({ data }) => {
@@ -29,7 +30,7 @@ class Layout extends Component {
       this.setState({ user })
     })
 
-    var me
+    let me
     if (tree.get('jwt')) {
       try {
         me = await api.get('/user/me')
@@ -45,7 +46,7 @@ class Layout extends Component {
           return this.setState({
             loaded: true,
             hasLoadError: true,
-            error: err.message
+            error: err.message,
           })
         }
       }
@@ -65,22 +66,25 @@ class Layout extends Component {
     this.setState({ loaded: true })
   }
 
-  render () {
+  render() {
     if (!this.state.loaded) {
-      return <Loader className='loader-wrapper' />
+      return <Loader className="loader-wrapper" />
     }
 
     if (this.state.hasLoadError) {
       return <ErrorPage message={this.state.error} />
     }
 
-    var userData
+    let userData
 
-    return (<div>
-      <NavBar />
-      {userData}
-      {this.props.children}
-    </div>)
+    return (
+      <div>
+        <NavBar />
+        {userData}
+        {this.props.children}
+        <Footer />
+      </div>
+    )
   }
 }
 
