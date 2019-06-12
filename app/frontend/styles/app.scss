@@ -112,6 +112,64 @@ body {
     }
 }
 
+.pricing {
+    .main-title {
+      font-family: Lato;
+      font-size: 2.25rem !important;
+      font-weight: bold;
+    }
+    .card-title{
+      font-family: Lato;
+      font-size: 1.5rem !important;
+      font-weight: bold;
+    }
+
+    .switch-text {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    .switch[type=checkbox] + label {
+      position: relative;
+      display: initial;
+      font-size: 1.5rem;
+      line-height: initial;
+      padding-left: 3.5rem;
+      padding-top: -1.9rem;
+      cursor: pointer;
+     
+    }
+
+    .switch[type=checkbox]:checked + label::before, .switch[type=checkbox]:checked + label:before {
+      background: $bg-blue;
+  }
+
+    /* .price{
+      font-family: Lato;
+      font-size: 2.5rem !important;
+      font-weight: bold;
+      color: black;
+    }
+
+    .pricing-table {
+      display: flex;
+      align-items: stretch;
+      flex-direction: row;
+      flex-flow: row wrap;
+      justify-content: baseline;
+  }
+
+    .pricing .pricing-table {
+      
+  }
+
+    .pricing-table .pricing-plan {
+      width: 311px !important;
+      flex: none;
+      margin-left: 125px;
+    } */
+}
+
 .blog {
     .card-shadow {
         box-shadow: 0 23px 41px 0 #dee1f1 !important;
