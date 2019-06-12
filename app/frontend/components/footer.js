@@ -10,7 +10,7 @@ class Footer extends Component {
   render() {
     return (
       <footer className="footer">
-        <div className="columns">
+        <div className="columns columns-footer">
           <div className="column">
             <div className="columns">
               <div className="column">
@@ -59,7 +59,7 @@ class Footer extends Component {
               </div>
             </div>
           </div>
-          <div className="column is-vcentered is-6">
+          <div className="column align-self is-6">
             <div className="columns is-mobile">
               <div className="column is-half is-offset-one-quarter">
                 <div className="content has-text-centered">
@@ -77,7 +77,7 @@ class Footer extends Component {
                       </a>
                     </p>
                   </div>
-                  <div>
+                  <div className="is-margin-top-medium">
                     <Image src="/public/img/ar-footer.svg" alt="arcam" />
                   </div>
                 </div>
@@ -88,7 +88,7 @@ class Footer extends Component {
             <div className="content has-text-centered directory">
               <div className="columns">
                 <div className="column is-half is-offset-one-quarter">
-                  <a>Home</a>
+                  <p>Home</p>
                   <p>Solutions</p>
                   <p>Sign in / Log in</p>
                 </div>
