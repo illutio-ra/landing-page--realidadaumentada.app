@@ -6,7 +6,10 @@ import api from '~base/api'
 import tree from '~core/tree'
 import Image from '~base/components/image'
 import { FormattedMessage, injectIntl } from 'react-intl'
-
+const langs = {
+  'en-US': 'En',
+  'es-MX': 'Es'
+}
 class NavBar extends Component {
   constructor(props) {
     super(props)
@@ -14,7 +17,7 @@ class NavBar extends Component {
       mobileMenu: 'close',
       profileDropdown: 'is-hidden',
       dropCaret: 'fa fa-caret-down',
-      lang: window.localStorage.getItem('lang'),
+      lang: langs[window.localStorage.getItem('lang')],
     }
 
     this.setWrapperRef = this.setWrapperRef.bind(this)
@@ -27,7 +30,7 @@ class NavBar extends Component {
 
   languageSettingDispatcher(lang) {
     this.setState({
-      lang,
+      lang: langs[lang],
     })
     window.dispatchEvent(
       new CustomEvent('lang', {
@@ -200,7 +203,7 @@ class NavBar extends Component {
 
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">
-                <Image src={`/public/img/lang/${lang}.png`} alt="ra cam" />
+                {lang}
               </a>
 
               <div className="navbar-dropdown">
@@ -208,7 +211,6 @@ class NavBar extends Component {
                   className="navbar-item"
                   onClick={() => this.languageSettingDispatcher('es-MX')}
                 >
-                <Image src="/public/img/lang/es-MX.png" alt="ra cam" />
                 <span className="margin-sides-icon">
                   Es
                 </span>
@@ -218,7 +220,6 @@ class NavBar extends Component {
                   className="navbar-item"
                   onClick={() => this.languageSettingDispatcher('en-US')}
                 >
-                <Image src="/public/img/lang/en-US.png" alt="ra cam" />
                 <span className="margin-sides-icon">
                   En
                 </span>
