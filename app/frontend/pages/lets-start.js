@@ -32,7 +32,7 @@ const LetsStart = () => (
             <strong>
               <FormattedMessage id="general.no_coding" />
             </strong>
-            <FormattedMessage id="general.it.works" />
+            <FormattedMessage id="general.it_works" />
           </p>
         </div>
       </div>
