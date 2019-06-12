@@ -84,13 +84,6 @@
     "content": "Lenguaje"
   },
   {
-    "id": "intro",
-    "modules": [
-      "general"
-    ],
-    "content": "Deja que tus clientes <i class=\"fa fa-heart heart margin-sides-icon\"></i>  tu marca"
-  },
-  {
     "id": "give",
     "modules": [
       "general"
@@ -166,5 +159,180 @@
       "general"
     ],
     "content": "Comencemos"
+  },
+  {
+    "id": "intro",
+    "modules": [
+      "general"
+    ],
+    "content": "Deja que tus clientes {icon} tu marca"
+  },
+  {
+    "id": "subtitle",
+    "modules": [
+      "general"
+    ],
+    "content": "con experiencias en {span}.\n"
+  },
+  {
+    "id": "augmented_reality",
+    "modules": [
+      "general"
+    ],
+    "content": "Realidad Aumentada"
+  },
+  {
+    "id": "try_now",
+    "modules": [
+      "general"
+    ],
+    "content": "¡Probar ahora!"
+  },
+  {
+    "id": "create",
+    "modules": [
+      "general"
+    ],
+    "content": "Crea"
+  },
+  {
+    "id": "publish",
+    "modules": [
+      "general"
+    ],
+    "content": "publica"
+  },
+  {
+    "id": "and",
+    "modules": [
+      "general"
+    ],
+    "content": "y"
+  },
+  {
+    "id": "measure",
+    "modules": [
+      "general"
+    ],
+    "content": "mide"
+  },
+  {
+    "id": "awesome_campaigns",
+    "modules": [
+      "general"
+    ],
+    "content": "increibles campañas con {augmented_reality}"
+  },
+  {
+    "id": "campaigns",
+    "modules": [
+      "general"
+    ],
+    "content": "campañas"
+  },
+  {
+    "id": "see_how_works",
+    "modules": [
+      "general"
+    ],
+    "content": "¿Cómo funciona?"
+  },
+  {
+    "id": "play_video",
+    "modules": [
+      "general"
+    ],
+    "content": "Ver video"
+  },
+  {
+    "id": "link_home",
+    "modules": [
+      "general"
+    ],
+    "content": "Inicio"
+  },
+  {
+    "id": "link_app",
+    "modules": [
+      "general"
+    ],
+    "content": "AR app"
+  },
+  {
+    "id": "link_solutions",
+    "modules": [
+      "general"
+    ],
+    "content": "Soluciones"
+  },
+  {
+    "id": "link_pricing",
+    "modules": [
+      "general"
+    ],
+    "content": "Precios"
+  },
+  {
+    "id": "link_blog",
+    "modules": [
+      "general"
+    ],
+    "content": "Blog"
+  },
+  {
+    "id": "link_login",
+    "modules": [
+      "general"
+    ],
+    "content": "Iniciar sesión"
+  },
+  {
+    "id": "see_all",
+    "modules": [
+      "general"
+    ],
+    "content": "Ver todos"
+  },
+  {
+    "id": "dont_miss",
+    "modules": [
+      "general"
+    ],
+    "content": "No te pierdas"
+  },
+  {
+    "id": "latest_news",
+    "modules": [
+      "general"
+    ],
+    "content": "nuestras últimas noticias"
+  },
+  {
+    "id": "detail",
+    "modules": [
+      "general"
+    ],
+    "content": "Detalle"
+  },
+  {
+    "id": "portfolio_preview",
+    "modules": [
+      "general"
+    ],
+    "content": "{discover} como transformar imágenes en {experiences}."
+  },
+  {
+    "id": "discover",
+    "modules": [
+      "general"
+    ],
+    "content": "Descubre"
+  },
+  {
+    "id": "experiences",
+    "modules": [
+      "general"
+    ],
+    "content": "experiencias"
   }
 ]

@@ -2,10 +2,14 @@
 body {
     font-family: 'Lato', sans-serif;
     .title {
-        font-size: 2.25rem;
+        @include from($desktop) {
+            font-size: 2.3rem;
+        }
         @include touch {
+            font-size: 1.25rem;
             text-align: center;
         }
+        letter-spacing: -0.5px
     }
     .text {
         font-size: 1.12rem;
@@ -29,29 +33,39 @@ body {
     padding-left: 0;
     padding-right: 0;
     .header-title {
-        font-size: 2.8rem;
+        @include from($desktop) {
+            font-size: 2.8rem;
+        }
+        @include touch {
+            font-size: 2rem;
+        }
         font-weight: 600;
         line-height: 1.125;
+        letter-spacing: -0.5px
         .heart {
             color: #b71c1c;
         }
     }
     .is-primary {
-        background-color: #2b78fa;
+        background-color: #0058ff;
         font-weight: lighter;
-        font-size: 18px;
+        font-size: 1.1rem;
+    }
+    .video {
+        p {
+            margin-bottom: 8px;
+        }
     }
     .phone {
-        #planets {
-            width: 35%;
-            float: right;
-            margin-top: -23%;
+        #phone {
+            width: 100%;
         }
     }
     .planets {
-        margin-top: -23%;
-        padding-bottom: 28%;
+        margin-top: -31%;
+        padding-bottom: 32%;
         #planet1 {
+            width: 21%;
             position: absolute;
             padding-left: 10%;
             padding-top: 3%;
@@ -60,22 +74,13 @@ body {
         @keyframes animate {
             0% {
                 opacity: 0;
-                padding-left: 80%;
-                padding-top: 3%;
-            }
-            5% {
-                opacity: 1;
-            }
-            25% {
-                margin-left: -1%;
-                margin-top: -7%;
             }
             65% {
-                margin-left: -15%;
-                margin-top: 3%;
+                opacity: 1;
             }
         }
         #astronaut {
+            width: 40%;
             position: absolute;
             padding-left: 27%;
             margin-top: 7%;
@@ -84,18 +89,13 @@ body {
         @keyframes animate2 {
             0% {
                 opacity: 0;
-                margin-left: 48%;
-                margin-top: 3%;
             }
-            10% {
+            65% {
                 opacity: 1;
-            }
-            35% {
-                margin-left: 35%;
-                margin-top: -10%;
             }
         }
         #planet2 {
+            width: 62%;
             position: absolute;
             padding-left: 50%;
             animation: animate3 3s linear 3.5s 1 normal backwards, forwards;
@@ -103,33 +103,23 @@ body {
         @keyframes animate3 {
             0% {
                 opacity: 0;
-                margin-left: 25%;
-                margin-top: 3%;
             }
-            10% {
+            65% {
                 opacity: 1;
-            }
-            45% {
-                margin-left: 10%;
-                margin-top: -5%;
             }
         }
         #planet3 {
+            width: 81%;
             position: absolute;
-            padding-left: 72%;
+            padding-left: 70%;
             animation: animate4 2s linear 5s 1 normal backwards, forwards;
         }
         @keyframes animate4 {
             0% {
                 opacity: 0;
-                margin-left: 6%;
-                margin-top: 3%;
             }
-            10% {
+            65% {
                 opacity: 1;
-            }
-            45% {
-                margin-left: 3%;
             }
         }
     }
