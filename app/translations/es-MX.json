@@ -4,7 +4,7 @@
     "modules": [
       "general"
     ],
-    "content": "Bienvenido a marbleseed"
+    "content": "Bienvenido a marbleseeds"
   },
   {
     "id": "welcome",
@@ -84,25 +84,81 @@
     "content": "Lenguaje"
   },
   {
-    "id": "test",
+    "id": "give",
     "modules": [
       "general"
     ],
-    "content": "test"
+    "content": "Regala"
   },
   {
-    "id": "test",
+    "id": "your_customers",
     "modules": [
       "general"
     ],
-    "content": "test"
+    "content": "a tus clientes"
   },
   {
-    "id": "test",
+    "id": "incredible_experiences",
     "modules": [
       "general"
     ],
-    "content": "test"
+    "content": "experiencias increíbles."
+  },
+  {
+    "id": "upgrade_text",
+    "modules": [
+      "general"
+    ],
+    "content": "Actualice sus campañas tradicionales a la realidad aumentada utilizando nuestro panel de creación de RA."
+  },
+  {
+    "id": "no_coding",
+    "modules": [
+      "general"
+    ],
+    "content": " No se requieren habilidades de codificación o diseño."
+  },
+  {
+    "id": "it_works",
+    "modules": [
+      "general"
+    ],
+    "content": " Funciona con cualquier etiqueta de producto, embalaje, anuncios impresos, revistas, carteles y mucho más."
+  },
+  {
+    "id": "take_back",
+    "modules": [
+      "general"
+    ],
+    "content": "Toma"
+  },
+  {
+    "id": "control_of_your",
+    "modules": [
+      "general"
+    ],
+    "content": " el control de los"
+  },
+  {
+    "id": "customers_data",
+    "modules": [
+      "general"
+    ],
+    "content": "datos de tus clientes."
+  },
+  {
+    "id": "real_information",
+    "modules": [
+      "general"
+    ],
+    "content": "Obtén información real sobre la interacción de los clientes con tus productos, campañas y anuncios impresos."
+  },
+  {
+    "id": "lets_start",
+    "modules": [
+      "general"
+    ],
+    "content": "Comencemos"
   },
   {
     "id": "intro",
