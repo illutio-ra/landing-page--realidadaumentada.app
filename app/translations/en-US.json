@@ -222,5 +222,26 @@
       "general"
     ],
     "content": "Detail"
+  },
+  {
+    "id": "portfolio_preview",
+    "modules": [
+      "general"
+    ],
+    "content": "{discover} how to transform images into {experiences}."
+  },
+  {
+    "id": "discover",
+    "modules": [
+      "general"
+    ],
+    "content": "Discover"
+  },
+  {
+    "id": "experiences",
+    "modules": [
+      "general"
+    ],
+    "content": "experiences"
   }
 ]

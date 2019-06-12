@@ -257,5 +257,26 @@
       "general"
     ],
     "content": "Detalle"
+  },
+  {
+    "id": "portfolio_preview",
+    "modules": [
+      "general"
+    ],
+    "content": "{discover} como transformar imágenes en {experiences}."
+  },
+  {
+    "id": "discover",
+    "modules": [
+      "general"
+    ],
+    "content": "Descubre"
+  },
+  {
+    "id": "experiences",
+    "modules": [
+      "general"
+    ],
+    "content": "experiencias"
   }
 ]
