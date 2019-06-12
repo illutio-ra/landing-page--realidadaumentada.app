@@ -136,4 +136,9 @@ body {
 .footer {
     background-color: $bg-footer;
     color: #ffffff;
+    font-weight: 300;
+
+    .directory{
+        font-size: 18px;
+    }
 }
