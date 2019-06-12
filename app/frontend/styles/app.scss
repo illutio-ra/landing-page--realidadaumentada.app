@@ -1,14 +1,37 @@
 // Add your app styles here
 body {
     font-family: 'Lato', sans-serif;
+    .title {
+        font-size: 2.25rem;
+        @include touch {
+            text-align: center;
+        }
+    }
+    .text {
+        font-size: 1.12rem;
+        @include touch {
+            text-align: center;
+        }
+    }
+}
+
+.is-right {
+    text-align: right;
+}
+
+.img-centered {
+    display: block;
+    margin: auto;
 }
 
 .app {
     background-color: #ffffff;
     padding-left: 0;
     padding-right: 0;
-    .title {
-        font-size: 45px;
+    .header-title {
+        font-size: 2.8rem;
+        font-weight: 600;
+        line-height: 1.125;
         .heart {
             color: #b71c1c;
         }
@@ -17,11 +40,6 @@ body {
         background-color: #2b78fa;
         font-weight: lighter;
         font-size: 18px;
-    }
-    .column {
-        p {
-            font-size: 36px;
-        }
     }
     .phone {
         #planets {
@@ -121,6 +139,19 @@ body {
     }
 }
 
+.centered-in-touch {
+    @include touch {
+        text-align: center;
+    }
+}
+
+.vertically-centered {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
 .blog {
     .card-shadow {
@@ -132,8 +163,7 @@ body {
         border-radius: 2.5px;
         background-color: #0058ff;
     }
-
-    .card-item-preview{
+    .card-item-preview {
         max-height: 295px;
     }
     .item-blog {

@@ -5,6 +5,7 @@ import { forcePublic } from '~base/middlewares/'
 import Image from '~base/components/image'
 import PreviewPortfolio from './portfolio/preview-portfolio'
 import PreviewBlog from './blog/components/preview-blog'
+import LetsStart from './lets-start'
 
 class Home extends PageComponent {
   constructor(props) {
@@ -19,7 +20,7 @@ class Home extends PageComponent {
     return (
       <section className="app section">
         <div className="container" align="center">
-          <p className="title has-text-black">
+          <p className="has-text-black header-title">
             <FormattedMessage
               id="general.intro"
               values={{
@@ -27,7 +28,7 @@ class Home extends PageComponent {
               }}
             />
           </p>
-          <p className="title">
+          <p className="header-title">
             <FormattedMessage
               id="general.subtitle"
               values={{
@@ -56,7 +57,7 @@ class Home extends PageComponent {
         <div className="container">
           <div className="columns">
             <div className="column">
-              <p>
+              <p className="title">
                 <strong>
                   <FormattedMessage id="general.create" />
                 </strong>
@@ -83,7 +84,7 @@ class Home extends PageComponent {
               </p>
             </div>
             <div className="column" align="center">
-              <p>
+              <p className="title">
                 <strong>
                   <FormattedMessage id="general.see_how_works" />
                 </strong>
@@ -97,6 +98,7 @@ class Home extends PageComponent {
           <Image src="/public/img/arrow.png" id="arrow" alt="ra cam" />
         </div>
 
+        <LetsStart />
         <PreviewPortfolio />
         <PreviewBlog />
       </section>

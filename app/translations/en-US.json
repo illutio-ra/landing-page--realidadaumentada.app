@@ -4,7 +4,7 @@
     "modules": [
       "general"
     ],
-    "content": "Welcome to marbleseed"
+    "content": "Welcome to marbleseeds"
   },
   {
     "id": "welcome",
@@ -70,157 +70,80 @@
     "content": "Language"
   },
   {
-    "id": "intro",
+    "id": "give",
     "modules": [
       "general"
     ],
-    "content": "Let your customers {icon} your brand"
+    "content": "Give"
   },
   {
-    "id": "subtitle",
+    "id": "your_customers",
     "modules": [
       "general"
     ],
-    "content": "with {span} experiences."
+    "content": "your customers"
   },
   {
-    "id": "augmented_reality",
+    "id": "incredible_experiences",
     "modules": [
       "general"
     ],
-    "content": "Augmented Reality"
+    "content": "incredible experiences."
   },
   {
-    "id": "try_now",
+    "id": "upgrade_text",
     "modules": [
       "general"
     ],
-    "content": "Try it now!"
+    "content": "Upgrade your traditional campaigns into augmented reality using our AR Creator panel."
   },
   {
-    "id": "create",
+    "id": "no_coding",
     "modules": [
       "general"
     ],
-    "content": "create"
+    "content": " No coding or design skills needed."
   },
   {
-    "id": "publish",
+    "id": "it_works",
     "modules": [
       "general"
     ],
-    "content": "publish"
+    "content": " It works with any product label,  packaging, printed ads, magazines, posters and much more."
   },
   {
-    "id": "and",
+    "id": "take_back",
     "modules": [
       "general"
     ],
-    "content": "and"
+    "content": "Take back"
   },
   {
-    "id": "measure",
+    "id": "control_of_your",
     "modules": [
       "general"
     ],
-    "content": "measure"
+    "content": " control of your"
   },
   {
-    "id": "awesome_campaigns",
+    "id": "customers_data",
     "modules": [
       "general"
     ],
-    "content": "awesome {augmented_reality} campaigns"
+    "content": "customers data."
   },
   {
-    "id": "campaigns",
+    "id": "real_information",
     "modules": [
       "general"
     ],
-    "content": "campaigns"
+    "content": "Get real information about interaction of customers with your products, campaigns and printed ads. "
   },
   {
-    "id": "see_how_works",
+    "id": "lets_start",
     "modules": [
       "general"
     ],
-    "content": "See how it works"
-  },
-  {
-    "id": "play_video",
-    "modules": [
-      "general"
-    ],
-    "content": "Play video"
-  },
-  {
-    "id": "link_home",
-    "modules": [
-      "general"
-    ],
-    "content": "Home"
-  },
-  {
-    "id": "link_app",
-    "modules": [
-      "general"
-    ],
-    "content": "AR app"
-  },
-  {
-    "id": "link_solutions",
-    "modules": [
-      "general"
-    ],
-    "content": "Solutions"
-  },
-  {
-    "id": "link_pricing",
-    "modules": [
-      "general"
-    ],
-    "content": "Pricing"
-  },
-  {
-    "id": "link_blog",
-    "modules": [
-      "general"
-    ],
-    "content": "Blog"
-  },
-  {
-    "id": "link_login",
-    "modules": [
-      "general"
-    ],
-    "content": "Login"
-  },
-  {
-    "id": "see_all",
-    "modules": [
-      "general"
-    ],
-    "content": "See all"
-  },
-  {
-    "id": "dont_miss",
-    "modules": [
-      "general"
-    ],
-    "content": "Don’t miss"
-  },
-  {
-    "id": "latest_news",
-    "modules": [
-      "general"
-    ],
-    "content": "the latest news\n"
-  },
-  {
-    "id": "detail",
-    "modules": [
-      "general"
-    ],
-    "content": "Detail"
+    "content": "Let's start"
   }
 ]
