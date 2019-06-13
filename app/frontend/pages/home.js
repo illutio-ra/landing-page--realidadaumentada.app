@@ -7,6 +7,7 @@ import Image from '~base/components/image'
 import PreviewPortfolio from './portfolio/preview-portfolio'
 import PreviewBlog from './blog/components/preview-blog'
 import LetsStart from './lets-start'
+import Pricing from './pricing'
 
 class Home extends PageComponent {
   constructor(props) {
@@ -107,6 +108,7 @@ class Home extends PageComponent {
 
         <LetsStart />
         <PreviewPortfolio />
+        <Pricing />
         <PreviewBlog />
       </section>
     )
