@@ -6,7 +6,6 @@ import { forcePublic } from '~base/middlewares/'
 import Image from '~base/components/image'
 import PreviewPortfolio from './portfolio/preview-portfolio'
 import PreviewBlog from './blog/components/preview-blog'
-import Pricing from './pricing'
 import LetsStart from './lets-start'
 
 class Home extends PageComponent {
@@ -65,11 +64,9 @@ class Home extends PageComponent {
                 </strong>
                 {', '}
                 <strong className="is-font-blue">
-                  <FormattedMessage id="general.publish" />
-                  {' '}
+                  <FormattedMessage id="general.publish" />{' '}
                 </strong>
-                <FormattedMessage id="general.and" />
-                {' '}
+                <FormattedMessage id="general.and" />{' '}
                 <strong className="is-font-blue">
                   <FormattedMessage id="general.measure" />
                 </strong>
@@ -108,7 +105,6 @@ class Home extends PageComponent {
 
         <LetsStart />
         <PreviewPortfolio />
-        <Pricing />
         <PreviewBlog />
       </section>
     )
