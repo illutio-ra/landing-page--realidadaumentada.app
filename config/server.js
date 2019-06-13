@@ -4,12 +4,12 @@ module.exports = {
 
   appPort: parseInt(process.env.APP_PORT) || 4000,
   appHost: process.env.APP_HOST || 'http://localhost:4000',
-  appTitle: process.env.APP_TITLE || 'Marble seeds',
+  appTitle: process.env.APP_TITLE || 'RA CAM',
 
   adminPort: parseInt(process.env.ADMIN_PORT) || 5000,
   adminHost: process.env.ADMIN_HOST || 'http://localhost:5000',
   adminPrefix: process.env.ADMIN_PREFIX || '',
-  adminTitle: process.env.ADMIN_TITLE || 'Marble seeds admin',
+  adminTitle: process.env.ADMIN_TITLE || 'RA CAM admin',
 
   static: process.env.WEBPACK_PUBLIC_PATH
 }

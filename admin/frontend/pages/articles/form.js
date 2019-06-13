@@ -1,18 +1,20 @@
 import React, { Component } from 'react'
 import api from '~base/api'
 import MarbleForm from '~base/components/marble-form'
+import PropTypes from 'prop-types'
 
-class KitForm extends Component {
+class ArticleForm extends Component {
   constructor(props) {
     super(props)
+    const { initialState } = this.props
     this.state = {
-      formData: this.props.initialState,
+      formData: initialState,
     }
   }
 
-  onError(e) {}
+  onError() {}
 
-  onSuccess(e) {}
+  onSuccess() {}
 
   changeHandler(formData) {
     this.setState({
@@ -21,20 +23,24 @@ class KitForm extends Component {
   }
 
   clearState() {
+    const { initialState } = this.props
     this.setState({
-      formData: this.props.initialState,
+      formData: initialState,
     })
   }
 
   async submitHandler(formData) {
+    const { url, load, finishUp } = this.props
     try {
       const method = formData.uuid ? 'put' : 'post'
-      const data = await api[method](this.props.url, formData)
-      if (this.props.load) await this.props.load()
-      if (this.props.finishUp) this.props.finishUp(data)
+      const data = await api[method](url, formData)
+      if (load) await load()
+      if (finishUp) finishUp(data)
 
       this.clearState()
-    } catch (e) {}
+    } catch (e) {
+      console.error(e)
+    }
   }
 
   render() {
@@ -47,15 +53,20 @@ class KitForm extends Component {
         required: true,
       },
       description: {
-        widget: 'TextWidget',
+        widget: 'TextareaWidget',
         label: 'Descripción',
+        required: true,
+      },
+      imagePreview: {
+        widget: 'TextWidget',
+        label: 'Image preview',
         required: true,
       },
     }
     const data = {
       title: formData.title,
       description: formData.description,
-      category: formData.category,
+      imagePreview: formData.imagePreview,
     }
 
     return (
@@ -63,14 +74,16 @@ class KitForm extends Component {
         <MarbleForm
           schema={schema}
           formData={data}
-          onChange={(data) => this.changeHandler(data)}
-          onSubmit={(data) => this.submitHandler(data)}
-          onSuccess={(data) => this.onSuccess(data)}
-          onError={(data) => this.onError(data)}
+          onChange={(e) => this.changeHandler(e)}
+          onSubmit={(e) => this.submitHandler(e)}
+          onSuccess={(e) => this.onSuccess(e)}
+          onError={(e) => this.onError(e)}
           handleMessages={false}
         >
           <div className="control">
-            <button className="button is-primary">Guardar</button>
+            <button type="submit" className="button is-primary">
+              Save
+            </button>
           </div>
         </MarbleForm>
       </div>
@@ -78,6 +91,11 @@ class KitForm extends Component {
   }
 }
 
-KitForm.defaultProps = {}
+ArticleForm.propTypes = {
+  url: PropTypes.string.isRequired,
+  initialState: PropTypes.shape.isRequired,
+  load: PropTypes.func.isRequired,
+  finishUp: PropTypes.func.isRequired,
+}
 
-export default KitForm
+export default ArticleForm

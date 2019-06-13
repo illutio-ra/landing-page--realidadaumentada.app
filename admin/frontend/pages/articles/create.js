@@ -9,6 +9,7 @@ import ArticleForm from './form'
 const initialState = {
   title: '',
   description: '',
+  imagePreview: '',
 }
 
 class CreateArticle extends Component {
@@ -16,7 +17,6 @@ class CreateArticle extends Component {
     super(props)
     this.hideModal = this.props.hideModal.bind(this)
   }
-
 
   render() {
     return (
@@ -51,8 +51,11 @@ CreateArticle.contextTypes = {
   tree: PropTypes.baobab,
 }
 
-const BranchedCreateArticle = branch((props, context) => ({
-  data: props.branchName,
-}), CreateArticle)
+const BranchedCreateArticle = branch(
+  (props, context) => ({
+    data: props.branchName,
+  }),
+  CreateArticle,
+)
 
 export default BranchedCreateArticle

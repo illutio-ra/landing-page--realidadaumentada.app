@@ -58,55 +58,55 @@ class Sidebar extends Component {
     return [
       Dashboard.asSidebarItem(),
       Articles.asSidebarItem(),
-      {
-        title: 'Manage Your Team',
-        icon: 'users',
-        to: '/manage',
-        open: false,
-        dropdown: [
-          Users.asSidebarItem(),
-          Organizations.asSidebarItem(),
-          Roles.asSidebarItem(),
-          Groups.asSidebarItem(),
-        ],
-      },
+      // {
+      //   title: 'Manage Your Team',
+      //   icon: 'users',
+      //   to: '/manage',
+      //   open: false,
+      //   dropdown: [
+      //     Users.asSidebarItem(),
+      //     Organizations.asSidebarItem(),
+      //     Roles.asSidebarItem(),
+      //     Groups.asSidebarItem(),
+      //   ],
+      // },
       // #Modules
-      {
-        title: 'Load Data',
-        icon: 'cloud-upload',
-        to: '/import',
-        open: false,
-        dropdown: [UsersImport.asSidebarItem()],
-      },
+      // {
+      //   title: 'Load Data',
+      //   icon: 'cloud-upload',
+      //   to: '/import',
+      //   open: false,
+      //   dropdown: [UsersImport.asSidebarItem()],
+      // },
       {
         title: 'Developer Tools',
         icon: 'github',
         to: '/devtools',
         open: false,
         dropdown: [
-          RequestLogs.asSidebarItem(),
-          AppConfig.asSidebarItem(),
-          FormBuilder.asSidebarItem(),
+          // RequestLogs.asSidebarItem(),
+          // AppConfig.asSidebarItem(),
+          // FormBuilder.asSidebarItem(),
           Translations.asSidebarItem(),
-          EmailBuilder.asSidebarItem(),
+          // EmailBuilder.asSidebarItem(),
         ],
       },
-      {
-        title: 'Restore data',
-        icon: 'trash-o',
-        to: '/restore',
-        open: false,
-        dropdown: [
-          DeletedUsers.asSidebarItem(), // #Restore
-        ],
-      },
-      {
-        title: 'UI Components',
-        icon: 'object-group',
-        to: '/ui-components',
-        open: false,
-        dropdown: [Buttons.asSidebarItem()],
-      },
+      // {
+      //   title: 'Restore data',
+      //   icon: 'trash-o',
+      //   to: '/restore',
+      //   open: false,
+      //   dropdown: [
+      //     DeletedUsers.asSidebarItem(), // #Restore
+      //   ],
+      // },
+      // {
+      //   title: 'UI Components',
+      //   icon: 'object-group',
+      //   to: '/ui-components',
+      //   open: false,
+      //   dropdown: [Buttons.asSidebarItem()],
+      // },
     ]
   }
 

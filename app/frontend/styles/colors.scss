@@ -17,6 +17,7 @@ $link: #229AD6;
 $link-active: #197DAF;
 $link-hovered: rgba(34, 154, 214, 0.75);
 $bg-secondary : rgba(201, 212, 217, 0.35);
+$bg-footer : #0058ff;
 $bg-minimalistic: #fff;
 .is-link{
   background-color: $link !important;
@@ -27,3 +28,7 @@ $bg-inactive : #9CABB2;
 $info: #229AD6;
 $info-active: $link-active;
 $info-hovered: $link-hovered;
+
+.is-font-blue {
+    color: #2b78fa;
+}

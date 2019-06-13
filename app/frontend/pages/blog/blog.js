@@ -3,7 +3,7 @@ import PageComponent from '~base/page-component'
 import { injectIntl } from 'react-intl'
 import api from '~base/api'
 import { forcePublic } from '~base/middlewares/'
-import Link from '~base/router/link'
+import Card from './components/card'
 
 class Blog extends PageComponent {
   constructor(props) {
@@ -37,22 +37,11 @@ class Blog extends PageComponent {
     const { items } = this.state
 
     return (
-      <div className="section">
+      <div className="section blog has-background-white">
         <div className="columns is-vcentered is-multiline">
           {items.map((item, i) => (
             <div className="column is-4" key={i}>
-              <div className="card">
-                <div className="card-header">
-                  <p className="card-header-title">{item.title}</p>
-                </div>
-                <div className="card-content">
-                  <p>{item.description}</p>
-                  <br />
-                  <Link className="button" to={`/blog/${item.slug}`}>
-                    Detalle
-                  </Link>
-                </div>
-              </div>
+              <Card showLink item={item} />
             </div>
           ))}
         </div>

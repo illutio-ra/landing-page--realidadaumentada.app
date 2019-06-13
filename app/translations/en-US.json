@@ -4,7 +4,7 @@
     "modules": [
       "general"
     ],
-    "content": "Welcome to marbleseed"
+    "content": "Welcome to marbleseeds"
   },
   {
     "id": "welcome",
@@ -70,129 +70,108 @@
     "content": "Language"
   },
   {
-    "id": "intro",
+    "id": "give",
     "modules": [
       "general"
     ],
-    "content": "Let your customers {icon} your brand"
+    "content": "Give"
   },
   {
-    "id": "subtitle",
+    "id": "your_customers",
     "modules": [
       "general"
     ],
-    "content": "with {span} experiences."
+    "content": "your customers"
   },
   {
-    "id": "augmented_reality",
+    "id": "incredible_experiences",
     "modules": [
       "general"
     ],
-    "content": "Augmented Reality"
+    "content": "incredible experiences."
   },
   {
-    "id": "try_now",
+    "id": "upgrade_text",
     "modules": [
       "general"
     ],
-    "content": "Try it now!"
+    "content": "Upgrade your traditional campaigns into augmented "
   },
   {
-    "id": "create",
+    "id": "no_coding",
     "modules": [
       "general"
     ],
-    "content": "create"
+    "content": " No coding or "
   },
   {
-    "id": "publish",
+    "id": "it_works",
     "modules": [
       "general"
     ],
-    "content": "publish"
+    "content": " It works with any product label,  "
   },
   {
-    "id": "and",
+    "id": "take_back",
     "modules": [
       "general"
     ],
-    "content": "and"
+    "content": "Take back"
   },
   {
-    "id": "measure",
+    "id": "control_of_your",
     "modules": [
       "general"
     ],
-    "content": "measure"
+    "content": " control of your"
   },
   {
-    "id": "awesome_campaigns",
+    "id": "customers_data",
     "modules": [
       "general"
     ],
-    "content": "awesome {augmented_reality} campaigns"
+    "content": "customers data."
   },
   {
-    "id": "campaigns",
+    "id": "real_information",
     "modules": [
       "general"
     ],
-    "content": "campaigns"
+    "content": "Get real information about interaction of customers "
   },
   {
-    "id": "see_how_works",
+    "id": "lets_start",
     "modules": [
       "general"
     ],
-    "content": "See how it works"
+    "content": "Let's start"
   },
   {
-    "id": "play_video",
+    "id": "reality_panel",
     "modules": [
       "general"
     ],
-    "content": "Play video"
+    "content": " reality using our AR Creator panel."
   },
   {
-    "id": "link_home",
+    "id": "desing_skills",
     "modules": [
       "general"
     ],
-    "content": "Home"
+    "content": "design skills needed."
   },
   {
-    "id": "link_app",
+    "id": "packaging_printed",
     "modules": [
       "general"
     ],
-    "content": "AR app"
+    "content": "packaging, printed ads, magazines, posters and much more."
   },
   {
-    "id": "link_solutions",
+    "id": "your_products",
     "modules": [
       "general"
     ],
-    "content": "Solutions"
-  },
-  {
-    "id": "link_pricing",
-    "modules": [
-      "general"
-    ],
-    "content": "Pricing"
-  },
-  {
-    "id": "link_blog",
-    "modules": [
-      "general"
-    ],
-    "content": "Blog"
-  },
-  {
-    "id": "link_login",
-    "modules": [
-      "general"
-    ],
-    "content": "Login"
+    "content": "with your products, campaigns and printed ads. "
   }
 ]

@@ -4,7 +4,7 @@
     "modules": [
       "general"
     ],
-    "content": "Bienvenido a marbleseed"
+    "content": "Bienvenido a marbleseeds"
   },
   {
     "id": "welcome",
@@ -84,150 +84,115 @@
     "content": "Lenguaje"
   },
   {
-    "id": "test",
-    "modules": [
-      "general"
-    ],
-    "content": "test"
-  },
-  {
-    "id": "test",
-    "modules": [
-      "general"
-    ],
-    "content": "test"
-  },
-  {
-    "id": "test",
-    "modules": [
-      "general"
-    ],
-    "content": "test"
-  },
-  {
     "id": "intro",
     "modules": [
       "general"
     ],
-    "content": "Deja que tus clientes {icon} tu marca"
+    "content": "Deja que tus clientes <i class=\"fa fa-heart heart margin-sides-icon\"></i>  tu marca"
   },
   {
-    "id": "subtitle",
+    "id": "give",
     "modules": [
       "general"
     ],
-    "content": "con experiencias en {span}.\n"
+    "content": "Regala"
   },
   {
-    "id": "augmented_reality",
+    "id": "your_customers",
     "modules": [
       "general"
     ],
-    "content": "Realidad Aumentada"
+    "content": "a tus clientes"
   },
   {
-    "id": "try_now",
+    "id": "incredible_experiences",
     "modules": [
       "general"
     ],
-    "content": "¡Probar ahora!"
+    "content": "experiencias increíbles."
   },
   {
-    "id": "create",
+    "id": "upgrade_text",
     "modules": [
       "general"
     ],
-    "content": "Crea"
+    "content": "Actualice sus campañas tradicionales a la realidad "
   },
   {
-    "id": "publish",
+    "id": "no_coding",
     "modules": [
       "general"
     ],
-    "content": "publica"
+    "content": " No se requieren "
   },
   {
-    "id": "and",
+    "id": "it_works",
     "modules": [
       "general"
     ],
-    "content": "y"
+    "content": " Funciona con cualquier etiqueta de "
   },
   {
-    "id": "measure",
+    "id": "take_back",
     "modules": [
       "general"
     ],
-    "content": "mide"
+    "content": "Toma"
   },
   {
-    "id": "awesome_campaigns",
+    "id": "control_of_your",
     "modules": [
       "general"
     ],
-    "content": "increibles campañas con {augmented_reality}"
+    "content": " el control de los"
   },
   {
-    "id": "campaigns",
+    "id": "customers_data",
     "modules": [
       "general"
     ],
-    "content": "campañas"
+    "content": "datos de tus clientes."
   },
   {
-    "id": "see_how_works",
+    "id": "real_information",
     "modules": [
       "general"
     ],
-    "content": "¿Cómo funciona?"
+    "content": "Obtén información real sobre la interacción de los clientes "
   },
   {
-    "id": "play_video",
+    "id": "lets_start",
     "modules": [
       "general"
     ],
-    "content": "Ver video"
+    "content": "Comencemos"
   },
   {
-    "id": "link_home",
+    "id": "reality_panel",
     "modules": [
       "general"
     ],
-    "content": "Inicio"
+    "content": "aumentada utilizando nuestro panel de creación de RA."
   },
   {
-    "id": "link_app",
+    "id": "desing_skills",
     "modules": [
       "general"
     ],
-    "content": "AR app"
+    "content": "habilidades de codificación o diseño."
   },
   {
-    "id": "link_solutions",
+    "id": "packaging_printed",
     "modules": [
       "general"
     ],
-    "content": "Soluciones"
+    "content": "producto, embalaje, anuncios impresos, revistas, carteles y mucho más."
   },
   {
-    "id": "link_pricing",
+    "id": "your_products",
     "modules": [
       "general"
     ],
-    "content": "Precios"
-  },
-  {
-    "id": "link_blog",
-    "modules": [
-      "general"
-    ],
-    "content": "Blog"
-  },
-  {
-    "id": "link_login",
-    "modules": [
-      "general"
-    ],
-    "content": "Iniciar sesión"
+    "content": "con tus productos, campañas y anuncios impresos."
   }
 ]

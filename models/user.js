@@ -212,7 +212,7 @@ userSchema.methods.sendInviteEmail = async function () {
       email: this.email,
       name: this.displayName
     },
-    title: 'Invite to Marble Seeds'
+    title: 'Invite to RA CAM'
   })
 }
 
@@ -240,7 +240,7 @@ userSchema.methods.sendResetPasswordEmail = async function (admin) {
       email: this.email,
       name: this.displayName
     },
-    title: 'Reset passsword for Marble Seeds'
+    title: 'Reset passsword for RA CAM'
   })
 }
 

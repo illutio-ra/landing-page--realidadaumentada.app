@@ -147,9 +147,7 @@ class Translations extends PageComponent {
   }
 
   getModal() {
-    const {
-      currentLabel, lang, modules, module,
-    } = this.state
+    const { currentLabel, lang, modules, module } = this.state
 
     if (currentLabel) {
       currentLabel.modules = currentLabel.modules.map((l) => ({
@@ -211,7 +209,8 @@ class Translations extends PageComponent {
               <button
                 type="button"
                 className="button"
-                onClick={() => this.setState({ classNameModal: true, currentLabel: null })
+                onClick={() =>
+                  this.setState({ classNameModal: true, currentLabel: null })
                 }
               >
                 <span className="icon">

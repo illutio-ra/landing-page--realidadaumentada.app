@@ -1,10 +1,12 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import PageComponent from '~base/page-component'
 import { FormattedMessage, injectIntl } from 'react-intl'
-
 import { forcePublic } from '~base/middlewares/'
-
 import Image from '~base/components/image'
+import PreviewPortfolio from './portfolio/preview-portfolio'
+import PreviewBlog from './blog/components/preview-blog'
+import LetsStart from './lets-start'
 
 class Home extends PageComponent {
   constructor(props) {
@@ -19,7 +21,7 @@ class Home extends PageComponent {
     return (
       <section className="app section">
         <div className="container" align="center">
-          <p className="title has-text-black">
+          <p className="has-text-black header-title">
             <FormattedMessage
               id="general.intro"
               values={{
@@ -27,7 +29,7 @@ class Home extends PageComponent {
               }}
             />
           </p>
-          <p className="title">
+          <p className="has-text-black header-title">
             <FormattedMessage
               id="general.subtitle"
               values={{
@@ -39,37 +41,37 @@ class Home extends PageComponent {
               }}
             />
           </p>
-          <button type="button" className="button is-primary">
+          <button type="button" className="button is-primary margin-button">
             <FormattedMessage id="general.try_now" />
             <i className="fa fa-rocket margin-sides-icon" />
           </button>
         </div>
         <div className="phone">
-          <Image src="/public/img/phone.png" id="phone" alt="ra cam" />
+          <Image src="/public/img/planets.svg" id="phone" alt="ra cam" />
         </div>
         <div className="planets">
-          <Image src="/public/img/planet1.png" id="planet1" alt="ra cam" />
-          <Image src="/public/img/astronaut.png" id="astronaut" alt="ra cam" />
-          <Image src="/public/img/planet2.png" id="planet2" alt="ra cam" />
-          <Image src="/public/img/arrow.png" id="planet3" alt="ra cam" />
+          <Image src="/public/img/planet1.svg" id="planet1" alt="ra cam" />
+          <Image src="/public/img/astronaut.svg" id="astronaut" alt="ra cam" />
+          <Image src="/public/img/planet2.svg" id="planet2" alt="ra cam" />
+          <Image src="/public/img/planet3.svg" id="planet3" alt="ra cam" />
         </div>
-        <div className="container">
+        <div className="container section">
           <div className="columns">
             <div className="column">
-              <p>
-                <strong>
+              <p className="title">
+                <span className="is-font-blue">
                   <FormattedMessage id="general.create" />
-                </strong>
+                </span>
                 {', '}
-                <strong>
+                <span className="is-font-blue">
                   <FormattedMessage id="general.publish" />
                   {' '}
-                </strong>
+                </span>
                 <FormattedMessage id="general.and" />
                 {' '}
-                <strong>
+                <span className="is-font-blue">
                   <FormattedMessage id="general.measure" />
-                </strong>
+                </span>
                 <br />
                 <FormattedMessage
                   id="general.awesome_campaigns"
@@ -84,20 +86,28 @@ class Home extends PageComponent {
                 <br />
               </p>
             </div>
-            <div className="column" align="center">
-              <p>
-                <strong>
+            <div className="column video" align="center">
+              <p className="title is-hidden-touch">
+                <strong className="is-font-blue">
                   <FormattedMessage id="general.see_how_works" />
                 </strong>
               </p>
-              <button type="button" className="button is-primary">
-                <FormattedMessage id="general.play_video" />
-                <i className="fa fa-play margin-sides-icon" />
-              </button>
+              <a href="#">
+                <Image src="../../public/img/video.png" alt="ra cam" />
+              </a>
             </div>
           </div>
-          <Image src="/public/img/arrow.png" id="arrow" alt="ra cam" />
+          <Image
+            src="/public/img/arrow.svg"
+            className="is-hidden-touch"
+            id="arrow"
+            alt="ra cam"
+          />
         </div>
+
+        <LetsStart />
+        <PreviewPortfolio />
+        <PreviewBlog />
       </section>
     )
   }

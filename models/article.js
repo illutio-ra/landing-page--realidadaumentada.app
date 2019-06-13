@@ -6,9 +6,10 @@ const dataTables = require('mongoose-datatables')
 const articleSchema = new Schema(
   {
     title: { type: String, required: true },
+    description: { type: Schema.Types.Mixed, required: true },
+    imagePreview: { type: String },
     tags: { type: Schema.Types.Mixed, default: [] },
     slug: { type: String },
-    description: { type: Schema.Types.Mixed, required: true },
     content: { type: Schema.Types.Mixed },
     links: [{ type: String }],
     status: { type: String },
@@ -24,14 +25,15 @@ const articleSchema = new Schema(
 
 articleSchema.plugin(dataTables)
 
-articleSchema.methods.toAdmin = function () {
+articleSchema.methods.toAdmin = function() {
   return {
     uuid: this.uuid,
     title: this.title,
+    description: this.description,
+    imagePreview: this.imagePreview,
     tags: this.tags,
     status: this.status,
     slug: this.slug,
-    description: this.description,
     content: this.content,
     links: this.links,
     isTop: this.isTop,
@@ -40,14 +42,15 @@ articleSchema.methods.toAdmin = function () {
   }
 }
 
-articleSchema.methods.toPublic = function () {
+articleSchema.methods.toPublic = function() {
   return {
     uuid: this.uuid,
     title: this.title,
+    description: this.description,
+    imagePreview: this.imagePreview,
     tags: this.tags,
     status: this.status,
     slug: this.slug,
-    description: this.description,
     content: this.content,
     isTop: this.isTop,
     links: this.links,
