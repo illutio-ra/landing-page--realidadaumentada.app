@@ -2,18 +2,46 @@
 body {
     font-family: 'Lato', sans-serif;
     .title {
+        @include from($desktop) {
+            font-size: 2.3rem;
+        }
+        @include touch {
+            font-size: 1.25rem;
+            text-align: center;
+        }
         letter-spacing: -0.5px
     }
+    .text {
+        font-size: 1.12rem;
+        @include touch {
+            text-align: center;
+        }
+    }
+}
+
+.is-right {
+    text-align: right;
+}
+
+.img-centered {
+    display: block;
+    margin: auto;
 }
 
 .app {
     background-color: #ffffff;
     padding-left: 0;
     padding-right: 0;
-    .title {
+    .header-title {
         @include from($desktop) {
             font-size: 2.8rem;
         }
+        @include touch {
+            font-size: 2rem;
+        }
+        font-weight: 600;
+        line-height: 1.125;
+        letter-spacing: -0.5px;
         .heart {
             color: #b71c1c;
         }
@@ -22,17 +50,6 @@ body {
         background-color: #0058ff;
         font-weight: lighter;
         font-size: 1.1rem;
-    }
-    .column {
-        p {
-            @include from($desktop) {
-                font-size: 2.3rem;
-            }
-            @include touch {
-                font-size: 1.25rem;
-                text-align: center;
-            }
-        }
     }
     .video {
         p {
@@ -144,30 +161,19 @@ body {
       background: $bg-blue;
   }
 
-    /* .price{
-      font-family: Lato;
-      font-size: 2.5rem !important;
-      font-weight: bold;
-      color: black;
+.centered-in-touch {
+    @include touch {
+        text-align: center;
     }
+}
 
-    .pricing-table {
-      display: flex;
-      align-items: stretch;
-      flex-direction: row;
-      flex-flow: row wrap;
-      justify-content: baseline;
-  }
+.vertically-centered {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-    .pricing .pricing-table {
-      
-  }
-
-    .pricing-table .pricing-plan {
-      width: 311px !important;
-      flex: none;
-      margin-left: 125px;
-    } */
 }
 
 .blog {
@@ -188,5 +194,20 @@ body {
             height: 273px;
             width: 240px;
         }
+    }
+}
+
+.footer {
+    background-color: $bg-footer;
+    color: #ffffff;
+    font-weight: 300;
+
+    .directory{
+        font-size: 18px;
+    }
+
+    a.directory {
+        color: #ffffff;
+        margin-bottom: 1em;
     }
 }

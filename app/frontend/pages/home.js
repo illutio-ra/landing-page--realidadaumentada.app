@@ -7,6 +7,7 @@ import Image from '~base/components/image'
 import PreviewPortfolio from './portfolio/preview-portfolio'
 import PreviewBlog from './blog/components/preview-blog'
 import Pricing from './pricing'
+import LetsStart from './lets-start'
 
 class Home extends PageComponent {
   constructor(props) {
@@ -19,9 +20,9 @@ class Home extends PageComponent {
   render() {
     const { formatMessage } = this.props.intl
     return (
-      <section className="app">
-        <div className="container section" align="center">
-          <p className="title has-text-black">
+      <section className="app section">
+        <div className="container" align="center">
+          <p className="has-text-black header-title">
             <FormattedMessage
               id="general.intro"
               values={{
@@ -29,7 +30,7 @@ class Home extends PageComponent {
               }}
             />
           </p>
-          <p className="title">
+          <p className="header-title">
             <FormattedMessage
               id="general.subtitle"
               values={{
@@ -58,7 +59,7 @@ class Home extends PageComponent {
         <div className="container section">
           <div className="columns">
             <div className="column">
-              <p>
+              <p className="title">
                 <strong className="is-font-blue">
                   <FormattedMessage id="general.create" />
                 </strong>
@@ -87,7 +88,7 @@ class Home extends PageComponent {
               </p>
             </div>
             <div className="column video" align="center">
-              <p className="is-hidden-touch">
+              <p className="title is-hidden-touch">
                 <strong className="is-font-blue">
                   <FormattedMessage id="general.see_how_works" />
                 </strong>
@@ -105,6 +106,7 @@ class Home extends PageComponent {
           />
         </div>
 
+        <LetsStart />
         <PreviewPortfolio />
         <Pricing />
         <PreviewBlog />

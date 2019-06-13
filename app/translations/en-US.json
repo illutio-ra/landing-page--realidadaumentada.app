@@ -4,7 +4,7 @@
     "modules": [
       "general"
     ],
-    "content": "Welcome to marbleseed"
+    "content": "Welcome to marbleseeds"
   },
   {
     "id": "welcome",
@@ -68,6 +68,83 @@
       "general"
     ],
     "content": "Language"
+  },
+  {
+    "id": "give",
+    "modules": [
+      "general"
+    ],
+    "content": "Give"
+  },
+  {
+    "id": "your_customers",
+    "modules": [
+      "general"
+    ],
+    "content": "your customers"
+  },
+  {
+    "id": "incredible_experiences",
+    "modules": [
+      "general"
+    ],
+    "content": "incredible experiences."
+  },
+  {
+    "id": "upgrade_text",
+    "modules": [
+      "general"
+    ],
+    "content": "Upgrade your traditional campaigns into augmented reality using our AR Creator panel."
+  },
+  {
+    "id": "no_coding",
+    "modules": [
+      "general"
+    ],
+    "content": " No coding or design skills needed."
+  },
+  {
+    "id": "it_works",
+    "modules": [
+      "general"
+    ],
+    "content": " It works with any product label,  packaging, printed ads, magazines, posters and much more."
+  },
+  {
+    "id": "take_back",
+    "modules": [
+      "general"
+    ],
+    "content": "Take back"
+  },
+  {
+    "id": "control_of_your",
+    "modules": [
+      "general"
+    ],
+    "content": " control of your"
+  },
+  {
+    "id": "customers_data",
+    "modules": [
+      "general"
+    ],
+    "content": "customers data."
+  },
+  {
+    "id": "real_information",
+    "modules": [
+      "general"
+    ],
+    "content": "Get real information about interaction of customers with your products, campaigns and printed ads. "
+  },
+  {
+    "id": "lets_start",
+    "modules": [
+      "general"
+    ],
+    "content": "Let's start"
   },
   {
     "id": "intro",

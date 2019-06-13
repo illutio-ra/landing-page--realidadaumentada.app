@@ -20,4 +20,8 @@
         }
     }
 }
+  .columns-footer{
+      flex-direction: column-reverse;
+      display: flex;
+  }
 }

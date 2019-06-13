@@ -21,6 +21,9 @@
 
 .is-margin-bottom-large{
     margin-bottom: 3rem;
+  
+.is-margin-top-medium{
+    margin-top: 2rem;
 }
 
 .is-padding-left-small{
@@ -30,6 +33,7 @@
 .is-padding-right-small{
     padding-right: 1rem;
 }
+
 
 .is-font-size-32px{
     font-size: 32px;
@@ -59,3 +63,7 @@
 .grow:hover {
     transform: scale(1.1);
 }
+.align-self {
+    align-self: center;
+  }
+
