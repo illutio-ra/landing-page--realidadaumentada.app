@@ -3,39 +3,64 @@
   margin-right: 3px;
 }
 
-.is-border-radius{
-    border-radius: 10px;
+.is-border-radius {
+  border-radius: 10px;
 }
 
-.is-margin-left-small{
-    margin-left: 1rem;
+.is-margin-left-small {
+  margin-left: 1rem;
 }
 
-.is-margin-right-small{
-    margin-right: 1rem;
+.is-margin-right-small {
+  margin-right: 1rem;
 }
 
-.is-margin-top-medium{
-    margin-top: 2rem;
+.is-margin-top-medium {
+  margin-top: 2rem;
 }
 
-.is-padding-left-small{
-    padding-left: 1rem;
+.is-padding-left-small {
+  padding-left: 1rem;
 }
 
-.is-padding-right-small{
-    padding-right: 1rem;
+.is-padding-right-small {
+  padding-right: 1rem;
 }
 
-
-.is-font-size-32px{
-    font-size: 32px;
+.is-font-size-32px {
+  font-size: 32px;
 }
-.is-font-size-24px{
-    font-size: 24px;
+.is-font-size-24px {
+  font-size: 24px;
 }
 
 .align-self {
-    align-self: center;
-  }
-  
+  align-self: center;
+}
+
+.is-switch-blue{
+     background: $bg-blue !important;
+ }
+
+ .is-box-shadowed {
+     width: 0.5rem;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     text-align: center;
+   
+}
+.is-bg-blue{
+ background-color: $bg-blue !important;
+}
+
+.grow {
+ transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+ transform: scale(1.1);
+}
+
+.is-vertical-center {
+   display: flex;
+   align-items: center;
+}
