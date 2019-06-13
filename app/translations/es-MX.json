@@ -84,6 +84,13 @@
     "content": "Lenguaje"
   },
   {
+    "id": "intro",
+    "modules": [
+      "general"
+    ],
+    "content": "Deja que tus clientes <i class=\"fa fa-heart heart margin-sides-icon\"></i>  tu marca"
+  },
+  {
     "id": "give",
     "modules": [
       "general"
@@ -109,21 +116,21 @@
     "modules": [
       "general"
     ],
-    "content": "Actualice sus campañas tradicionales a la realidad aumentada utilizando nuestro panel de creación de RA."
+    "content": "Actualice sus campañas tradicionales a la realidad "
   },
   {
     "id": "no_coding",
     "modules": [
       "general"
     ],
-    "content": " No se requieren habilidades de codificación o diseño."
+    "content": " No se requieren "
   },
   {
     "id": "it_works",
     "modules": [
       "general"
     ],
-    "content": " Funciona con cualquier etiqueta de producto, embalaje, anuncios impresos, revistas, carteles y mucho más."
+    "content": " Funciona con cualquier etiqueta de "
   },
   {
     "id": "take_back",
@@ -151,7 +158,7 @@
     "modules": [
       "general"
     ],
-    "content": "Obtén información real sobre la interacción de los clientes con tus productos, campañas y anuncios impresos."
+    "content": "Obtén información real sobre la interacción de los clientes "
   },
   {
     "id": "lets_start",
@@ -161,178 +168,31 @@
     "content": "Comencemos"
   },
   {
-    "id": "intro",
+    "id": "reality_panel",
     "modules": [
       "general"
     ],
-    "content": "Deja que tus clientes {icon} tu marca"
+    "content": "aumentada utilizando nuestro panel de creación de RA."
   },
   {
-    "id": "subtitle",
+    "id": "desing_skills",
     "modules": [
       "general"
     ],
-    "content": "con experiencias en {span}.\n"
+    "content": "habilidades de codificación o diseño."
   },
   {
-    "id": "augmented_reality",
+    "id": "packaging_printed",
     "modules": [
       "general"
     ],
-    "content": "Realidad Aumentada"
+    "content": "producto, embalaje, anuncios impresos, revistas, carteles y mucho más."
   },
   {
-    "id": "try_now",
+    "id": "your_products",
     "modules": [
       "general"
     ],
-    "content": "¡Probar ahora!"
-  },
-  {
-    "id": "create",
-    "modules": [
-      "general"
-    ],
-    "content": "Crea"
-  },
-  {
-    "id": "publish",
-    "modules": [
-      "general"
-    ],
-    "content": "publica"
-  },
-  {
-    "id": "and",
-    "modules": [
-      "general"
-    ],
-    "content": "y"
-  },
-  {
-    "id": "measure",
-    "modules": [
-      "general"
-    ],
-    "content": "mide"
-  },
-  {
-    "id": "awesome_campaigns",
-    "modules": [
-      "general"
-    ],
-    "content": "increibles campañas con {augmented_reality}"
-  },
-  {
-    "id": "campaigns",
-    "modules": [
-      "general"
-    ],
-    "content": "campañas"
-  },
-  {
-    "id": "see_how_works",
-    "modules": [
-      "general"
-    ],
-    "content": "¿Cómo funciona?"
-  },
-  {
-    "id": "play_video",
-    "modules": [
-      "general"
-    ],
-    "content": "Ver video"
-  },
-  {
-    "id": "link_home",
-    "modules": [
-      "general"
-    ],
-    "content": "Inicio"
-  },
-  {
-    "id": "link_app",
-    "modules": [
-      "general"
-    ],
-    "content": "AR app"
-  },
-  {
-    "id": "link_solutions",
-    "modules": [
-      "general"
-    ],
-    "content": "Soluciones"
-  },
-  {
-    "id": "link_pricing",
-    "modules": [
-      "general"
-    ],
-    "content": "Precios"
-  },
-  {
-    "id": "link_blog",
-    "modules": [
-      "general"
-    ],
-    "content": "Blog"
-  },
-  {
-    "id": "link_login",
-    "modules": [
-      "general"
-    ],
-    "content": "Iniciar sesión"
-  },
-  {
-    "id": "see_all",
-    "modules": [
-      "general"
-    ],
-    "content": "Ver todos"
-  },
-  {
-    "id": "dont_miss",
-    "modules": [
-      "general"
-    ],
-    "content": "No te pierdas"
-  },
-  {
-    "id": "latest_news",
-    "modules": [
-      "general"
-    ],
-    "content": "nuestras últimas noticias"
-  },
-  {
-    "id": "detail",
-    "modules": [
-      "general"
-    ],
-    "content": "Detalle"
-  },
-  {
-    "id": "portfolio_preview",
-    "modules": [
-      "general"
-    ],
-    "content": "{discover} como transformar imágenes en {experiences}."
-  },
-  {
-    "id": "discover",
-    "modules": [
-      "general"
-    ],
-    "content": "Descubre"
-  },
-  {
-    "id": "experiences",
-    "modules": [
-      "general"
-    ],
-    "content": "experiencias"
+    "content": "con tus productos, campañas y anuncios impresos."
   }
 ]
