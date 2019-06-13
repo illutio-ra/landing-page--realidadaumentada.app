@@ -24,7 +24,7 @@ class Pricing extends Component {
           <label htmlFor="switchRoundedInfo switch-text">Monthly</label>
         </div>
         <div className="pricing-table">
-          <div className="pricing-plan is-box-shadowed">
+          <div className="pricing-plan is-box-shadowed grow">
             <div className="plan-header card-title">Basic</div>
             <Image src="/public/img/basic.svg" alt="ra cam" />
             <div className="plan-price">
@@ -39,13 +39,16 @@ $ 0.00
               <div className="is-margin-bottom-small">Free account</div>
             </div>
             <div className="plan-footer">
-              <button className="button is-fullwidth is-info is-bg-blue">
+              <a
+                className="button is-fullwidth is-info is-bg-blue"
+                href="https://realidadaumentada.app/admin/register"
+              >
                 Create a new account
-              </button>
+              </a>
             </div>
           </div>
 
-          <div className="pricing-plan is-box-shadowed">
+          <div className="pricing-plan is-box-shadowed grow">
             <div className="plan-header card-title">Pro</div>
             <Image src="/public/img/pro.svg" alt="ra cam" />
             <div className="plan-price">
@@ -62,13 +65,16 @@ $ 199.00
               <div className="is-margin-bottom-small">Customer support</div>
             </div>
             <div className="plan-footer">
-              <button className="button is-fullwidth is-info is-bg-blue">
+              <a
+                className="button is-fullwidth is-info is-bg-blue"
+                href="https://realidadaumentada.app/admin/register"
+              >
                 Buy it
-              </button>
+              </a>
             </div>
           </div>
 
-          <div className="pricing-plan is-box-shadowed">
+          <div className="pricing-plan is-box-shadowed grow">
             <div className="plan-header card-title">Bussiness</div>
             <Image src="/public/img/bussiness.svg" alt="ra cam" />
             <div className="plan-price">
@@ -85,13 +91,16 @@ $ 399.00
               <div className="is-margin-bottom-small">Customer support</div>
             </div>
             <div className="plan-footer">
-              <button className="button is-fullwidth is-info is-bg-blue">
+              <a
+                className="button is-fullwidth is-info is-bg-blue"
+                href="https://realidadaumentada.app/admin/register"
+              >
                 Buy it
-              </button>
+              </a>
             </div>
           </div>
 
-          <div className="pricing-plan is-box-shadowed">
+          <div className="pricing-plan is-box-shadowed grow">
             <div className="plan-header card-title">Enterprise</div>
             <Image src="/public/img/enterprise.svg" alt="ra cam" />
             <div className="plan-price">
@@ -108,9 +117,12 @@ $ 599.00
               <div className="is-margin-bottom-small">Customer support</div>
             </div>
             <div className="plan-footer">
-              <button className="button is-fullwidth is-info is-bg-blue">
+              <a
+                className="button is-fullwidth is-info is-bg-blue"
+                href="https://realidadaumentada.app/admin/register"
+              >
                 Buy it
-              </button>
+              </a>
             </div>
           </div>
         </div>
