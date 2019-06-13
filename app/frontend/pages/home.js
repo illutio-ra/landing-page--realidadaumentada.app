@@ -29,7 +29,7 @@ class Home extends PageComponent {
               }}
             />
           </p>
-          <p className="header-title">
+          <p className="has-text-black header-title">
             <FormattedMessage
               id="general.subtitle"
               values={{
@@ -41,7 +41,7 @@ class Home extends PageComponent {
               }}
             />
           </p>
-          <button type="button" className="button is-primary">
+          <button type="button" className="button is-primary margin-button">
             <FormattedMessage id="general.try_now" />
             <i className="fa fa-rocket margin-sides-icon" />
           </button>
@@ -59,17 +59,19 @@ class Home extends PageComponent {
           <div className="columns">
             <div className="column">
               <p className="title">
-                <strong className="is-font-blue">
+                <span className="is-font-blue">
                   <FormattedMessage id="general.create" />
-                </strong>
+                </span>
                 {', '}
-                <strong className="is-font-blue">
-                  <FormattedMessage id="general.publish" />{' '}
-                </strong>
-                <FormattedMessage id="general.and" />{' '}
-                <strong className="is-font-blue">
+                <span className="is-font-blue">
+                  <FormattedMessage id="general.publish" />
+                  {' '}
+                </span>
+                <FormattedMessage id="general.and" />
+                {' '}
+                <span className="is-font-blue">
                   <FormattedMessage id="general.measure" />
-                </strong>
+                </span>
                 <br />
                 <FormattedMessage
                   id="general.awesome_campaigns"
