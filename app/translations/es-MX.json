@@ -84,11 +84,165 @@
     "content": "Lenguaje"
   },
   {
+    "id": "test",
+    "modules": [
+      "general"
+    ],
+    "content": "test"
+  },
+  {
     "id": "intro",
     "modules": [
       "general"
     ],
-    "content": "Deja que tus clientes <i class=\"fa fa-heart heart margin-sides-icon\"></i>  tu marca"
+    "content": "Deja que tus clientes {icon} tu marca"
+  },
+  {
+    "id": "subtitle",
+    "modules": [
+      "general"
+    ],
+    "content": "con experiencias en {span}.\n"
+  },
+  {
+    "id": "augmented_reality",
+    "modules": [
+      "general"
+    ],
+    "content": "Realidad Aumentada"
+  },
+  {
+    "id": "try_now",
+    "modules": [
+      "general"
+    ],
+    "content": "¡Probar ahora!"
+  },
+  {
+    "id": "create",
+    "modules": [
+      "general"
+    ],
+    "content": "Crea"
+  },
+  {
+    "id": "publish",
+    "modules": [
+      "general"
+    ],
+    "content": "publica"
+  },
+  {
+    "id": "and",
+    "modules": [
+      "general"
+    ],
+    "content": "y"
+  },
+  {
+    "id": "measure",
+    "modules": [
+      "general"
+    ],
+    "content": "mide"
+  },
+  {
+    "id": "awesome_campaigns",
+    "modules": [
+      "general"
+    ],
+    "content": "increibles campañas con {augmented_reality}"
+  },
+  {
+    "id": "campaigns",
+    "modules": [
+      "general"
+    ],
+    "content": "campañas"
+  },
+  {
+    "id": "see_how_works",
+    "modules": [
+      "general"
+    ],
+    "content": "¿Cómo funciona?"
+  },
+  {
+    "id": "play_video",
+    "modules": [
+      "general"
+    ],
+    "content": "Ver video"
+  },
+  {
+    "id": "link_home",
+    "modules": [
+      "general"
+    ],
+    "content": "Inicio"
+  },
+  {
+    "id": "link_app",
+    "modules": [
+      "general"
+    ],
+    "content": "AR app"
+  },
+  {
+    "id": "link_solutions",
+    "modules": [
+      "general"
+    ],
+    "content": "Soluciones"
+  },
+  {
+    "id": "link_pricing",
+    "modules": [
+      "general"
+    ],
+    "content": "Precios"
+  },
+  {
+    "id": "link_blog",
+    "modules": [
+      "general"
+    ],
+    "content": "Blog"
+  },
+  {
+    "id": "link_login",
+    "modules": [
+      "general"
+    ],
+    "content": "Iniciar sesión"
+  },
+  {
+    "id": "see_all",
+    "modules": [
+      "general"
+    ],
+    "content": "Ver todos"
+  },
+  {
+    "id": "dont_miss",
+    "modules": [
+      "general"
+    ],
+    "content": "No te pierdas"
+  },
+  {
+    "id": "latest_news",
+    "modules": [
+      "general"
+    ],
+    "content": "nuestras últimas noticias"
+  },
+  {
+    "id": "detail",
+    "modules": [
+      "general"
+    ],
+    "content": "Detalle"
   },
   {
     "id": "give",
@@ -116,21 +270,21 @@
     "modules": [
       "general"
     ],
-    "content": "Actualice sus campañas tradicionales a la realidad "
+    "content": "Actualice sus campañas tradicionales a la realidad aumentada utilizando nuestro panel de creación de RA."
   },
   {
     "id": "no_coding",
     "modules": [
       "general"
     ],
-    "content": " No se requieren "
+    "content": " No se requieren habilidades de codificación o diseño."
   },
   {
     "id": "it_works",
     "modules": [
       "general"
     ],
-    "content": " Funciona con cualquier etiqueta de "
+    "content": " Funciona con cualquier etiqueta de producto, embalaje, anuncios impresos, revistas, carteles y mucho más."
   },
   {
     "id": "take_back",
@@ -158,7 +312,7 @@
     "modules": [
       "general"
     ],
-    "content": "Obtén información real sobre la interacción de los clientes "
+    "content": "Obtén información real sobre la interacción de los clientes con tus productos, campañas y anuncios impresos."
   },
   {
     "id": "lets_start",
@@ -168,31 +322,38 @@
     "content": "Comencemos"
   },
   {
-    "id": "reality_panel",
+    "id": "portfolio_preview",
     "modules": [
       "general"
     ],
-    "content": "aumentada utilizando nuestro panel de creación de RA."
+    "content": "{discover} como transformar imágenes en {experiences}."
   },
   {
-    "id": "desing_skills",
+    "id": "discover",
     "modules": [
       "general"
     ],
-    "content": "habilidades de codificación o diseño."
+    "content": "Descubre"
   },
   {
-    "id": "packaging_printed",
+    "id": "experiences",
     "modules": [
       "general"
     ],
-    "content": "producto, embalaje, anuncios impresos, revistas, carteles y mucho más."
+    "content": "experiencias"
   },
   {
-    "id": "your_products",
+    "id": "register",
     "modules": [
       "general"
     ],
-    "content": "con tus productos, campañas y anuncios impresos."
+    "content": "Registrarme"
+  },
+  {
+    "id": "contact_navbar",
+    "modules": [
+      "general"
+    ],
+    "content": "Contacto"
   }
 ]

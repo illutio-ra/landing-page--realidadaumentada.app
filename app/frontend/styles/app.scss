@@ -19,6 +19,11 @@ body {
     }
 }
 
+a.navbar-item:hover, a.navbar-item.is-active, a.navbar-link:hover, a.navbar-link.is-active {
+    background-color: transparent !important;
+    color: #0058ff;
+}
+
 .is-right {
     text-align: right;
 }

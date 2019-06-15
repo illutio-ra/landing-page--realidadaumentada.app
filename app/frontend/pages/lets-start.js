@@ -13,7 +13,7 @@ const LetsStart = () => (
           className="img-centered"
         />
       </div>
-      <div className="column is-right vertically-centered">
+      <div className="column is-right vertically-centered" id="solutions">
         <div className="section">
           <p className="title">
             <span className="is-font-blue">

@@ -3,7 +3,7 @@ import Image from '~base/components/image'
 import { injectIntl } from 'react-intl'
 
 const Footer = () => (
-  <footer className="footer">
+  <footer className="footer" id="contact">
     <div className="columns columns-footer">
       <div className="column">
         <div className="columns">

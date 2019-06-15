@@ -10,7 +10,7 @@ class Pricing extends Component {
   render() {
     const { checked } = this.state
     return (
-      <div className="section pricing">
+      <div className="section pricing" id="pricing">
         <div className="has-text-centered is-size-1 is-margin-bottom-large main-title">
           Choose your plan
         </div>
