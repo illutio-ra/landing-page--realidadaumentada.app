@@ -16,6 +16,7 @@ class App extends Component {
     this.state = {
       locale,
       messages: null,
+      loading: false,
     }
     window.addEventListener('lang', this.changeLanguage)
     window.localStorage.setItem('lang', locale)
@@ -36,6 +37,7 @@ class App extends Component {
     if (config) {
       this.setState({
         messages: config.data,
+        loading: true,
       })
     }
   }
@@ -52,13 +54,17 @@ class App extends Component {
   }
 
   render() {
-    const { messages, locale } = this.state
+    const { messages, locale, loading } = this.state
     const { Root } = this.props
-    return (
-      <IntlProvider messages={this.formatMessages(messages)} locale={locale}>
-        <Root />
-      </IntlProvider>
-    )
+
+    if (loading) {
+      return (
+        <IntlProvider messages={this.formatMessages(messages)} locale={locale}>
+          <Root />
+        </IntlProvider>
+      )
+    }
+    return <div />
   }
 }
 

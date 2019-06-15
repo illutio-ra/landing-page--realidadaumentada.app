@@ -57,16 +57,16 @@ class PreviewBlog extends Component {
               </Link>
             </div>
           </div>
-          {itemsTop.map((item) => (
-            <div className="column">
+          {itemsTop.map((item, i) => (
+            <div className="column" key={i}>
               <Card item={item} />
             </div>
           ))}
         </div>
 
         <div className="columns is-multiline">
-          {items.map((item) => (
-            <div className="column is-4">
+          {items.map((item, i) => (
+            <div className="column is-4" key={i}>
               <Card item={item} />
             </div>
           ))}

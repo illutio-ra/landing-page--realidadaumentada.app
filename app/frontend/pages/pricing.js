@@ -3,11 +3,12 @@ import Image from '~base/components/image'
 import { injectIntl } from 'react-intl'
 
 class Pricing extends Component {
-  async componentDidMount() {
-    await this.loadData()
+  state = {
+    checked: true,
   }
 
   render() {
+    const { checked } = this.state
     return (
       <div className="section pricing">
         <div className="has-text-centered is-size-1 is-margin-bottom-large main-title">
@@ -19,7 +20,8 @@ class Pricing extends Component {
             type="checkbox"
             name="switchRoundedInfo"
             className="switch is-rounded is-switch-blue"
-            checked="checked"
+            checked={checked}
+            onChange={(e) => this.setState({ checked: e.target.checked })}
           />
           <label htmlFor="switchRoundedInfo switch-text">Monthly</label>
         </div>

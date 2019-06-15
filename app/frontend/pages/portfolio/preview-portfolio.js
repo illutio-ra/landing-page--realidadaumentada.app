@@ -7,11 +7,6 @@ import Link from '~base/router/link'
 import PropTypes from 'prop-types'
 
 class PreviewPortfolio extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
   render() {
     const responsive = {
       0: { items: 1 },
@@ -88,8 +83,11 @@ class PreviewPortfolio extends Component {
               mouseDragEnabled
               responsive={responsive}
             >
-              {images.map((item) => (
-                <div className="is-padding-left-small is-padding-right-small">
+              {images.map((item, i) => (
+                <div
+                  className="is-padding-left-small is-padding-right-small"
+                  key={i}
+                >
                   <Image
                     style={{
                       height: 244,
@@ -107,10 +105,6 @@ class PreviewPortfolio extends Component {
       </div>
     )
   }
-}
-
-PreviewPortfolio.propTypes = {
-  intl: PropTypes.shape.isRequired,
 }
 
 export default injectIntl(PreviewPortfolio)
