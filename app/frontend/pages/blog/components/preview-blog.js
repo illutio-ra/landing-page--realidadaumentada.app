@@ -38,7 +38,7 @@ class PreviewBlog extends Component {
   render() {
     const { itemsTop, items } = this.state
     return (
-      <section className="section blog">
+      <section className="section blog" id="blog">
         <div className="columns">
           <div className="column is-3">
             <div className="card-content">

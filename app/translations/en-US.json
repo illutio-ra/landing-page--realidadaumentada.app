@@ -70,6 +70,160 @@
     "content": "Language"
   },
   {
+    "id": "dont_miss",
+    "modules": [
+      "general"
+    ],
+    "content": "Don’t miss"
+  },
+  {
+    "id": "intro",
+    "modules": [
+      "general"
+    ],
+    "content": "Let your customers {icon} your brand"
+  },
+  {
+    "id": "subtitle",
+    "modules": [
+      "general"
+    ],
+    "content": "with {span} experiences."
+  },
+  {
+    "id": "augmented_reality",
+    "modules": [
+      "general"
+    ],
+    "content": "Augmented Reality"
+  },
+  {
+    "id": "try_now",
+    "modules": [
+      "general"
+    ],
+    "content": "Try it now!"
+  },
+  {
+    "id": "create",
+    "modules": [
+      "general"
+    ],
+    "content": "create"
+  },
+  {
+    "id": "publish",
+    "modules": [
+      "general"
+    ],
+    "content": "publish"
+  },
+  {
+    "id": "and",
+    "modules": [
+      "general"
+    ],
+    "content": "and"
+  },
+  {
+    "id": "measure",
+    "modules": [
+      "general"
+    ],
+    "content": "measure"
+  },
+  {
+    "id": "awesome_campaigns",
+    "modules": [
+      "general"
+    ],
+    "content": "awesome {augmented_reality} campaigns"
+  },
+  {
+    "id": "campaigns",
+    "modules": [
+      "general"
+    ],
+    "content": "campaigns"
+  },
+  {
+    "id": "see_how_works",
+    "modules": [
+      "general"
+    ],
+    "content": "See how it works"
+  },
+  {
+    "id": "play_video",
+    "modules": [
+      "general"
+    ],
+    "content": "Play video"
+  },
+  {
+    "id": "link_home",
+    "modules": [
+      "general"
+    ],
+    "content": "Home"
+  },
+  {
+    "id": "link_app",
+    "modules": [
+      "general"
+    ],
+    "content": "AR app"
+  },
+  {
+    "id": "link_solutions",
+    "modules": [
+      "general"
+    ],
+    "content": "Solutions"
+  },
+  {
+    "id": "link_pricing",
+    "modules": [
+      "general"
+    ],
+    "content": "Pricing"
+  },
+  {
+    "id": "link_blog",
+    "modules": [
+      "general"
+    ],
+    "content": "Blog"
+  },
+  {
+    "id": "link_login",
+    "modules": [
+      "general"
+    ],
+    "content": "Login"
+  },
+  {
+    "id": "see_all",
+    "modules": [
+      "general"
+    ],
+    "content": "See all"
+  },
+  {
+    "id": "latest_news",
+    "modules": [
+      "general"
+    ],
+    "content": "the latest news\n"
+  },
+  {
+    "id": "detail",
+    "modules": [
+      "general"
+    ],
+    "content": "Detail"
+  },
+  {
     "id": "give",
     "modules": [
       "general"
@@ -95,21 +249,21 @@
     "modules": [
       "general"
     ],
-    "content": "Upgrade your traditional campaigns into augmented "
+    "content": "Upgrade your traditional campaigns into augmented reality using our AR Creator panel."
   },
   {
     "id": "no_coding",
     "modules": [
       "general"
     ],
-    "content": " No coding or "
+    "content": " No coding or design skills needed."
   },
   {
     "id": "it_works",
     "modules": [
       "general"
     ],
-    "content": " It works with any product label,  "
+    "content": " It works with any product label,  packaging, printed ads, magazines, posters and much more."
   },
   {
     "id": "take_back",
@@ -137,7 +291,7 @@
     "modules": [
       "general"
     ],
-    "content": "Get real information about interaction of customers "
+    "content": "Get real information about interaction of customers with your products, campaigns and printed ads. "
   },
   {
     "id": "lets_start",
@@ -147,31 +301,38 @@
     "content": "Let's start"
   },
   {
-    "id": "reality_panel",
+    "id": "portfolio_preview",
     "modules": [
       "general"
     ],
-    "content": " reality using our AR Creator panel."
+    "content": "{discover} how to transform images into {experiences}."
   },
   {
-    "id": "desing_skills",
+    "id": "discover",
     "modules": [
       "general"
     ],
-    "content": "design skills needed."
+    "content": "Discover"
   },
   {
-    "id": "packaging_printed",
+    "id": "experiences",
     "modules": [
       "general"
     ],
-    "content": "packaging, printed ads, magazines, posters and much more."
+    "content": "experiences"
   },
   {
-    "id": "your_products",
+    "id": "register",
     "modules": [
       "general"
     ],
-    "content": "with your products, campaigns and printed ads. "
+    "content": "Register"
+  },
+  {
+    "id": "contact_navbar",
+    "modules": [
+      "general"
+    ],
+    "content": "Contact"
   }
 ]

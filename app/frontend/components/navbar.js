@@ -6,9 +6,10 @@ import api from '~base/api'
 import tree from '~core/tree'
 import Image from '~base/components/image'
 import { FormattedMessage, injectIntl } from 'react-intl'
+
 const langs = {
   'en-US': 'En',
-  'es-MX': 'Es'
+  'es-MX': 'Es',
 }
 class NavBar extends Component {
   constructor(props) {
@@ -104,13 +105,9 @@ class NavBar extends Component {
       navbarMenuClassName = 'navbar-menu is-active'
     }
 
-    const {
-      lang,
-    } = this.state
+    const { lang } = this.state
 
-    const {
-      loggedIn,
-    } = this.props
+    const { loggedIn } = this.props
 
     let navButtons
     let navMainLink
@@ -185,44 +182,61 @@ class NavBar extends Component {
             <NavLink className="navbar-item" exact to="/">
               <FormattedMessage id="general.link_home" />
             </NavLink>
-            <NavLink className="navbar-item" exact to="/#app">
+            <a className="navbar-item" href="/#app">
               <FormattedMessage id="general.link_app" />
-            </NavLink>
-            <NavLink className="navbar-item" exact to="/#soluctions">
+            </a>
+            <a className="navbar-item" href="/#solutions">
               <FormattedMessage id="general.link_solutions" />
-            </NavLink>
-            <NavLink className="navbar-item" exact to="/#pricing">
+            </a>
+            <a className="navbar-item" href="/#pricing">
               <FormattedMessage id="general.link_pricing" />
-            </NavLink>
-            <NavLink className="navbar-item" exact to="/blog">
+            </a>
+            <a className="navbar-item" href="/#blog">
               <FormattedMessage id="general.link_blog" />
-            </NavLink>
-            <NavLink className="navbar-item" exact to="/log-in">
-              <FormattedMessage id="general.link_login" />
-            </NavLink>
-
+            </a>
+            <a className="navbar-item" href="/#contact">
+              <FormattedMessage id="general.contact_navbar" />
+            </a>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">
-                {lang}
+                <FormattedMessage id="general.link_login" />
               </a>
+              <div className="navbar-dropdown">
+                <a
+                  className="navbar-item"
+                  href="https://realidadaumentada.app/admin/login"
+                  target="_blank"
+                >
+                  <span className="margin-sides-icon">
+                    <FormattedMessage id="general.link_login" />
+                  </span>
+                </a>
+                <a
+                  className="navbar-item"
+                  href="https://realidadaumentada.app/admin/register"
+                  target="_blank"
+                >
+                  <span className="margin-sides-icon">
+                    <FormattedMessage id="general.register" />
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div className="navbar-item has-dropdown is-hoverable">
+              <a className="navbar-link">{lang}</a>
 
               <div className="navbar-dropdown">
                 <a
                   className="navbar-item"
                   onClick={() => this.languageSettingDispatcher('es-MX')}
                 >
-                <span className="margin-sides-icon">
-                  Es
-                </span>
-
+                  <span className="margin-sides-icon">Es</span>
                 </a>
                 <a
                   className="navbar-item"
                   onClick={() => this.languageSettingDispatcher('en-US')}
                 >
-                <span className="margin-sides-icon">
-                  En
-                </span>
+                  <span className="margin-sides-icon">En</span>
                 </a>
               </div>
             </div>
