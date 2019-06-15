@@ -1,6 +1,7 @@
 /*
   New color palette
 */
+
 $primary: #066391;
 $primary-active: #054F74;
 $primary-hovered: rgba(6, 99, 145, 0.75);
@@ -11,25 +12,24 @@ $warning: #E1A42B;
 $warning-active: #C79127;
 $warning-hovered: rgba(225, 164, 43, 0.75);
 $danger: #C1271B;
-$danger-active:  #9A1E14;
-$danger-hovered: rgba(193, 39, 27, 0.75); 
+$danger-active : #9A1E14;
+$danger-hovered: rgba(193, 39, 27, 0.75);
 $link: #229AD6;
 $link-active: #197DAF;
 $link-hovered: rgba(34, 154, 214, 0.75);
-$bg-secondary : rgba(201, 212, 217, 0.35);
-$bg-footer : #0058ff;
-$bg-blue : #0058ff;
+$bg-secondary: rgba(201, 212, 217, 0.35);
+$electric-blue: #0058ff;
 $bg-minimalistic: #fff;
-.is-link{
-  background-color: $link !important;
-  text-decoration: none !important;
-  color:#fff !important;
+.is-link {
+    background-color: $link !important;
+    text-decoration: none !important;
+    color: #fff !important;
 }
-$bg-inactive : #9CABB2;
+
+$bg-inactive: #9CABB2;
 $info: #229AD6;
 $info-active: $link-active;
 $info-hovered: $link-hovered;
-
 .is-font-blue {
-    color: #2b78fa;
+    color: $electric-blue;
 }
