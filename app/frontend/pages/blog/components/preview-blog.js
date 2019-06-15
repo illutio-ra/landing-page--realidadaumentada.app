@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import 'react-alice-carousel/lib/alice-carousel.css'
 import api from '~base/api'
 import { FormattedMessage, injectIntl } from 'react-intl'
 import Card from './card'
