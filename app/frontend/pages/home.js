@@ -65,11 +65,9 @@ class Home extends PageComponent {
                 </span>
                 {', '}
                 <span className="is-font-blue">
-                  <FormattedMessage id="general.publish" />
-                  {' '}
+                  <FormattedMessage id="general.publish" />{' '}
                 </span>
-                <FormattedMessage id="general.and" />
-                {' '}
+                <FormattedMessage id="general.and" />{' '}
                 <span className="is-font-blue">
                   <FormattedMessage id="general.measure" />
                 </span>
@@ -78,7 +76,7 @@ class Home extends PageComponent {
                   id="general.awesome_campaigns"
                   values={{
                     augmented_reality: (
-                      <span>
+                      <span className="is-font-blue">
                         {formatMessage({ id: 'general.augmented_reality' })}
                       </span>
                     ),
@@ -87,14 +85,18 @@ class Home extends PageComponent {
                 <br />
               </p>
             </div>
-            <div className="column video" align="center">
+            <div className="column video" align="right">
               <p className="title is-hidden-touch">
                 <strong className="is-font-blue">
                   <FormattedMessage id="general.see_how_works" />
                 </strong>
               </p>
               <a href="#">
-                <Image src="../../public/img/video.png" alt="ra cam" />
+                <Image
+                  src="../../public/img/video.png"
+                  alt="ra cam"
+                  className="is-button-video"
+                />
               </a>
             </div>
           </div>

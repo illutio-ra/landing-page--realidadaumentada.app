@@ -60,6 +60,15 @@ a.navbar-item:hover, a.navbar-item.is-active, a.navbar-link:hover, a.navbar-link
         p {
             margin-bottom: 8px;
         }
+        .is-button-video {
+            @include from($desktop) {
+                padding-right: 3rem;
+            }
+            @include touch {
+                display: block;
+                margin: auto;
+            }
+        }
     }
     .phone {
         #phone {
@@ -170,7 +179,7 @@ a.navbar-item:hover, a.navbar-item.is-active, a.navbar-link:hover, a.navbar-link
 }
 
 .footer {
-    background-color: $bg-footer;
+    background-color: $electric-blue;
     color: #ffffff;
     font-weight: 300;
     .directory {
@@ -187,35 +196,31 @@ a.navbar-item:hover, a.navbar-item.is-active, a.navbar-link:hover, a.navbar-link
 }
 
 .pricing {
- .main-title {
-   font-family: Lato;
-   font-size: 2.25rem !important;
-   font-weight: bold;
- }
- .card-title{
-   font-family: Lato;
-   font-size: 1.5rem !important;
-   font-weight: bold;
- }
-
- .switch-text {
-   font-size: 1.5rem;
-   font-weight: 300;
- }
-
- .switch[type=checkbox] + label {
-   position: relative;
-   display: initial;
-   font-size: 1.5rem;
-   line-height: initial;
-   padding-left: 3.5rem;
-   padding-top: -1.9rem;
-   cursor: pointer;
-
- }
-
- .switch[type=checkbox]:checked + label::before, .switch[type=checkbox]:checked + label:before {
-   background: $bg-blue;
- }
-
+    .main-title {
+        font-family: Lato;
+        font-size: 2.25rem !important;
+        font-weight: bold;
+    }
+    .card-title {
+        font-family: Lato;
+        font-size: 1.5rem !important;
+        font-weight: bold;
+    }
+    .switch-text {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .switch[type=checkbox]+label {
+        position: relative;
+        display: initial;
+        font-size: 1.5rem;
+        line-height: initial;
+        padding-left: 3.5rem;
+        padding-top: -1.9rem;
+        cursor: pointer;
+    }
+    .switch[type=checkbox]:checked+label::before,
+    .switch[type=checkbox]:checked+label:before {
+        background: $electric-blue;
+    }
 }
