@@ -3,7 +3,22 @@ import { MegadraftPlugin, insertDataBlock, MegadraftIcons } from 'megadraft'
 import FontAwesome from 'react-fontawesome'
 import ImagePlugin from './image-plugin'
 
-const Image = ({ data }) => <ImagePlugin data={data} />
+const { CommonBlock } = MegadraftPlugin
+
+const Image = (props) => {
+  const blockActions = [
+    {
+      key: 'delete',
+      icon: MegadraftIcons.DeleteIcon,
+      action: props.container.remove,
+    },
+  ]
+  return (
+    <CommonBlock actions={blockActions} {...props}>
+      <ImagePlugin {...props} data={props.data} />
+    </CommonBlock>
+  )
+}
 
 class ButtonComponent extends Component {
   onClick() {
@@ -22,7 +37,7 @@ class ButtonComponent extends Component {
         className="button is-success is-orbed"
         onClick={() => this.onClick()}
       >
-        <FontAwesome name="file" />
+        <FontAwesome name="image" />
       </button>
     )
   }
