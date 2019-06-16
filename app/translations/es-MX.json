@@ -1,152 +1,5 @@
 [
   {
-    "id": "marbleseeds",
-    "modules": [
-      "general"
-    ],
-    "content": "Bienvenido a marbleseeds"
-  },
-  {
-    "id": "welcome",
-    "modules": [
-      "general"
-    ],
-    "content": "Bienvenido"
-  },
-  {
-    "id": "home",
-    "modules": [
-      "general"
-    ],
-    "content": "Inicio"
-  },
-  {
-    "id": "regards",
-    "modules": [
-      "general"
-    ],
-    "content": "¡Hola {name}!"
-  },
-  {
-    "id": "dashboardTitle",
-    "modules": [
-      "general"
-    ],
-    "content": "Dashboard"
-  },
-  {
-    "id": "postsListTitle",
-    "modules": [
-      "general"
-    ],
-    "content": "Lista de posts\n"
-  },
-  {
-    "id": "testLabel",
-    "modules": [
-      "general"
-    ],
-    "content": "Test"
-  },
-  {
-    "id": "profile",
-    "modules": [
-      "general"
-    ],
-    "content": "Perfil"
-  },
-  {
-    "id": "security",
-    "modules": [
-      "general"
-    ],
-    "content": "Seguridad"
-  },
-  {
-    "id": "name",
-    "modules": [
-      "general"
-    ],
-    "content": "Nombre"
-  },
-  {
-    "id": "email",
-    "modules": [
-      "general"
-    ],
-    "content": "Correo"
-  },
-  {
-    "id": "lang",
-    "modules": [
-      "general"
-    ],
-    "content": "Lenguaje"
-  },
-  {
-    "id": "test",
-    "modules": [
-      "general"
-    ],
-    "content": "test"
-  },
-  {
-    "id": "test",
-    "modules": [
-      "general"
-    ],
-    "content": "test"
-  },
-  {
-    "id": "test",
-    "modules": [
-      "general"
-    ],
-    "content": "test"
-  },
-  {
-    "id": "intro",
-    "modules": [
-      "general"
-    ],
-    "content": "Deja que tus clientes {icon}  tu marca"
-  },
-  {
-    "id": "subtitle",
-    "modules": [
-      "general"
-    ],
-    "content": "con experiencias en {span}.\n"
-  },
-  {
-    "id": "augmented_reality",
-    "modules": [
-      "general"
-    ],
-    "content": "Realidad Aumentada"
-  },
-  {
-    "id": "try_now",
-    "modules": [
-      "general"
-    ],
-    "content": "¡Probar ahora!"
-  },
-  {
-    "id": "create",
-    "modules": [
-      "general"
-    ],
-    "content": "Crea"
-  },
-  {
-    "id": "publish",
-    "modules": [
-      "general"
-    ],
-    "content": "publica"
-  },
-  {
     "id": "and",
     "modules": [
       "general"
@@ -154,11 +7,11 @@
     "content": "y"
   },
   {
-    "id": "measure",
+    "id": "augmented_reality",
     "modules": [
       "general"
     ],
-    "content": "mide"
+    "content": "Realidad Aumentada"
   },
   {
     "id": "awesome_campaigns",
@@ -175,81 +28,32 @@
     "content": "campañas"
   },
   {
-    "id": "see_how_works",
+    "id": "control_of_your",
     "modules": [
       "general"
     ],
-    "content": "¿Cómo funciona?"
+    "content": " el control de los"
   },
   {
-    "id": "play_video",
+    "id": "create",
     "modules": [
       "general"
     ],
-    "content": "Ver video"
+    "content": "Crea"
   },
   {
-    "id": "link_home",
+    "id": "customers_data",
     "modules": [
       "general"
     ],
-    "content": "Inicio"
+    "content": "datos de tus clientes."
   },
   {
-    "id": "link_app",
+    "id": "desing_skills",
     "modules": [
       "general"
     ],
-    "content": "AR app"
-  },
-  {
-    "id": "link_solutions",
-    "modules": [
-      "general"
-    ],
-    "content": "Soluciones"
-  },
-  {
-    "id": "link_pricing",
-    "modules": [
-      "general"
-    ],
-    "content": "Precios"
-  },
-  {
-    "id": "link_blog",
-    "modules": [
-      "general"
-    ],
-    "content": "Blog"
-  },
-  {
-    "id": "link_login",
-    "modules": [
-      "general"
-    ],
-    "content": "Iniciar sesión"
-  },
-  {
-    "id": "see_all",
-    "modules": [
-      "general"
-    ],
-    "content": "Ver todos"
-  },
-  {
-    "id": "dont_miss",
-    "modules": [
-      "general"
-    ],
-    "content": "No te pierdas"
-  },
-  {
-    "id": "latest_news",
-    "modules": [
-      "general"
-    ],
-    "content": "nuestras últimas noticias"
+    "content": "habilidades de codificación o diseño."
   },
   {
     "id": "detail",
@@ -259,18 +63,25 @@
     "content": "Detalle"
   },
   {
-    "id": "portfolio_preview",
-    "modules": [
-      "general"
-    ],
-    "content": "{discover} como transformar imágenes en {experiences}."
-  },
-  {
     "id": "discover",
     "modules": [
       "general"
     ],
     "content": "Descubre"
+  },
+  {
+    "id": "dont_miss",
+    "modules": [
+      "general"
+    ],
+    "content": "No te pierdas"
+  },
+  {
+    "id": "email",
+    "modules": [
+      "general"
+    ],
+    "content": "Correo"
   },
   {
     "id": "experiences",
@@ -287,11 +98,11 @@
     "content": "Regala"
   },
   {
-    "id": "your_customers",
+    "id": "home",
     "modules": [
       "general"
     ],
-    "content": "a tus clientes"
+    "content": "Inicio"
   },
   {
     "id": "incredible_experiences",
@@ -301,18 +112,11 @@
     "content": "experiencias increíbles."
   },
   {
-    "id": "upgrade_text",
+    "id": "intro",
     "modules": [
       "general"
     ],
-    "content": "Actualice sus campañas tradicionales a la realidad "
-  },
-  {
-    "id": "no_coding",
-    "modules": [
-      "general"
-    ],
-    "content": " No se requieren "
+    "content": "Deja que tus clientes {icon}  tu marca"
   },
   {
     "id": "it_works",
@@ -322,32 +126,18 @@
     "content": " Funciona con cualquier etiqueta de "
   },
   {
-    "id": "take_back",
+    "id": "lang",
     "modules": [
       "general"
     ],
-    "content": "Toma"
+    "content": "Lenguaje"
   },
   {
-    "id": "control_of_your",
+    "id": "latest_news",
     "modules": [
       "general"
     ],
-    "content": " el control de los"
-  },
-  {
-    "id": "customers_data",
-    "modules": [
-      "general"
-    ],
-    "content": "datos de tus clientes."
-  },
-  {
-    "id": "real_information",
-    "modules": [
-      "general"
-    ],
-    "content": "Obtén información real sobre la interacción de los clientes "
+    "content": "nuestras últimas noticias"
   },
   {
     "id": "lets_start",
@@ -357,18 +147,81 @@
     "content": "Comencemos"
   },
   {
-    "id": "reality_panel",
+    "id": "link_app",
     "modules": [
       "general"
     ],
-    "content": "aumentada utilizando nuestro panel de creación de RA."
+    "content": "AR app"
   },
   {
-    "id": "desing_skills",
+    "id": "link_blog",
     "modules": [
       "general"
     ],
-    "content": "habilidades de codificación o diseño."
+    "content": "Blog"
+  },
+  {
+    "id": "link_contact",
+    "modules": [
+      "general"
+    ],
+    "content": "Contacto"
+  },
+  {
+    "id": "link_home",
+    "modules": [
+      "general"
+    ],
+    "content": "Inicio"
+  },
+  {
+    "id": "link_login",
+    "modules": [
+      "general"
+    ],
+    "content": "Iniciar sesión"
+  },
+  {
+    "id": "link_pricing",
+    "modules": [
+      "general"
+    ],
+    "content": "Precios"
+  },
+  {
+    "id": "link_solutions",
+    "modules": [
+      "general"
+    ],
+    "content": "Soluciones"
+  },
+  {
+    "id": "marbleseeds",
+    "modules": [
+      "general"
+    ],
+    "content": "Bienvenido a marbleseeds"
+  },
+  {
+    "id": "measure",
+    "modules": [
+      "general"
+    ],
+    "content": "mide"
+  },
+  {
+    "id": "name",
+    "modules": [
+      "general"
+    ],
+    "content": "Nombre"
+  },
+  {
+    "id": "no_coding",
+    "modules": [
+      "general"
+    ],
+    "content": " No se requieren "
   },
   {
     "id": "packaging_printed",
@@ -378,11 +231,60 @@
     "content": "producto, embalaje, anuncios impresos, revistas, carteles y mucho más."
   },
   {
-    "id": "your_products",
+    "id": "play_video",
     "modules": [
       "general"
     ],
-    "content": "con tus productos, campañas y anuncios impresos."
+    "content": "Ver video"
+  },
+  {
+    "id": "portfolio_preview",
+    "modules": [
+      "general"
+    ],
+    "content": "{discover} como transformar imágenes en {experiences}."
+  },
+  {
+    "id": "postsListTitle",
+    "modules": [
+      "general"
+    ],
+    "content": "Lista de posts\n"
+  },
+  {
+    "id": "profile",
+    "modules": [
+      "general"
+    ],
+    "content": "Perfil"
+  },
+  {
+    "id": "publish",
+    "modules": [
+      "general"
+    ],
+    "content": "publica"
+  },
+  {
+    "id": "real_information",
+    "modules": [
+      "general"
+    ],
+    "content": "Obtén información real sobre la interacción de los clientes "
+  },
+  {
+    "id": "reality_panel",
+    "modules": [
+      "general"
+    ],
+    "content": "aumentada utilizando nuestro panel de creación de RA."
+  },
+  {
+    "id": "regards",
+    "modules": [
+      "general"
+    ],
+    "content": "¡Hola {name}!"
   },
   {
     "id": "scan_with_ra-cam",
@@ -392,10 +294,80 @@
     "content": "Escanea con RA CAM"
   },
   {
+    "id": "security",
+    "modules": [
+      "general"
+    ],
+    "content": "Seguridad"
+  },
+  {
+    "id": "see_all",
+    "modules": [
+      "general"
+    ],
+    "content": "Ver todos"
+  },
+  {
     "id": "see_detail",
     "modules": [
       "general"
     ],
     "content": "Ver detalle"
+  },
+  {
+    "id": "see_how_works",
+    "modules": [
+      "general"
+    ],
+    "content": "¿Cómo funciona?"
+  },
+  {
+    "id": "subtitle",
+    "modules": [
+      "general"
+    ],
+    "content": "con experiencias en {span}.\n"
+  },
+  {
+    "id": "take_back",
+    "modules": [
+      "general"
+    ],
+    "content": "Toma"
+  }, 
+  {
+    "id": "try_now",
+    "modules": [
+      "general"
+    ],
+    "content": "¡Probar ahora!"
+  },
+  {
+    "id": "upgrade_text",
+    "modules": [
+      "general"
+    ],
+    "content": "Actualice sus campañas tradicionales a la realidad "
+  },
+  {
+    "id": "welcome",
+    "modules": [
+      "general"
+    ],
+    "content": "Bienvenido"
+  },
+  {
+    "id": "your_customers",
+    "modules": [
+      "general"
+    ],
+    "content": "a tus clientes"
+  },
+  {
+    "id": "your_products",
+    "modules": [
+      "general"
+    ],
+    "content": "con tus productos, campañas y anuncios impresos."
   }
 ]
