@@ -26,6 +26,13 @@
 .is-padding-right-small {
     padding-right: 1rem;
 }
+.is-padding-top-small {
+  padding-top: 1rem;
+}
+
+.is-padding-bottom-small {
+  padding-bottom: 1rem;
+}
 
 .is-font-size-32px {
     font-size: 32px;
@@ -61,6 +68,26 @@
 }
 
 .is-vertical-center {
-    display: flex;
-    align-items: center;
+   display: flex;
+   align-items: center;
 }
+
+.slick-slide, .slick-slide *{ outline: none !important; }
+
+.slick-slide:hover{
+  img {
+        box-shadow: 0 10px 20px 0 #dee1f1 !important;
+        transition: .4s ease-in;
+
+  }
+  .see-detail-portfolio {
+    opacity: 1;
+    transition: opacity 1s;
+  }
+ }
+
+ .see-detail-portfolio {
+   bottom: 45px;
+   left: 13px;
+  opacity: 0;
+ }
