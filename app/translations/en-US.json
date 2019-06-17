@@ -1,117 +1,5 @@
 [
   {
-    "id": "marbleseeds",
-    "modules": [
-      "general"
-    ],
-    "content": "Welcome to marbleseeds"
-  },
-  {
-    "id": "welcome",
-    "modules": [
-      "general"
-    ],
-    "content": "Welcome"
-  },
-  {
-    "id": "home",
-    "modules": [
-      "general"
-    ],
-    "content": "Dashboard"
-  },
-  {
-    "id": "regards",
-    "modules": [
-      "general"
-    ],
-    "content": "Hi {name}!"
-  },
-  {
-    "id": "postsListTitle",
-    "modules": [
-      "general"
-    ],
-    "content": "List of posts"
-  },
-  {
-    "id": "profile",
-    "modules": [
-      "general"
-    ],
-    "content": "Profile"
-  },
-  {
-    "id": "security",
-    "modules": [
-      "general"
-    ],
-    "content": "Security"
-  },
-  {
-    "id": "name",
-    "modules": [
-      "general"
-    ],
-    "content": "Name"
-  },
-  {
-    "id": "email",
-    "modules": [
-      "general"
-    ],
-    "content": "Email"
-  },
-  {
-    "id": "lang",
-    "modules": [
-      "general"
-    ],
-    "content": "Language"
-  },
-  {
-    "id": "intro",
-    "modules": [
-      "general"
-    ],
-    "content": "Let your customers {icon} your brand"
-  },
-  {
-    "id": "subtitle",
-    "modules": [
-      "general"
-    ],
-    "content": "with {span} experiences."
-  },
-  {
-    "id": "augmented_reality",
-    "modules": [
-      "general"
-    ],
-    "content": "Augmented Reality"
-  },
-  {
-    "id": "try_now",
-    "modules": [
-      "general"
-    ],
-    "content": "Try it now!"
-  },
-  {
-    "id": "create",
-    "modules": [
-      "general"
-    ],
-    "content": "create"
-  },
-  {
-    "id": "publish",
-    "modules": [
-      "general"
-    ],
-    "content": "publish"
-  },
-  {
     "id": "and",
     "modules": [
       "general"
@@ -119,11 +7,11 @@
     "content": "and"
   },
   {
-    "id": "measure",
+    "id": "augmented_reality",
     "modules": [
       "general"
     ],
-    "content": "measure"
+    "content": "Augmented Reality"
   },
   {
     "id": "awesome_campaigns",
@@ -140,81 +28,32 @@
     "content": "campaigns"
   },
   {
-    "id": "see_how_works",
+    "id": "control_of_your",
     "modules": [
       "general"
     ],
-    "content": "See how it works"
+    "content": " control of your"
   },
   {
-    "id": "play_video",
+    "id": "create",
     "modules": [
       "general"
     ],
-    "content": "Play video"
+    "content": "create"
   },
   {
-    "id": "link_home",
+    "id": "customers_data",
     "modules": [
       "general"
     ],
-    "content": "Home"
+    "content": "customers data."
   },
   {
-    "id": "link_app",
+    "id": "desing_skills",
     "modules": [
       "general"
     ],
-    "content": "AR app"
-  },
-  {
-    "id": "link_solutions",
-    "modules": [
-      "general"
-    ],
-    "content": "Solutions"
-  },
-  {
-    "id": "link_pricing",
-    "modules": [
-      "general"
-    ],
-    "content": "Pricing"
-  },
-  {
-    "id": "link_blog",
-    "modules": [
-      "general"
-    ],
-    "content": "Blog"
-  },
-  {
-    "id": "link_login",
-    "modules": [
-      "general"
-    ],
-    "content": "Login"
-  },
-  {
-    "id": "see_all",
-    "modules": [
-      "general"
-    ],
-    "content": "See all"
-  },
-  {
-    "id": "dont_miss",
-    "modules": [
-      "general"
-    ],
-    "content": "Don’t miss"
-  },
-  {
-    "id": "latest_news",
-    "modules": [
-      "general"
-    ],
-    "content": "the latest news\n"
+    "content": "design skills needed."
   },
   {
     "id": "detail",
@@ -224,18 +63,25 @@
     "content": "Detail"
   },
   {
-    "id": "portfolio_preview",
-    "modules": [
-      "general"
-    ],
-    "content": "{discover} how to transform images into {experiences}."
-  },
-  {
     "id": "discover",
     "modules": [
       "general"
     ],
     "content": "Discover"
+  },
+  {
+    "id": "dont_miss",
+    "modules": [
+      "general"
+    ],
+    "content": "Don’t miss"
+  },
+  {
+    "id": "email",
+    "modules": [
+      "general"
+    ],
+    "content": "Email"
   },
   {
     "id": "experiences",
@@ -252,11 +98,11 @@
     "content": "Give"
   },
   {
-    "id": "your_customers",
+    "id": "home",
     "modules": [
       "general"
     ],
-    "content": "your customers"
+    "content": "Dashboard"
   },
   {
     "id": "incredible_experiences",
@@ -266,18 +112,11 @@
     "content": "incredible experiences."
   },
   {
-    "id": "upgrade_text",
+    "id": "intro",
     "modules": [
       "general"
     ],
-    "content": "Upgrade your traditional campaigns into augmented "
-  },
-  {
-    "id": "no_coding",
-    "modules": [
-      "general"
-    ],
-    "content": " No coding or "
+    "content": "Let your customers {icon} your brand"
   },
   {
     "id": "it_works",
@@ -287,32 +126,18 @@
     "content": " It works with any product label,  "
   },
   {
-    "id": "take_back",
+    "id": "lang",
     "modules": [
       "general"
     ],
-    "content": "Take back"
+    "content": "Language"
   },
   {
-    "id": "control_of_your",
+    "id": "latest_news",
     "modules": [
       "general"
     ],
-    "content": " control of your"
-  },
-  {
-    "id": "customers_data",
-    "modules": [
-      "general"
-    ],
-    "content": "customers data."
-  },
-  {
-    "id": "real_information",
-    "modules": [
-      "general"
-    ],
-    "content": "Get real information about interaction of customers "
+    "content": "the latest news\n"
   },
   {
     "id": "lets_start",
@@ -322,18 +147,81 @@
     "content": "Let's start"
   },
   {
-    "id": "reality_panel",
+    "id": "link_app",
     "modules": [
       "general"
     ],
-    "content": " reality using our AR Creator panel."
+    "content": "AR app"
   },
   {
-    "id": "desing_skills",
+    "id": "link_blog",
     "modules": [
       "general"
     ],
-    "content": "design skills needed."
+    "content": "Blog"
+  },
+  {
+    "id": "link_contact",
+    "modules": [
+      "general"
+    ],
+    "content": "Contact"
+  },
+  {
+    "id": "link_home",
+    "modules": [
+      "general"
+    ],
+    "content": "Home"
+  },
+  {
+    "id": "link_login",
+    "modules": [
+      "general"
+    ],
+    "content": "Login"
+  },
+  {
+    "id": "link_pricing",
+    "modules": [
+      "general"
+    ],
+    "content": "Pricing"
+  },
+  {
+    "id": "link_solutions",
+    "modules": [
+      "general"
+    ],
+    "content": "Solutions"
+  },
+  {
+    "id": "marbleseeds",
+    "modules": [
+      "general"
+    ],
+    "content": "Welcome to marbleseeds"
+  },
+  {
+    "id": "measure",
+    "modules": [
+      "general"
+    ],
+    "content": "measure"
+  },
+  {
+    "id": "name",
+    "modules": [
+      "general"
+    ],
+    "content": "Name"
+  },
+  {
+    "id": "no_coding",
+    "modules": [
+      "general"
+    ],
+    "content": " No coding or "
   },
   {
     "id": "packaging_printed",
@@ -343,11 +231,60 @@
     "content": "packaging, printed ads, magazines, posters and much more."
   },
   {
-    "id": "your_products",
+    "id": "play_video",
     "modules": [
       "general"
     ],
-    "content": "with your products, campaigns and printed ads. "
+    "content": "Play video"
+  },
+  {
+    "id": "portfolio_preview",
+    "modules": [
+      "general"
+    ],
+    "content": "{discover} how to transform images into {experiences}."
+  },
+  {
+    "id": "postsListTitle",
+    "modules": [
+      "general"
+    ],
+    "content": "List of posts"
+  },
+  {
+    "id": "profile",
+    "modules": [
+      "general"
+    ],
+    "content": "Profile"
+  },
+  {
+    "id": "publish",
+    "modules": [
+      "general"
+    ],
+    "content": "publish"
+  },
+  {
+    "id": "real_information",
+    "modules": [
+      "general"
+    ],
+    "content": "Get real information about interaction of customers "
+  },
+  {
+    "id": "reality_panel",
+    "modules": [
+      "general"
+    ],
+    "content": " reality using our AR Creator panel."
+  },
+  {
+    "id": "regards",
+    "modules": [
+      "general"
+    ],
+    "content": "Hi {name}!"
   },
   {
     "id": "scan_with_ra-cam",
@@ -357,10 +294,80 @@
     "content": "Scan me with RA Cam"
   },
   {
+    "id": "security",
+    "modules": [
+      "general"
+    ],
+    "content": "Security"
+  },
+  {
+    "id": "see_all",
+    "modules": [
+      "general"
+    ],
+    "content": "See all"
+  },
+  {
     "id": "see_detail",
     "modules": [
       "general"
     ],
     "content": "See detail"
+  },
+  {
+    "id": "see_how_works",
+    "modules": [
+      "general"
+    ],
+    "content": "See how it works"
+  },
+  {
+    "id": "subtitle",
+    "modules": [
+      "general"
+    ],
+    "content": "with {span} experiences."
+  },
+  {
+    "id": "take_back",
+    "modules": [
+      "general"
+    ],
+    "content": "Take back"
+  },
+  {
+    "id": "try_now",
+    "modules": [
+      "general"
+    ],
+    "content": "Try it now!"
+  },
+  {
+    "id": "upgrade_text",
+    "modules": [
+      "general"
+    ],
+    "content": "Upgrade your traditional campaigns into augmented "
+  },
+  {
+    "id": "welcome",
+    "modules": [
+      "general"
+    ],
+    "content": "Welcome"
+  },
+  {
+    "id": "your_customers",
+    "modules": [
+      "general"
+    ],
+    "content": "your customers"
+  },
+  {
+    "id": "your_products",
+    "modules": [
+      "general"
+    ],
+    "content": "with your products, campaigns and printed ads. "
   }
 ]
