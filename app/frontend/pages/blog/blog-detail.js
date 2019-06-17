@@ -6,6 +6,7 @@ import { forcePublic } from '~base/middlewares/'
 import { MegadraftEditor, editorStateFromRaw } from 'megadraft'
 
 import PluginImage from './plugins/image'
+import PluginVideo from './plugins/video'
 
 class Blog extends PageComponent {
   constructor(props) {
@@ -54,7 +55,7 @@ class Blog extends PageComponent {
               </div>
               {content && (
                 <MegadraftEditor
-                  plugins={[PluginImage]}
+                  plugins={[PluginImage, PluginVideo]}
                   readOnly
                   editorState={content}
                   onChange={(e) => this.onChange(e)}
