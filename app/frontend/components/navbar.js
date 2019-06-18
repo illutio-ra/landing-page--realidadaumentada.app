@@ -208,7 +208,7 @@ class NavBar extends Component {
               aria-haspopup="true"
               onClick={() => this.handleModal()}
             >
-              <FormattedMessage id="general.contact_navbar" />
+              <FormattedMessage id="general.link_contact" />
             </a>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">

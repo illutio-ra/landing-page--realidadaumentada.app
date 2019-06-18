@@ -287,6 +287,13 @@
     "content": "Hi {name}!"
   },
   {
+    "id": "register",
+    "modules": [
+      "general"
+    ],
+    "content": "Register"
+  },
+  {
     "id": "scan_with_ra-cam",
     "modules": [
       "general"

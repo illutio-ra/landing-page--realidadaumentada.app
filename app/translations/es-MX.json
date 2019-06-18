@@ -49,6 +49,13 @@
     "content": "datos de tus clientes."
   },
   {
+    "id": "dashboardTitle",
+    "modules": [
+      "general"
+    ],
+    "content": "Dashboard"
+  },
+  {
     "id": "desing_skills",
     "modules": [
       "general"
@@ -245,13 +252,6 @@
     "content": "{discover} como transformar imágenes en {experiences}."
   },
   {
-    "id": "postsListTitle",
-    "modules": [
-      "general"
-    ],
-    "content": "Lista de posts\n"
-  },
-  {
     "id": "profile",
     "modules": [
       "general"
@@ -285,6 +285,13 @@
       "general"
     ],
     "content": "¡Hola {name}!"
+  },
+  {
+    "id": "register",
+    "modules": [
+      "general"
+    ],
+    "content": "Registrarse"
   },
   {
     "id": "scan_with_ra-cam",
@@ -334,7 +341,7 @@
       "general"
     ],
     "content": "Toma"
-  }, 
+  },
   {
     "id": "try_now",
     "modules": [
