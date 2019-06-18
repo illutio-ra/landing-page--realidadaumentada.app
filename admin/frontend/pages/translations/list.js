@@ -125,6 +125,7 @@ class Translations extends PageComponent {
 
     this.setState({
       labels: body.data,
+      labelsCopy: body.data,
       node,
     })
   }
@@ -147,7 +148,12 @@ class Translations extends PageComponent {
   }
 
   getModal() {
-    const { currentLabel, lang, modules, module } = this.state
+    const {
+      currentLabel,
+      lang,
+      modules,
+      module
+    } = this.state
 
     if (currentLabel) {
       currentLabel.modules = currentLabel.modules.map((l) => ({
@@ -196,6 +202,26 @@ class Translations extends PageComponent {
     await api.del(`/admin/translations/${row.uuid}`)
     success()
     this.setNode()
+  }
+
+
+  filterList(event) {
+    let {
+      labels: updatedList, labelsCopy: labelsBackup
+    } = this.state
+
+    if (event.target.value.length > 2) {
+      updatedList = updatedList.filter((item) => {
+        return item.content.toLowerCase().search(
+          event.target.value.toLowerCase()) !== -1
+      })
+
+      this.setState({ labels: updatedList })
+
+
+    } else {
+      this.setState({ labels: labelsBackup })
+    }
   }
 
   render() {
@@ -259,6 +285,9 @@ class Translations extends PageComponent {
           </div>
           <div className="column">
             <div className="card">
+              <div className="card-header-title">
+                <input type="search" className="input is-fullwidth" placeholder="Buscar" onChange={(e) => this.filterList(e)} />
+              </div>
               <div className="card-content">
                 <BaseTable
                   handleSort={(e) => this.handleSort(e)}
