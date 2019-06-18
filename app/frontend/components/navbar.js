@@ -6,6 +6,7 @@ import api from '~base/api'
 import tree from '~core/tree'
 import Image from '~base/components/image'
 import { FormattedMessage, injectIntl } from 'react-intl'
+import HubspotForm from 'react-hubspot-form'
 
 const langs = {
   'en-US': 'En',
@@ -19,6 +20,7 @@ class NavBar extends Component {
       profileDropdown: 'is-hidden',
       dropCaret: 'fa fa-caret-down',
       lang: langs[window.localStorage.getItem('lang')],
+      classNameModal: '',
     }
 
     this.setWrapperRef = this.setWrapperRef.bind(this)
@@ -97,6 +99,12 @@ class NavBar extends Component {
     } else {
       this.setState({ mobileMenu: 'open' })
     }
+  }
+
+  handleModal() {
+    this.setState({
+      classNameModal: 'is-active',
+    })
   }
 
   render() {
@@ -194,8 +202,13 @@ class NavBar extends Component {
             <a className="navbar-item" href="/#blog">
               <FormattedMessage id="general.link_blog" />
             </a>
-            <a className="navbar-item" href="/#contact">
-              <FormattedMessage id="general.link_contact" />
+            <a
+              className="navbar-item"
+              data-target="modal"
+              aria-haspopup="true"
+              onClick={() => this.handleModal()}
+            >
+              <FormattedMessage id="general.contact_navbar" />
             </a>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">
@@ -232,7 +245,7 @@ class NavBar extends Component {
     }
 
     return (
-      <nav className="navbar" role="navigation">
+      <nav className="navbar is-fixed-top" role="navigation">
         <div className="navbar-brand">
           {navMainLink}
 
@@ -246,6 +259,28 @@ class NavBar extends Component {
           </div>
         </div>
         <div className={navbarMenuClassName}>{navButtons}</div>
+        <div className={`modal ${this.state.classNameModal}`}>
+          <div className="modal-background" />
+          <div className="modal-content">
+            <div className="box">
+              <h1 className="has-text-centered title is-2 is-margin-bottom-medium">
+                Contáctanos
+              </h1>
+              <HubspotForm
+                portalId="2705799"
+                formId="d8b7a2ac-f5bb-4b7a-9963-d8e30844250a"
+                onSubmit={() => console.log('Submit!')}
+                onReady={(form) => console.log('Form ready!')}
+                loading={<div>Loading...</div>}
+              />
+            </div>
+          </div>
+          <button
+            className="modal-close is-large"
+            aria-label="close"
+            onClick={() => this.setState({ classNameModal: '' })}
+          />
+        </div>
       </nav>
     )
   }
