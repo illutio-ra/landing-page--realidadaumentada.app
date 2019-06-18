@@ -12,6 +12,7 @@ import Loader from '~base/components/spinner'
 import FontAwesome from 'react-fontawesome'
 import { success } from '~base/components/toast'
 import PluginImage from './plugins/image'
+import PluginVideo from './plugins/video'
 
 const richContent = {
   blocks: [
@@ -218,7 +219,7 @@ class ArticlesDetailPage extends PageComponent {
                   <div className="card-content">
                     {this.state.editorState && (
                       <MegadraftEditor
-                        plugins={[PluginImage]}
+                        plugins={[PluginImage, PluginVideo]}
                         editorState={this.state.editorState}
                         onChange={(e) => this.onChange(e)}
                       />

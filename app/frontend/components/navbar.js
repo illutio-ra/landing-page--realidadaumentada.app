@@ -202,10 +202,6 @@ class NavBar extends Component {
             <a className="navbar-item" href="/#blog">
               <FormattedMessage id="general.link_blog" />
             </a>
-            {/* <a className="navbar-item" href="/#contact">
-              <FormattedMessage id="general.contact_navbar" />
-            </a> */}
-
             <a
               className="navbar-item"
               data-target="modal"
@@ -216,28 +212,8 @@ class NavBar extends Component {
             </a>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">
-                <FormattedMessage id="general.link_login" />
+                <FormattedMessage id="general.register" />
               </a>
-              <div className="navbar-dropdown">
-                <a
-                  className="navbar-item"
-                  href="https://realidadaumentada.app/admin/login"
-                  target="_blank"
-                >
-                  <span className="margin-sides-icon">
-                    <FormattedMessage id="general.link_login" />
-                  </span>
-                </a>
-                <a
-                  className="navbar-item"
-                  href="https://realidadaumentada.app/admin/register"
-                  target="_blank"
-                >
-                  <span className="margin-sides-icon">
-                    <FormattedMessage id="general.register" />
-                  </span>
-                </a>
-              </div>
             </div>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">{lang}</a>

@@ -1,3 +1,5 @@
+$modal-content-width: 900px;
+
 @import 'colors';
 @import 'breakpoints';
 @import 'buttons';
@@ -11,3 +13,5 @@
 @import '~megadraft/dist/css/megadraft.css';
 @import 'megadraft';
 @import '~bulma-pricingtable';
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
