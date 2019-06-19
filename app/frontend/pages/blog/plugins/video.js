@@ -7,16 +7,10 @@ const { CommonBlock } = MegadraftPlugin
 
 const Image = (props) => {
   const blockActions = [
-    {
-      key: 'delete',
-      icon: MegadraftIcons.DeleteIcon,
-      action: props.container.remove,
-    },
+
   ]
   return (
-    <CommonBlock actions={blockActions} {...props}>
-      <VideoPlugin {...props} data={props.data} />
-    </CommonBlock>
+    <VideoPlugin {...props} data={props.data} />
   )
 }
 

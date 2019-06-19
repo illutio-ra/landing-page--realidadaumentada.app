@@ -1,6 +1,7 @@
 // Add your app styles here
 #app {
     margin-top: 52px;
+    background-color: white;
 }
 body {
     font-family: 'Lato', sans-serif;
@@ -161,6 +162,12 @@ a.navbar-item:hover, a.navbar-item.is-active, a.navbar-link:hover, a.navbar-link
 }
 
 .blog {
+    .blog-tags-preview {
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        top: 1rem;
+    }
     .card-shadow {
         box-shadow: 0 23px 41px 0 #dee1f1 !important;
     }

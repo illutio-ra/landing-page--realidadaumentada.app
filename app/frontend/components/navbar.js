@@ -31,23 +31,24 @@ class NavBar extends Component {
     document.addEventListener('mousedown', this.handleClickOutside)
   }
 
-  languageSettingDispatcher(lang) {
-    this.setState({
-      lang: langs[lang],
-    })
-    window.dispatchEvent(
-      new CustomEvent('lang', {
-        detail: { lang },
-      }),
-    )
-  }
-
   componentWillUnmount() {
     document.removeEventListener('mousedown', this.handleClickOutside)
   }
 
   setWrapperRef(node) {
     this.wrapperRef = node
+  }
+
+  languageSettingDispatcher(lang) {
+    this.setState({
+      lang: langs[lang],
+    })
+    this.handleNavbarBurgerClick()
+    window.dispatchEvent(
+      new CustomEvent('lang', {
+        detail: { lang },
+      }),
+    )
   }
 
   handleClickOutside(event) {
@@ -60,8 +61,9 @@ class NavBar extends Component {
   }
 
   toggleBtnClass() {
+    const { profileDropdown } = this.state
     if (this.wrapperRef) {
-      if (this.state.profileDropdown === 'is-hidden') {
+      if (profileDropdown === 'is-hidden') {
         this.setState({
           profileDropdown: 'is-active',
           dropCaret: 'fa fa-caret-up',
@@ -94,7 +96,8 @@ class NavBar extends Component {
   }
 
   handleNavbarBurgerClick() {
-    if (this.state.mobileMenu === 'open') {
+    const { mobileMenu } = this.state
+    if (mobileMenu === 'open') {
       this.setState({ mobileMenu: 'close' })
     } else {
       this.setState({ mobileMenu: 'open' })
@@ -108,12 +111,13 @@ class NavBar extends Component {
   }
 
   render() {
+    const { mobileMenu } = this.state
     let navbarMenuClassName = 'navbar-menu'
-    if (this.state.mobileMenu === 'open') {
+    if (mobileMenu === 'open') {
       navbarMenuClassName = 'navbar-menu is-active'
     }
 
-    const { lang } = this.state
+    const { lang, dropCaret, profileDropdown } = this.state
 
     const { loggedIn } = this.props
 
@@ -151,11 +155,11 @@ class NavBar extends Component {
                 onClick={() => this.toggleBtnClass()}
               >
                 <span className="icon">
-                  <i className={this.state.dropCaret} />
+                  <i className={dropCaret} />
                 </span>
               </a>
             </div>
-            <div className={this.state.profileDropdown}>
+            <div className={profileDropdown}>
               <div className="dropdown-menu" id="dropdown-menu" role="menu">
                 <div className="dropdown-content">
                   <NavLink
@@ -190,16 +194,32 @@ class NavBar extends Component {
             <NavLink className="navbar-item" exact to="/">
               <FormattedMessage id="general.link_home" />
             </NavLink>
-            <a className="navbar-item" href="/#app">
+            <a
+              className="navbar-item"
+              onClick={() => this.handleNavbarBurgerClick()}
+              href="/#app"
+            >
               <FormattedMessage id="general.link_app" />
             </a>
-            <a className="navbar-item" href="/#solutions">
+            <a
+              className="navbar-item"
+              onClick={() => this.handleNavbarBurgerClick()}
+              href="/#solutions"
+            >
               <FormattedMessage id="general.link_solutions" />
             </a>
-            <a className="navbar-item" href="/#pricing">
+            <a
+              className="navbar-item"
+              onClick={() => this.handleNavbarBurgerClick()}
+              href="/#pricing"
+            >
               <FormattedMessage id="general.link_pricing" />
             </a>
-            <a className="navbar-item" href="/#blog">
+            <a
+              className="navbar-item"
+              onClick={() => this.handleNavbarBurgerClick()}
+              href="/#blog"
+            >
               <FormattedMessage id="general.link_blog" />
             </a>
             <a
@@ -212,8 +232,28 @@ class NavBar extends Component {
             </a>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">
-                <FormattedMessage id="general.register" />
+                <FormattedMessage id="general.link_login" />
               </a>
+              <div className="navbar-dropdown">
+                <a
+                  className="navbar-item"
+                  href="https://realidadaumentada.app/admin/login"
+                  target="_blank"
+                >
+                  <span className="margin-sides-icon">
+                    <FormattedMessage id="general.link_login" />
+                  </span>
+                </a>
+                <a
+                  className="navbar-item"
+                  href="https://realidadaumentada.app/admin/register"
+                  target="_blank"
+                >
+                  <span className="margin-sides-icon">
+                    <FormattedMessage id="general.register" />
+                  </span>
+                </a>
+              </div>
             </div>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">{lang}</a>
@@ -264,7 +304,7 @@ class NavBar extends Component {
           <div className="modal-content">
             <div className="box">
               <h1 className="has-text-centered title is-2 is-margin-bottom-medium">
-                Contáctanos
+                <FormattedMessage id="general.contact_us_footer" />
               </h1>
               <HubspotForm
                 portalId="2705799"

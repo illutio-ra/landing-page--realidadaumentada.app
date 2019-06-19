@@ -200,13 +200,8 @@ class SimpleSlider extends Component {
               key={i}
             >
               <Image
-                style={{
-                  height: 240,
-                  width: 356,
-                }}
                 className="is-border-radius"
                 src={item.img}
-                onDragStart={(e) => this.handleOnDragStart(e)}
               />
               <button
                 type="button"

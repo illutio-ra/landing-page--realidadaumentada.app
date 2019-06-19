@@ -15,7 +15,7 @@ class Blog extends PageComponent {
       ...this.baseState,
       name: 'Eric',
       unreadCount: 1000,
-      post: [],
+      post: null,
       content: null,
     }
   }
@@ -45,14 +45,23 @@ class Blog extends PageComponent {
 
     const { post, content } = this.state
 
+    console.log('post', post)
+
+    if (!post) {
+      return <div />
+    }
+
     return (
       <div className="container">
         <div className="section">
-          <div className="card">
+          <div className="card card-shadow">
+            <div className="card-header">
+              <h1 className="card-header-title title is-2">
+                {post.title}
+              </h1>
+            </div>
             <div className="card-content">
-              <div className="card-header">
-                <p className="card-header-title">{post.title}</p>
-              </div>
+              {post.tags.map((l) => (<span className=" margin-sides-icon tag is-info">{l}</span>))}
               {content && (
                 <MegadraftEditor
                   plugins={[PluginImage, PluginVideo]}
