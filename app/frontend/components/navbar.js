@@ -194,16 +194,32 @@ class NavBar extends Component {
             <NavLink className="navbar-item" exact to="/">
               <FormattedMessage id="general.link_home" />
             </NavLink>
-            <a className="navbar-item" onClick={() => this.handleNavbarBurgerClick()} href="/#app">
+            <a
+              className="navbar-item"
+              onClick={() => this.handleNavbarBurgerClick()}
+              href="/#app"
+            >
               <FormattedMessage id="general.link_app" />
             </a>
-            <a className="navbar-item" onClick={() => this.handleNavbarBurgerClick()} href="/#solutions">
+            <a
+              className="navbar-item"
+              onClick={() => this.handleNavbarBurgerClick()}
+              href="/#solutions"
+            >
               <FormattedMessage id="general.link_solutions" />
             </a>
-            <a className="navbar-item" onClick={() => this.handleNavbarBurgerClick()} href="/#pricing">
+            <a
+              className="navbar-item"
+              onClick={() => this.handleNavbarBurgerClick()}
+              href="/#pricing"
+            >
               <FormattedMessage id="general.link_pricing" />
             </a>
-            <a className="navbar-item" onClick={() => this.handleNavbarBurgerClick()} href="/#blog">
+            <a
+              className="navbar-item"
+              onClick={() => this.handleNavbarBurgerClick()}
+              href="/#blog"
+            >
               <FormattedMessage id="general.link_blog" />
             </a>
             <a
@@ -216,8 +232,28 @@ class NavBar extends Component {
             </a>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">
-                <FormattedMessage id="general.register" />
+                <FormattedMessage id="general.link_login" />
               </a>
+              <div className="navbar-dropdown">
+                <a
+                  className="navbar-item"
+                  href="https://realidadaumentada.app/admin/login"
+                  target="_blank"
+                >
+                  <span className="margin-sides-icon">
+                    <FormattedMessage id="general.link_login" />
+                  </span>
+                </a>
+                <a
+                  className="navbar-item"
+                  href="https://realidadaumentada.app/admin/register"
+                  target="_blank"
+                >
+                  <span className="margin-sides-icon">
+                    <FormattedMessage id="general.register" />
+                  </span>
+                </a>
+              </div>
             </div>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">{lang}</a>
@@ -268,7 +304,7 @@ class NavBar extends Component {
           <div className="modal-content">
             <div className="box">
               <h1 className="has-text-centered title is-2 is-margin-bottom-medium">
-                Contáctanos
+                <FormattedMessage id="general.contact_us_footer" />
               </h1>
               <HubspotForm
                 portalId="2705799"
