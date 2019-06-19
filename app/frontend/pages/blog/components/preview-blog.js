@@ -15,22 +15,14 @@ class PreviewBlog extends Component {
 
   async componentDidMount() {
     await this.loadDataTop()
-    await this.loadData()
   }
 
   async loadDataTop() {
-    const { data } = await api.get('/public/blog', { limit: 2, isTop: true })
+    const { data } = await api.get('/public/blog', { limit: 5 })
 
     this.setState({
-      itemsTop: data,
-    })
-  }
-
-  async loadData() {
-    const { data } = await api.get('/public/blog', { limit: 6 })
-
-    this.setState({
-      items: data,
+      itemsTop: data.slice(0, 2),
+      items: data.slice(2, 5),
     })
   }
 
