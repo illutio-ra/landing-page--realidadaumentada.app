@@ -1,6 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import Image from '~base/components/image'
-import { injectIntl } from 'react-intl'
+import { FormattedMessage, injectIntl } from 'react-intl'
 
 const Footer = () => (
   <footer className="footer" id="contact">
@@ -9,7 +10,7 @@ const Footer = () => (
         <div className="columns">
           <div className="column">
             <div className="columns">
-              <div className="column is-2 has-text-centered">
+              <div className="column is-3 has-text-centered">
                 <Image src="/public/img/f1.svg" alt="brigde" />
               </div>
               <div className="column">
@@ -24,7 +25,7 @@ const Footer = () => (
         <div className="columns">
           <div className="column">
             <div className="columns">
-              <div className="column is-2 has-text-centered">
+              <div className="column is-3 has-text-centered">
                 <Image src="/public/img/f2.svg" alt="brigde" />
               </div>
               <div className="column">
@@ -40,7 +41,7 @@ const Footer = () => (
         <div className="columns">
           <div className="column">
             <div className="columns">
-              <div className="column is-2 has-text-centered">
+              <div className="column is-3 has-text-centered">
                 <Image src="/public/img/f3.svg" alt="brigde" />
               </div>
               <div className="column">
@@ -53,43 +54,101 @@ const Footer = () => (
           </div>
         </div>
       </div>
-      <div className="column align-self is-6">
-        <div className="columns is-mobile">
-          <div className="column is-half is-offset-one-quarter">
-            <div className="content has-text-centered">
-              <div className="field is-grouped">
-                <p className="control is-expanded">
-                  <input
-                    className="input"
-                    type="text"
-                    placeholder="Type your email to stay tuned."
-                  />
-                </p>
-                <p className="control">
-                  <a className="button is-primary is-inverted is-outlined">
-                    Suscribe
-                  </a>
-                </p>
-              </div>
-              <div className="is-margin-top-medium">
-                <Image src="/public/img/ar-footer.svg" alt="arcam" />
-              </div>
+      <div className="column is-6 vertically-centered is-flex-1">
+        <div className="content mail-chimp">
+          <div className="field is-grouped">
+            <p className="control is-expanded">
+              <input
+                className="input"
+                type="text"
+                placeholder="Type your email to stay tuned."
+              />
+            </p>
+            <p className="control">
+              <a className="button is-primary is-inverted is-outlined">
+                Suscribe
+              </a>
+            </p>
+          </div>
+        </div>
+        <div className="vertically-bottom">
+          <Image src="/public/img/ar-footer.svg" alt="arcam" />
+        </div>
+      </div>
+      <div className="column is-flex">
+        <div className="content has-text-centered directory">
+          <div className="columns">
+            <div className="column is-half is-offset-10">
+              <p>
+                <a href="/" className="is-link">
+                  <FormattedMessage id="general.link_home" />
+                </a>
+              </p>
+              <p>
+                <a href="#solutions" className="is-link">
+                  <FormattedMessage id="general.link_solutions" />
+                </a>
+              </p>
+              <p className="is-link">Log in</p>
+            </div>
+            <div className="column">
+              <p>
+                <a href="#app" className="is-link">
+                  <FormattedMessage id="general.link_app" />
+                </a>
+              </p>
+              <p>
+                <a href="#pricing" className="is-link">
+                  <FormattedMessage id="general.link_pricing" />
+                </a>
+              </p>
+              <p className="is-link">
+                <FormattedMessage id="general.link_contact" />
+              </p>
             </div>
           </div>
         </div>
-      </div>
-      <div className="column">
-        <div className="content has-text-centered directory">
-          <div className="columns">
-            <div className="column is-half is-offset-one-quarter">
-              <p>Home</p>
-              <p>Solutions</p>
-              <p>Sign in / Log in</p>
+        <div className="vertically-bottom">
+          <div className="columns is-mobile">
+            <div className="column">
+              <a
+                href="https://facebook.com/illutio"
+                className="media-links"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa fa-facebook" />
+              </a>
             </div>
             <div className="column">
-              <p>AR app</p>
-              <p>Pricing</p>
-              <p>Contact</p>
+              <a
+                href="https://twitter.com/illut_io"
+                className="media-links"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa fa-twitter" />
+              </a>
+            </div>
+            <div className="column">
+              <a
+                href="https://www.instagram.com/illutio/"
+                className="media-links"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa fa-instagram" />
+              </a>
+            </div>
+            <div className="column">
+              <a
+                href="https://www.youtube.com/user/ILLUTIO1"
+                className="media-links"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa fa-youtube-play" />
+              </a>
             </div>
           </div>
         </div>

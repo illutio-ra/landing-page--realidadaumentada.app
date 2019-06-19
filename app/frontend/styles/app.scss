@@ -3,6 +3,7 @@
     margin-top: 52px;
     background-color: white;
 }
+
 body {
     font-family: 'Lato', sans-serif;
     .title {
@@ -23,7 +24,10 @@ body {
     }
 }
 
-a.navbar-item:hover, a.navbar-item.is-active, a.navbar-link:hover, a.navbar-link.is-active {
+a.navbar-item:hover,
+a.navbar-item.is-active,
+a.navbar-link:hover,
+a.navbar-link.is-active {
     background-color: transparent !important;
     color: #0058ff;
 }
@@ -233,4 +237,25 @@ a.navbar-item:hover, a.navbar-item.is-active, a.navbar-link:hover, a.navbar-link
     .switch[type=checkbox]:checked+label:before {
         background: $electric-blue;
     }
+}
+
+.is-flex-1 {
+    flex: 1 !important;
+}
+
+.vertically-bottom {
+    align-self: flex-end;
+}
+
+.media-links {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.is-link {
+    background-color: transparent !important;
+}
+
+.mail-chimp {
+    padding-left: 5rem;
 }
