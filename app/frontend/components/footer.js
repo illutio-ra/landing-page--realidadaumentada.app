@@ -55,7 +55,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="column is-6 vertically-centered is-flex-1">
-        <div className="content">
+        <div className="content mail-chimp">
           <div className="field is-grouped">
             <p className="control is-expanded">
               <input
@@ -71,7 +71,6 @@ const Footer = () => (
             </p>
           </div>
         </div>
-        <br />
         <div className="vertically-bottom">
           <Image src="/public/img/ar-footer.svg" alt="arcam" />
         </div>
@@ -90,7 +89,7 @@ const Footer = () => (
                   <FormattedMessage id="general.link_solutions" />
                 </a>
               </p>
-              <p className="is-link">Sign in / Log in</p>
+              <p className="is-link">Log in</p>
             </div>
             <div className="column">
               <p>
