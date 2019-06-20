@@ -103,8 +103,7 @@ class SimpleSlider extends Component {
     }
 
     const { selected } = this.state
-    const { intl } = this.props
-    const { formatMessage } = intl
+    const { intl: { formatMessage } } = this.props
 
     return (
       <div className="section">
@@ -207,17 +206,6 @@ class SimpleSlider extends Component {
                 <i className="fa fa-eye margin-sides-icon" />
               </button>
             </div>
-            // <div
-            //   className="is-border-radius is-padding-left-small is-padding-right-small is-padding-top-small is-padding-bottom-small"
-            //   key={i}
-            // >
-
-            //   <Image
-            //     className="is-border-radius"
-            //     src={item.img}
-            //   />
-
-            // </div>
           ))}
         </Slider>
       </div>
