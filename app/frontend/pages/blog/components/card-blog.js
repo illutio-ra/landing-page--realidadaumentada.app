@@ -5,10 +5,12 @@ import FontAwesome from 'react-fontawesome'
 
 const Card = ({ item }) => (
   <Link to={`/blog/${item.slug}`}>
-    <div className="card is-border-radius card-shadow">
+    <div className="card is-border-radius is-shadowless">
       <div className="card-image">
         <div className="blog-tags-preview">
-          {item.tags.map((l) => (<span className=" margin-sides-icon tag is-info">{l}</span>))}
+          {item.tags.map((l) => (
+            <span className=" margin-sides-icon tag is-info">{l}</span>
+          ))}
         </div>
         <Image
           className="is-border-radius is-fullwidth"
@@ -19,14 +21,18 @@ const Card = ({ item }) => (
       <div className="card-content">
         <div className="content">
           <div className="columns is-mobile">
-            <div className="column is-10">
-              {item.title}
+            <div className="column is-10">{item.title}</div>
+            <div className="column is-1 has-text-centered">
+              <FontAwesome
+                name="facebook"
+                className="is-font-blue is-font-bold"
+              />
             </div>
             <div className="column is-1 has-text-centered">
-              <FontAwesome name="facebook" className="is-font-blue is-font-bold" />
-            </div>
-            <div className="column is-1 has-text-centered">
-              <FontAwesome name="twitter" className="is-font-blue is-font-bold" />
+              <FontAwesome
+                name="twitter"
+                className="is-font-blue is-font-bold"
+              />
             </div>
           </div>
         </div>

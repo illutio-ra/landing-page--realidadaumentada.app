@@ -54,14 +54,17 @@ class Blog extends PageComponent {
     return (
       <div className="container">
         <div className="section">
-          <div className="card card-shadow">
-            <div className="card-header">
-              <h1 className="card-header-title title is-2">
-                {post.title}
-              </h1>
+          <div className="card is-shadowless">
+            <div className="card-header is-shadowless">
+              <h1 className="card-header-title title is-2">{post.title}</h1>
             </div>
-            <div className="card-content">
-              {post.tags.map((l) => (<span className=" margin-sides-icon tag is-info">{l}</span>))}
+            <hr className="divider" />
+            Tags:
+            {' '}
+            {post.tags.map((l) => (
+              <span className=" margin-sides-icon tag is-info">{l}</span>
+            ))}
+            <div className="card-content is-paddingless">
               {content && (
                 <MegadraftEditor
                   plugins={[PluginImage, PluginVideo]}
