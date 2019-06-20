@@ -3,7 +3,7 @@ import React from 'react'
 const ImagePlugin = ({ data }) => (
   <div className="columns is-centered">
     <div className="column">
-      <div className="card">
+      <div className="card is-shadowless">
         <div className="card-content has-text-centered">
           <img src={data.src} alt="RACAM" />
         </div>

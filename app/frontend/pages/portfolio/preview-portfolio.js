@@ -195,23 +195,29 @@ class SimpleSlider extends Component {
 
         <Slider {...settings}>
           {images.map((item, i) => (
-            <div
-              className="is-border-radius is-padding-left-small is-padding-right-small is-padding-top-small is-padding-bottom-small"
-              key={i}
-            >
-              <Image
-                className="is-border-radius"
-                src={item.img}
-              />
+            <div className="container-img-portfolio is-border-radius is-padding-left-small is-padding-right-small is-padding-top-small is-padding-bottom-small">
+              <Image className="is-border-radius" src={item.img} />
+
               <button
                 type="button"
                 onClick={() => this.setActive(item)}
-                className="button see-detail-portfolio is-primary"
+                className="btn button see-detail-portfolio is-primary"
               >
                 <FormattedMessage id="general.see_detail" />
                 <i className="fa fa-eye margin-sides-icon" />
               </button>
             </div>
+            // <div
+            //   className="is-border-radius is-padding-left-small is-padding-right-small is-padding-top-small is-padding-bottom-small"
+            //   key={i}
+            // >
+
+            //   <Image
+            //     className="is-border-radius"
+            //     src={item.img}
+            //   />
+
+            // </div>
           ))}
         </Slider>
       </div>

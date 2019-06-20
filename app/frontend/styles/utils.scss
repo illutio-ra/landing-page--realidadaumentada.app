@@ -93,9 +93,37 @@
  .see-detail-portfolio {
    bottom: 45px;
    left: 13px;
-  opacity: 0;
+   opacity: 0;
  }
 
  .is-font-bold {
      font-weight: bold;
  }
+
+
+
+
+ .container-img-portfolio {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container-img-portfolio img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container-img-portfolio/image */
+.container-img-portfolio .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

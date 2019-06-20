@@ -18,7 +18,6 @@ class Blog extends PageComponent {
 
   async componentDidMount() {
     window.scrollTo(0, 0)
-
     await this.loadData()
   }
 
@@ -49,12 +48,14 @@ class Blog extends PageComponent {
             <FormattedMessage id="general.latest_news" />
           </span>
         </p>
-        <div className="columns is-vcentered is-multiline">
-          {items.map((item, i) => (
-            <div className="column is-4" key={i}>
-              <CardBlog showLink item={item} />
-            </div>
-          ))}
+        <div className="section">
+          <div className="columns is-vcentered is-multiline">
+            {items.map((item, i) => (
+              <div className="column is-4" key={i}>
+                <CardBlog showLink item={item} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     )
