@@ -46,6 +46,7 @@ class Home extends PageComponent {
           <a
             href="https://realidadaumentada.app/admin/register"
             type="button"
+            target="_blank"
             className="button btn-primary margin-button"
           >
             <FormattedMessage id="general.try_now" />
