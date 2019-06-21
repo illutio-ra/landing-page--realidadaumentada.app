@@ -22,7 +22,7 @@ class Pricing extends Component {
         <div className="columns">
           <div className="column is-2" />
           <div className="column">
-            <div className="field has-text-left">
+            {/* <div className="field has-text-left">
               <input
                 id="switchRoundedInfo"
                 type="checkbox"
@@ -36,9 +36,9 @@ class Pricing extends Component {
               >
                 Monthly
               </label>
-            </div>
+            </div> */}
             <div className="pricing-table">
-              <div className="pricing-plan is-box-shadowed free">
+              <div className="pricing-plan card-shadow free">
                 <div className="plan-header card-title free-pricing">Basic</div>
                 <Image src="/public/img/basic.svg" alt="ra cam" />
                 <div className="plan-price">

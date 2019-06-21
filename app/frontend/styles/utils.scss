@@ -104,7 +104,14 @@
      font-weight: bold;
  }
 
- .container-img-portfolio {
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container-img-portfolio {
   position: relative;
   width: 50%;
 }
@@ -126,11 +133,4 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
-}
-
-.truncate {
-  width: 250px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }

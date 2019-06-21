@@ -134,7 +134,7 @@ class Footer extends Component {
                 </div>
                 <div className="column is-half">
                   <p>
-                    <a href="/#porfolio" className="is-link">
+                    <a href="/#portfolio" className="is-link">
                       <FormattedMessage id="general.link_app" />
                     </a>
                   </p>
