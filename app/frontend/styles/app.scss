@@ -257,6 +257,55 @@ a.navbar-link.is-active {
 }
 
 .mail-chimp {
+    padding-left: 5rem;
+
+    /* .free-pricing {
+        background-color: white !important;
+    } */
+
+    .pricing-secondary {
+        background-color: #f9fbff !important;
+        border: none !important;
+    }
+    
+    /* .pricing-table .pricing-plan .plan-price {
+        background-color: #f9fbff !important;
+    }
+    
+    .pricing-table .pricing-plan .plan-header {
+        background-color: #f9fbff !important;
+    }
+ */
+}
+
+
+
+.btn-primary {
+    box-shadow: 0 16px 41px 0 #dee1f1 !important;
+    background-color: #0058ff;
+    color: white;
+}
+
+.btn-primary-pricing {
+    box-shadow: 0 16px 41px 0 #dee1f1 !important;
+    color: white;
+}
+
+.button.is-info.is-outlined {
+    background-color: transparent;
+    border-color: #0058ff;
+    color: #0058ff;
+}
+
+.button.is-info.is-outlined:hover, .button.is-info.is-outlined:focus {
+    background-color: #0058ff;
+    border-color: #0058ff;
+    color: #fff;
+}
+
+.button.btn-primary:hover, .button.btn-primary.is-hovered {
+    
+    color: #fff;
     padding: 1rem 3rem 1rem;
 }
 

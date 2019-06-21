@@ -14,6 +14,7 @@ class Home extends PageComponent {
     super(props)
     this.state = {
       ...this.baseState,
+      classNameModal: '',
     }
   }
 
@@ -42,10 +43,14 @@ class Home extends PageComponent {
               }}
             />
           </p>
-          <button type="button" className="button is-primary margin-button">
+          <a
+            href="https://realidadaumentada.app/admin/register"
+            type="button"
+            className="button btn-primary margin-button"
+          >
             <FormattedMessage id="general.try_now" />
             <i className="fa fa-rocket margin-sides-icon" />
-          </button>
+          </a>
         </div>
         <div className="phone">
           <Image src="/public/img/planets.svg" id="phone" alt="ra cam" />
@@ -93,13 +98,39 @@ class Home extends PageComponent {
                   <FormattedMessage id="general.see_how_works" />
                 </strong>
               </p>
-              <a href="#">
+              <a
+                href="https://www.youtube.com/watch?v=7T6-XYZdnRc&t=4s"
+                target="_blank"
+              >
                 <Image
                   src="../../public/img/video.png"
                   alt="ra cam"
                   className="is-button-video"
                 />
               </a>
+
+              <div className={`modal ${this.state.classNameModal}`}>
+                <div className="modal-background" />
+                <div className="modal-content">
+                  <div className="box">
+                    <h1 className="has-text-centered title is-2 is-margin-bottom-medium">
+                      Contáctanos
+                    </h1>
+                    {/* <HubspotForm
+                      portalId="2705799"
+                      formId="d8b7a2ac-f5bb-4b7a-9963-d8e30844250a"
+                      onSubmit={() => console.log('Submit!')}
+                      onReady={(form) => console.log('Form ready!')}
+                      loading={<div>Loading...</div>}
+                    /> */}
+                  </div>
+                </div>
+                {/*  <button
+                  className="modal-close is-large"
+                  aria-label="close"
+                  onClick={() => this.setState({ classNameModal: '' })}
+                /> */}
+              </div>
             </div>
           </div>
           <Image

@@ -7,6 +7,10 @@ class Pricing extends Component {
     checked: true,
   }
 
+  handlerChange(e) {
+    this.setState((prevState) => ({ checked: !prevState.checked }))
+  }
+
   render() {
     const { checked } = this.state
     return (
@@ -14,29 +18,33 @@ class Pricing extends Component {
         <div className="has-text-centered is-size-1 is-margin-bottom-large main-title">
           Choose your plan
         </div>
-        <div className="field has-text-centered">
-          <input
-            id="switchRoundedInfo"
-            type="checkbox"
-            name="switchRoundedInfo"
-            className="switch is-rounded is-switch-blue"
-            checked={checked}
-            onChange={(e) => this.setState({ checked: e.target.checked })}
-          />
-          <label htmlFor="switchRoundedInfo switch-text">Monthly</label>
-        </div>
 
         <div className="columns">
-          <div className="column is-1" />
+          <div className="column is-2" />
           <div className="column">
+            <div className="field has-text-left">
+              <input
+                id="switchRoundedInfo"
+                type="checkbox"
+                name="switchRoundedInfo"
+                className="switch is-rounded is-switch-blue"
+                checked={checked}
+              />
+              <label
+                htmlFor="switchRoundedInfo switch-text"
+                onClick={() => this.handlerChange()}
+              >
+                Monthly
+              </label>
+            </div>
             <div className="pricing-table">
-              <div className="pricing-plan is-box-shadowed grow">
-                <div className="plan-header card-title">Basic</div>
+              <div className="pricing-plan is-box-shadowed free">
+                <div className="plan-header card-title free-pricing">Basic</div>
                 <Image src="/public/img/basic.svg" alt="ra cam" />
                 <div className="plan-price">
                   <span className="plan-price-amount price">
                     <span className="plan-price-currency price" />
-$ 0.00
+                    Free
                   </span>
                 </div>
                 <div className="has-text-centered">
@@ -46,17 +54,19 @@ $ 0.00
                 </div>
                 <div className="plan-footer">
                   <a
-                    className="button is-fullwidth is-info is-bg-blue"
+                    className="button is-fullwidth is-outlined is-info"
                     href="https://realidadaumentada.app/admin/register"
                   >
                     Create a new account
                   </a>
                 </div>
               </div>
-              <div className="pricing-plan is-box-shadowed grow">
-                <div className="plan-header card-title">Pro</div>
+              <div className="pricing-plan pricing-secondary">
+                <div className="plan-header pricing-secondary card-title">
+                  Pro
+                </div>
                 <Image src="/public/img/pro.svg" alt="ra cam" />
-                <div className="plan-price">
+                <div className="plan-price pricing-secondary">
                   <span className="plan-price-amount price">
                     <span className="plan-price-currency price" />
 $ 199.00
@@ -71,17 +81,19 @@ $ 199.00
                 </div>
                 <div className="plan-footer">
                   <a
-                    className="button is-fullwidth is-info is-bg-blue"
+                    className="button is-fullwidth is-outlined is-info"
                     href="https://realidadaumentada.app/admin/register"
                   >
                     Buy it
                   </a>
                 </div>
               </div>
-              <div className="pricing-plan is-box-shadowed grow">
-                <div className="plan-header card-title">Bussiness</div>
+              <div className="pricing-plan pricing-secondary">
+                <div className="plan-header pricing-secondary card-title">
+                  Bussiness
+                </div>
                 <Image src="/public/img/bussiness.svg" alt="ra cam" />
-                <div className="plan-price">
+                <div className="plan-price pricing-secondary">
                   <span className="plan-price-amount price">
                     <span className="plan-price-currency price" />
 $ 399.00
@@ -96,17 +108,19 @@ $ 399.00
                 </div>
                 <div className="plan-footer">
                   <a
-                    className="button is-fullwidth is-info is-bg-blue"
+                    className="button is-fullwidth is-outlined is-info"
                     href="https://realidadaumentada.app/admin/register"
                   >
                     Buy it
                   </a>
                 </div>
               </div>
-              <div className="pricing-plan is-box-shadowed grow">
-                <div className="plan-header card-title">Enterprise</div>
+              <div className="pricing-plan pricing-secondary">
+                <div className="plan-header pricing-secondary card-title">
+                  Enterprise
+                </div>
                 <Image src="/public/img/enterprise.svg" alt="ra cam" />
-                <div className="plan-price">
+                <div className="plan-price pricing-secondary">
                   <span className="plan-price-amount price">
                     <span className="plan-price-currency price" />
 $ 599.00
@@ -121,7 +135,7 @@ $ 599.00
                 </div>
                 <div className="plan-footer">
                   <a
-                    className="button is-fullwidth is-info is-bg-blue"
+                    className="button is-fullwidth is-outlined is-info"
                     href="https://realidadaumentada.app/admin/register"
                   >
                     Buy it
@@ -130,7 +144,7 @@ $ 599.00
               </div>
             </div>
           </div>
-          <div className="column is-1" />
+          <div className="column is-2" />
         </div>
       </div>
     )
