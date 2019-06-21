@@ -20,7 +20,7 @@ class Pricing extends Component {
         </div>
 
         <div className="columns">
-          <div className="column is-2" />
+          <div className="column is-1" />
           <div className="column">
             {/* <div className="field has-text-left">
               <input
@@ -144,7 +144,7 @@ $ 599.00
               </div>
             </div>
           </div>
-          <div className="column is-2" />
+          <div className="column is-1" />
         </div>
       </div>
     )

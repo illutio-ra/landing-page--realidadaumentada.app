@@ -237,6 +237,10 @@ a.navbar-link.is-active {
     .switch[type=checkbox]:checked+label:before {
         background: $electric-blue;
     }
+    .pricing-secondary {
+        background-color: #f9fbff !important;
+        border: none !important;
+    }
 }
 
 .is-flex-1 {
@@ -263,10 +267,6 @@ a.navbar-link.is-active {
         background-color: white !important;
     } */
 
-    .pricing-secondary {
-        background-color: #f9fbff !important;
-        border: none !important;
-    }
     
     /* .pricing-table .pricing-plan .plan-price {
         background-color: #f9fbff !important;

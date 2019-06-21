@@ -107,17 +107,17 @@ class Footer extends Component {
               <div className="columns">
                 <div className="column is-half">
                   <p>
-                    <a href="/" className="is-link">
+                    <a href="/" className="has-text-white">
                       <FormattedMessage id="general.link_home" />
                     </a>
                   </p>
                   <p>
-                    <a href="/#solutions" className="is-link">
+                    <a href="/#solutions" className="has-text-white">
                       <FormattedMessage id="general.link_solutions" />
                     </a>
                   </p>
                   <p>
-                    <a href="/#blog" className="is-link">
+                    <a href="/#blog" className="has-text-white">
                       <FormattedMessage id="general.link_blog" />
                     </a>
                   </p>
@@ -126,7 +126,7 @@ class Footer extends Component {
                       href="https://realidadaumentada.app/admin/login"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="is-link"
+                      className="has-text-white"
                     >
                       <FormattedMessage id="general.link_login" />
                     </a>
@@ -134,18 +134,18 @@ class Footer extends Component {
                 </div>
                 <div className="column is-half">
                   <p>
-                    <a href="/#portfolio" className="is-link">
+                    <a href="/#portfolio" className="has-text-white">
                       <FormattedMessage id="general.link_app" />
                     </a>
                   </p>
                   <p>
-                    <a href="/#pricing" className="is-link">
+                    <a href="/#pricing" className="has-text-white">
                       <FormattedMessage id="general.link_pricing" />
                     </a>
                   </p>
                   <p>
                     <a
-                      className="is-link"
+                      className="has-text-white"
                       data-target="modal"
                       aria-haspopup="true"
                       onClick={() => this.handleModal()}
