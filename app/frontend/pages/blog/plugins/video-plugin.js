@@ -13,7 +13,7 @@ const opts = {
 const ImagePlugin = ({ data }) => (
   <div className="columns is-centered">
     <div className="column">
-      <div className="card">
+      <div className="card is-shadowless">
         <div className="card-content has-text-centered">
           <YouTube videoId={data.id} opts={opts} />
         </div>

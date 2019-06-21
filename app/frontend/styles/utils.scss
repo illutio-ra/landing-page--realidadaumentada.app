@@ -123,3 +123,10 @@
   cursor: pointer;
   border-radius: 5px;
 }
+
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
