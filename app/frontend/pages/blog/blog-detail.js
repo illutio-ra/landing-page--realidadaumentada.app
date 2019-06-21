@@ -1,12 +1,13 @@
 import React from 'react'
 import PageComponent from '~base/page-component'
-import { injectIntl } from 'react-intl'
+import { FormattedMessage, injectIntl } from 'react-intl'
 import api from '~base/api'
 import { forcePublic } from '~base/middlewares/'
 import { MegadraftEditor, editorStateFromRaw } from 'megadraft'
 
 import PluginImage from './plugins/image'
 import PluginVideo from './plugins/video'
+import PreviewBlog from './components/preview-blog'
 
 class Blog extends PageComponent {
   constructor(props) {
@@ -45,8 +46,6 @@ class Blog extends PageComponent {
 
     const { post, content } = this.state
 
-    console.log('post', post)
-
     if (!post) {
       return <div />
     }
@@ -75,6 +74,12 @@ class Blog extends PageComponent {
               )}
             </div>
           </div>
+          <hr />
+          <p className="is-font-size-24px">
+            <FormattedMessage id="general.related_articles" />
+          </p>
+          <br />
+          <PreviewBlog limit={3} />
         </div>
       </div>
     )

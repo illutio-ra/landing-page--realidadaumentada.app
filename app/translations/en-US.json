@@ -21,6 +21,13 @@
     "content": "awesome {augmented_reality} campaigns"
   },
   {
+    "id": "brand",
+    "modules": [
+      "general"
+    ],
+    "content": "RA Cam"
+  },
+  {
     "id": "campaigns",
     "modules": [
       "general"
@@ -75,6 +82,13 @@
       "general"
     ],
     "content": "Don’t miss"
+  },
+  {
+    "id": "download_racam",
+    "modules": [
+      "general"
+    ],
+    "content": "Download {brand} to explore the examples below.\n"
   },
   {
     "id": "email",
@@ -292,6 +306,13 @@
       "general"
     ],
     "content": "Register"
+  },
+  {
+    "id": "related_articles",
+    "modules": [
+      "general"
+    ],
+    "content": "Related articles"
   },
   {
     "id": "scan_with_ra-cam",

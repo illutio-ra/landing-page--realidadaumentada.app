@@ -10,7 +10,7 @@ const task = new Task((async (argv) => {
   const translationsPath = './app/translations'
   await fs.ensureDir(translationsPath)
   for (const lang of langs) {
-    let translations = await Translation.find({ lang }).sort('id')
+    let translations = await Translation.find({ lang, isDeleted: false }).sort('id')
     translations = translations.map((t) => ({
       id: t.id,
       modules: t.modules,

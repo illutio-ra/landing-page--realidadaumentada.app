@@ -17,7 +17,7 @@ const task = new Task(async function (argv) {
     let data = fs.readFileSync(translationsPath + '/' + lang + '.json')
     let translations = JSON.parse(data.toString())
     for (let t of translations) {
-      let translation = await Translation.findOne({ id: t.id, lang: lang })
+      let translation = await Translation.findOne({ id: t.id, lang: lang, isDeleted: false })
       if (translation) {
         translation.content = t.content
         translation.modules = t.modules
