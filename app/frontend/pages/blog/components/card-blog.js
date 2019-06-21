@@ -3,7 +3,7 @@ import Image from '~base/components/image'
 import Link from '~base/router/link'
 import FontAwesome from 'react-fontawesome'
 
-const Card = ({ item }) => (
+const Card = ({ item, isBig = false }) => (
   <Link to={`/blog/${item.slug}`}>
     <div className="card is-border-radius is-shadowless">
       <div className="card-image">
@@ -14,14 +14,16 @@ const Card = ({ item }) => (
         </div>
         <Image
           className="is-border-radius is-fullwidth"
-          style={{ height: 240 }}
+          style={{ height: isBig ? 350 : 240 }}
           src={item.imagePreview}
         />
       </div>
       <div className="card-content">
         <div className="content">
           <div className="columns is-mobile">
-            <div className="column is-10">{item.title}</div>
+            <div className="column is-10">
+              <p className="is-font-size-24px truncate">{item.title}</p>
+            </div>
             <div className="column is-1 has-text-centered">
               <FontAwesome
                 name="facebook"

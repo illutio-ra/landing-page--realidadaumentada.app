@@ -197,7 +197,7 @@ class NavBar extends Component {
             <a
               className="navbar-item"
               onClick={() => this.handleNavbarBurgerClick()}
-              href="/#app"
+              href="/#portfolio"
             >
               <FormattedMessage id="general.link_app" />
             </a>

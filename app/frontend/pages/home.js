@@ -144,7 +144,11 @@ class Home extends PageComponent {
         <LetsStart />
         <PreviewPortfolio />
         <Pricing />
-        <PreviewBlog />
+        <br />
+        <br />
+        <div className="container">
+          <PreviewBlog seAll />
+        </div>
       </section>
     )
   }

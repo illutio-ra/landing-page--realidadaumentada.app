@@ -103,12 +103,14 @@ class SimpleSlider extends Component {
     }
 
     const { selected } = this.state
-    const { intl: { formatMessage } } = this.props
+    const {
+      intl: { formatMessage },
+    } = this.props
 
     return (
-      <div className="section">
+      <div className="section" id="portfolio">
         <div className="columns">
-          <div className="column is-offset-one-third is-4 has-text-centered">
+          <div className="column is-offset-2 is-8 has-text-centered">
             <p className="is-font-size-32px">
               <span>
                 <FormattedMessage
@@ -133,10 +135,21 @@ class SimpleSlider extends Component {
                 <br />
               </span>
             </p>
-            <Link className="button btn-primary" to="/portfolio">
-              <FormattedMessage id="general.see_all" />
-              <i className="fa fa-eye margin-sides-icon" />
-            </Link>
+
+            <p className="is-font-size-24px">
+              <FormattedMessage
+                id="general.download_racam"
+                values={{
+                  brand: (
+                    <span className="is-font-blue">
+                      <span className="is-font-blue">
+                        {formatMessage({ id: 'general.brand' })}
+                      </span>
+                    </span>
+                  ),
+                }}
+              />
+            </p>
           </div>
         </div>
 
