@@ -150,6 +150,15 @@ class SimpleSlider extends Component {
                 }}
               />
             </p>
+
+            <Image
+              className="is-border-radius"
+              src="/public/img/android-store.png"
+            />
+            <Image
+              className="is-border-radius"
+              src="/public/img/ios-store.png"
+            />
           </div>
         </div>
 
@@ -213,7 +222,7 @@ class SimpleSlider extends Component {
               <button
                 type="button"
                 onClick={() => this.setActive(item)}
-                className="button see-detail-portfolio btn-primary"
+                className="button btn is-primary see-detail-portfolio"
               >
                 <FormattedMessage id="general.see_detail" />
                 <i className="fa fa-eye margin-sides-icon" />
