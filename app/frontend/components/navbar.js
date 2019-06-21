@@ -279,7 +279,7 @@ class NavBar extends Component {
 
       navMainLink = (
         <NavLink className="navbar-item" exact to="/">
-          <Image src="/public/img/racam.png" alt="ra cam" />
+          <Image src="/public/img/racam.svg" alt="ra cam" />
         </NavLink>
       )
     }

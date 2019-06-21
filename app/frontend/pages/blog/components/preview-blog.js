@@ -42,7 +42,7 @@ class PreviewBlog extends Component {
                   <FormattedMessage id="general.latest_news" />
                 </span>
               </p>
-              <Link className="button is-primary" to="/blog">
+              <Link className="button btn-primary" to="/blog">
                 <FormattedMessage id="general.see_all" />
                 <i className="fa fa-eye margin-sides-icon" />
               </Link>

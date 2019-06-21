@@ -67,10 +67,14 @@ const LetsStart = () => (
             <FormattedMessage id="general.your_products" />
           </p>
           <div className="centered-in-touch">
-            <button type="button" className="button is-primary margin-button">
+            <a
+              href="https://realidadaumentada.app/admin/register"
+              type="button"
+              className="button btn-primary margin-button"
+            >
               <FormattedMessage id="general.lets_start" />
               <i className="fa fa-smile-o margin-sides-icon" />
-            </button>
+            </a>
           </div>
         </div>
       </div>

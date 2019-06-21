@@ -133,7 +133,7 @@ class SimpleSlider extends Component {
                 <br />
               </span>
             </p>
-            <Link className="button is-primary" to="/portfolio">
+            <Link className="button btn-primary" to="/portfolio">
               <FormattedMessage id="general.see_all" />
               <i className="fa fa-eye margin-sides-icon" />
             </Link>
@@ -200,7 +200,7 @@ class SimpleSlider extends Component {
               <button
                 type="button"
                 onClick={() => this.setActive(item)}
-                className="btn button see-detail-portfolio is-primary"
+                className="button see-detail-portfolio btn-primary"
               >
                 <FormattedMessage id="general.see_detail" />
                 <i className="fa fa-eye margin-sides-icon" />
