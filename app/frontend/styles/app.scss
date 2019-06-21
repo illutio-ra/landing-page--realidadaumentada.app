@@ -257,5 +257,24 @@ a.navbar-link.is-active {
 }
 
 .mail-chimp {
-    padding-left: 5rem;
+    padding: 1rem 3rem 1rem;
+}
+
+.is-footer-input {
+    color: #ffffff;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ffffff;
+    font-weight: lighter;
+    &::placeholder {
+        color: #ffffff;
+    }
+    &:active,
+    &:focus {
+        border: none;
+        border-bottom: 2px solid #ffffff;
+        box-shadow: none;
+    }
 }
