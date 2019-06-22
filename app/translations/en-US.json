@@ -35,6 +35,20 @@
     "content": "campaigns"
   },
   {
+    "id": "contact_navbar",
+    "modules": [
+      "general"
+    ],
+    "content": "Contact"
+  },
+  {
+    "id": "contact_us_footer",
+    "modules": [
+      "general"
+    ],
+    "content": "Contact us"
+  },
+  {
     "id": "control_of_your",
     "modules": [
       "general"
@@ -123,7 +137,7 @@
     "modules": [
       "general"
     ],
-    "content": "incredible experiences."
+    "content": "memorable experiences."
   },
   {
     "id": "intro",
@@ -368,7 +382,7 @@
     "modules": [
       "general"
     ],
-    "content": "Try it now!"
+    "content": "Free trial!"
   },
   {
     "id": "upgrade_text",

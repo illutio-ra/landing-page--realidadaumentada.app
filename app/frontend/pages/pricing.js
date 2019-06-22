@@ -90,7 +90,7 @@ $ 199.00
               </div>
               <div className="pricing-plan pricing-secondary">
                 <div className="plan-header pricing-secondary card-title">
-                  Bussiness
+                  Business
                 </div>
                 <Image src="/public/img/bussiness.svg" alt="ra cam" />
                 <div className="plan-price pricing-secondary">
