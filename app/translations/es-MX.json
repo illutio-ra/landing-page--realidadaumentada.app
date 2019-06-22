@@ -35,6 +35,20 @@
     "content": "campañas"
   },
   {
+    "id": "contact_navbar",
+    "modules": [
+      "general"
+    ],
+    "content": "Contacto"
+  },
+  {
+    "id": "contact_us_footer",
+    "modules": [
+      "general"
+    ],
+    "content": "Contáctanos"
+  },
+  {
     "id": "control_of_your",
     "modules": [
       "general"
@@ -130,7 +144,7 @@
     "modules": [
       "general"
     ],
-    "content": "experiencias increíbles."
+    "content": "experiencias memorables."
   },
   {
     "id": "intro",
@@ -266,6 +280,13 @@
     "content": "{discover} como transformar imágenes en {experiences}."
   },
   {
+    "id": "postsListTitle",
+    "modules": [
+      "general"
+    ],
+    "content": "Lista de posts\n"
+  },
+  {
     "id": "profile",
     "modules": [
       "general"
@@ -364,11 +385,25 @@
     "content": "Toma"
   },
   {
+    "id": "test",
+    "modules": [
+      "general"
+    ],
+    "content": "test"
+  },
+  {
+    "id": "testLabel",
+    "modules": [
+      "general"
+    ],
+    "content": "Test"
+  },
+  {
     "id": "try_now",
     "modules": [
       "general"
     ],
-    "content": "¡Probar ahora!"
+    "content": "¡Demo gratuita!"
   },
   {
     "id": "upgrade_text",
