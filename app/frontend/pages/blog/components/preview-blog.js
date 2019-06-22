@@ -30,7 +30,7 @@ class PreviewBlog extends Component {
     const { items } = this.state
     const { seAll } = this.props
     return (
-      <section className="blog" id="blog">
+      <section className="section blog" id="blog">
         {seAll && (
           <div className="columns">
             <div className="column has-text-centered">
