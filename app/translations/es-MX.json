@@ -35,20 +35,6 @@
     "content": "campañas"
   },
   {
-    "id": "contact_navbar",
-    "modules": [
-      "general"
-    ],
-    "content": "Contacto"
-  },
-  {
-    "id": "contact_us_footer",
-    "modules": [
-      "general"
-    ],
-    "content": "Contáctanos"
-  },
-  {
     "id": "control_of_your",
     "modules": [
       "general"
@@ -144,7 +130,7 @@
     "modules": [
       "general"
     ],
-    "content": "experiencias memorables."
+    "content": "experiencias increíbles."
   },
   {
     "id": "intro",
@@ -273,6 +259,27 @@
     "content": "Ver video"
   },
   {
+    "id": "portfolio_castle",
+    "modules": [
+      "general"
+    ],
+    "content": "Este proyecto se realizó para la portada de una revista impresa “Superbrands” en México. La mariposas cobran vida cuando es escaneada con la app. Muestra un botón “Call to action” y lleva a los clientes al sitio web donde explica cómo ser parte de la comunidad de mejores marcas de México."
+  },
+  {
+    "id": "portfolio_chilis",
+    "modules": [
+      "general"
+    ],
+    "content": "Este proyecto se realizó para publicidad impresa en el periódico \"El País\" en Honduras. La hamburguesa en la imagen despliega una video sobre la publicidad cuando es escaneado por la aplicación AR CAM; muestra un botón “Call to action” y lleva a los clientes al restaurante más nuevo en la ciudad. Esta experiencia se publicó para una campaña semanal en la cual se imprimieron 35 mil ejemplares cada día de la campaña."
+  },
+  {
+    "id": "portfolio_miller",
+    "modules": [
+      "general"
+    ],
+    "content": "Este proyecto se realizó para publicidad impresa en el periódico \"El País\" en Honduras. El fuego en la imagen cobra vida cuando es escaneado por la aplicación AR CAM; muestra un botón “Call to action” y lleva a los clientes a un video sobre ofertas de verano. Esta experiencia se publicó para una campaña semanal en la cual se imprimieron 35 mil ejemplares cada día de la campaña."
+  },
+  {
     "id": "portfolio_preview",
     "modules": [
       "general"
@@ -280,11 +287,11 @@
     "content": "{discover} como transformar imágenes en {experiences}."
   },
   {
-    "id": "postsListTitle",
+    "id": "portfolio_superbrands",
     "modules": [
       "general"
     ],
-    "content": "Lista de posts\n"
+    "content": "Este proyecto se realizó para la portada de una revista impresa “Superbrands” en México. La mariposas cobran vida cuando es escaneada con la app. Muestra un botón “Call to action” y lleva a los clientes al sitio web donde explica cómo ser parte de la comunidad de mejores marcas de México."
   },
   {
     "id": "profile",
@@ -385,25 +392,11 @@
     "content": "Toma"
   },
   {
-    "id": "test",
-    "modules": [
-      "general"
-    ],
-    "content": "test"
-  },
-  {
-    "id": "testLabel",
-    "modules": [
-      "general"
-    ],
-    "content": "Test"
-  },
-  {
     "id": "try_now",
     "modules": [
       "general"
     ],
-    "content": "¡Demo gratuita!"
+    "content": "¡Probar ahora!"
   },
   {
     "id": "upgrade_text",

@@ -2,48 +2,78 @@ import React, { Component } from 'react'
 import Image from '~base/components/image'
 import Slider from 'react-slick'
 import { FormattedMessage, injectIntl } from 'react-intl'
-import Link from '~base/router/link'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const images = [
   {
+    id: 'chilis',
+    visible: true,
+    name: 'AR CAM',
     img: '/public/img/portfolio/1.png',
     imgBig: '/public/img/portfolio/1-1.png',
     width: 440,
     height: 570,
   },
   {
+    id: 'superbrands',
+    visible: true,
+    name: 'Superbrands',
     img: '/public/img/portfolio/2.png',
     imgBig: '/public/img/portfolio/2-1.png',
     width: 440,
     height: 570,
   },
   {
+    id: 'miller',
+    visible: true,
+    name: 'AR CAM',
     img: '/public/img/portfolio/3.png',
     imgBig: '/public/img/portfolio/3-1.png',
     width: 440,
     height: 570,
   },
   {
+    id: 'castle',
+    visible: true,
+    name: 'AR CAM',
     img: '/public/img/portfolio/4.png',
     imgBig: '/public/img/portfolio/4-1.png',
     width: 440,
     height: 570,
   },
   {
+    id: '',
+    visible: false,
+    name: '',
     img: '/public/img/portfolio/5.png',
     imgBig: '/public/img/portfolio/5-1.png',
     width: 440,
     height: 570,
   },
   {
+    id: '',
+    visible: false,
+    name: '',
     img: '/public/img/portfolio/6.png',
     imgBig: '/public/img/portfolio/6-1.png',
     width: 440,
     height: 300,
   },
   {
+    id: '',
+    visible: false,
+    name: '',
     img: '/public/img/portfolio/7.png',
     imgBig: '/public/img/portfolio/7-1.png',
+    width: 440,
+    height: 300,
+  },
+  {
+    id: '',
+    visible: false,
+    name: '',
+    img: '/public/img/portfolio/8.png',
+    imgBig: '/public/img/portfolio/8-1.png',
     width: 440,
     height: 300,
   },
@@ -65,6 +95,8 @@ class SimpleSlider extends Component {
 
   render() {
     const settings = {
+      classid: 'center',
+      classvisible: 'center',
       className: 'center',
       centerMode: true,
       infinite: true,
@@ -111,45 +143,46 @@ class SimpleSlider extends Component {
       <div className="section" id="portfolio">
         <div className="columns">
           <div className="column is-offset-2 is-8 has-text-centered">
-            <p className="is-font-size-32px">
-              <span>
-                <FormattedMessage
-                  id="general.portfolio_preview"
-                  values={{
-                    discover: (
-                      <span className="is-font-blue">
+            <ScrollAnimation animateIn="fadeIn">
+              <p className="is-font-size-32px">
+                <span>
+                  <FormattedMessage
+                    id="general.portfolio_preview"
+                    values={{
+                      discover: (
                         <span className="is-font-blue">
-                          {formatMessage({ id: 'general.discover' })}
+                          <span className="is-font-blue">
+                            {formatMessage({ id: 'general.discover' })}
+                          </span>
                         </span>
-                      </span>
-                    ),
-                    experiences: (
+                      ),
+                      experiences: (
+                        <span className="is-font-blue">
+                          <span className="is-font-blue">
+                            {formatMessage({ id: 'general.experiences' })}
+                          </span>
+                        </span>
+                      ),
+                    }}
+                  />
+                  <br />
+                </span>
+              </p>
+              <p className="is-font-size-24px">
+                <FormattedMessage
+                  id="general.download_racam"
+                  values={{
+                    brand: (
                       <span className="is-font-blue">
                         <span className="is-font-blue">
-                          {formatMessage({ id: 'general.experiences' })}
+                          {formatMessage({ id: 'general.brand' })}
                         </span>
                       </span>
                     ),
                   }}
                 />
-                <br />
-              </span>
-            </p>
-
-            <p className="is-font-size-24px">
-              <FormattedMessage
-                id="general.download_racam"
-                values={{
-                  brand: (
-                    <span className="is-font-blue">
-                      <span className="is-font-blue">
-                        {formatMessage({ id: 'general.brand' })}
-                      </span>
-                    </span>
-                  ),
-                }}
-              />
-            </p>
+              </p>
+            </ScrollAnimation>
 
             <Image
               className="is-border-radius"
@@ -186,17 +219,12 @@ class SimpleSlider extends Component {
                   </div>
                   <div className="column">
                     <h2 className="title is-2 has-text-white">
-                      ¿Qué es Lorem Ipsum?
+                      {selected.name}
                     </h2>
                     <p className="has-text-white">
-                      Lorem Ipsum es simplemente el texto de relleno de las
-                      imprentas y archivos de texto. Lorem Ipsum ha sido el
-                      texto de relleno estándar de las industrias desde el año
-                      1500, cuando un impresor (N. del T. persona que se dedica
-                      a la imprenta) desconocido usó una galería de textos y los
-                      mezcló de tal manera que logró hacer un libro de textos
-                      especimen. No sólo sobrevivió 500 años, sino que tambien
-                      ingresó como texto de relleno en d
+                      <FormattedMessage
+                        id={`general.portfolio_${selected.id}`}
+                      />
                     </p>
                   </div>
                 </div>
@@ -219,14 +247,16 @@ class SimpleSlider extends Component {
             <div className="container-img-portfolio is-border-radius is-padding-left-small is-padding-right-small is-padding-top-small is-padding-bottom-small">
               <Image className="is-border-radius" src={item.img} />
 
-              <button
-                type="button"
-                onClick={() => this.setActive(item)}
-                className="button btn is-primary see-detail-portfolio"
-              >
-                <FormattedMessage id="general.see_detail" />
-                <i className="fa fa-eye margin-sides-icon" />
-              </button>
+              {item.visible && (
+                <button
+                  type="button"
+                  onClick={() => this.setActive(item)}
+                  className="button btn is-primary see-detail-portfolio"
+                >
+                  <FormattedMessage id="general.see_detail" />
+                  <i className="fa fa-eye margin-sides-icon" />
+                </button>
+              )}
             </div>
           ))}
         </Slider>

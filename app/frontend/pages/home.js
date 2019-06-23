@@ -4,6 +4,7 @@ import PageComponent from '~base/page-component'
 import { FormattedMessage, injectIntl } from 'react-intl'
 import { forcePublic } from '~base/middlewares/'
 import Image from '~base/components/image'
+import ScrollAnimation from 'react-animate-on-scroll'
 import PreviewPortfolio from './portfolio/preview-portfolio'
 import PreviewBlog from './blog/components/preview-blog'
 import LetsStart from './lets-start'
@@ -23,26 +24,29 @@ class Home extends PageComponent {
     return (
       <section className="app section">
         <div className="container" align="center">
-          <p className="has-text-black header-title">
-            <FormattedMessage
-              id="general.intro"
-              values={{
-                icon: <i className="fa fa-heart heart margin-sides-icon" />,
-              }}
-            />
-          </p>
-          <p className="has-text-black header-title">
-            <FormattedMessage
-              id="general.subtitle"
-              values={{
-                span: (
-                  <span className="is-font-blue">
-                    {formatMessage({ id: 'general.augmented_reality' })}
-                  </span>
-                ),
-              }}
-            />
-          </p>
+          <ScrollAnimation animateIn="fadeIn">
+            <p className="has-text-black header-title">
+              <FormattedMessage
+                id="general.intro"
+                values={{
+                  icon: <i className="fa fa-heart heart margin-sides-icon" />,
+                }}
+              />
+            </p>
+            <p className="has-text-black header-title">
+              <FormattedMessage
+                id="general.subtitle"
+                values={{
+                  span: (
+                    <span className="is-font-blue">
+                      {formatMessage({ id: 'general.augmented_reality' })}
+                    </span>
+                  ),
+                }}
+              />
+            </p>
+          </ScrollAnimation>
+
           <a
             href="https://realidadaumentada.app/admin/register"
             type="button"
@@ -65,33 +69,35 @@ class Home extends PageComponent {
         <div className="container section">
           <div className="columns">
             <div className="column">
-              <p className="title">
-                <span className="is-font-blue">
-                  <FormattedMessage id="general.create" />
-                </span>
-                {', '}
-                <span className="is-font-blue">
-                  <FormattedMessage id="general.publish" />
+              <ScrollAnimation animateIn="fadeIn">
+                <p className="title">
+                  <span className="is-font-blue">
+                    <FormattedMessage id="general.create" />
+                  </span>
+                  {', '}
+                  <span className="is-font-blue">
+                    <FormattedMessage id="general.publish" />
+                    {' '}
+                  </span>
+                  <FormattedMessage id="general.and" />
                   {' '}
-                </span>
-                <FormattedMessage id="general.and" />
-                {' '}
-                <span className="is-font-blue">
-                  <FormattedMessage id="general.measure" />
-                </span>
-                <br />
-                <FormattedMessage
-                  id="general.awesome_campaigns"
-                  values={{
-                    augmented_reality: (
-                      <span className="is-font-blue">
-                        {formatMessage({ id: 'general.augmented_reality' })}
-                      </span>
-                    ),
-                  }}
-                />
-                <br />
-              </p>
+                  <span className="is-font-blue">
+                    <FormattedMessage id="general.measure" />
+                  </span>
+                  <br />
+                  <FormattedMessage
+                    id="general.awesome_campaigns"
+                    values={{
+                      augmented_reality: (
+                        <span className="is-font-blue">
+                          {formatMessage({ id: 'general.augmented_reality' })}
+                        </span>
+                      ),
+                    }}
+                  />
+                  <br />
+                </p>
+              </ScrollAnimation>
             </div>
             <div className="column video" align="right">
               <p className="title is-hidden-touch">

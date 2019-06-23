@@ -35,20 +35,6 @@
     "content": "campaigns"
   },
   {
-    "id": "contact_navbar",
-    "modules": [
-      "general"
-    ],
-    "content": "Contact"
-  },
-  {
-    "id": "contact_us_footer",
-    "modules": [
-      "general"
-    ],
-    "content": "Contact us"
-  },
-  {
     "id": "control_of_your",
     "modules": [
       "general"
@@ -137,7 +123,7 @@
     "modules": [
       "general"
     ],
-    "content": "memorable experiences."
+    "content": "incredible experiences."
   },
   {
     "id": "intro",
@@ -266,11 +252,39 @@
     "content": "Play video"
   },
   {
+    "id": "portfolio_castle",
+    "modules": [
+      "general"
+    ],
+    "content": "This project was made for the cover of printed magazine “Superbrands” in Mexico. The butterflies on the image comes to life when its scanned by the AR app; it shows a call to action button and takes customers to a website about how to be part of the community of best brands in Mexico."
+  },
+  {
+    "id": "portfolio_chilis",
+    "modules": [
+      "general"
+    ],
+    "content": "This project was made for printed advertising on newspaper “El País” in Honduras. The burger on the image displays a video layer when its scanned by the AR app; it shows a call to action button and takes customers to the newest restaurant in the city. This experience was published for a daily campaign for 1 week and printed in 35K copies every day in the country."
+  },
+  {
+    "id": "portfolio_miller",
+    "modules": [
+      "general"
+    ],
+    "content": "This project was made for printed advertising on newspaper “El País” in Honduras. The fire on the image comes to life when its scanned by the AR app; shows a call to action button and takes customers to a video about summer offers. This experience was published for a daily campaign for 1 week and printed in 35K copies every day in the country."
+  },
+  {
     "id": "portfolio_preview",
     "modules": [
       "general"
     ],
     "content": "{discover} how to transform images into {experiences}."
+  },
+  {
+    "id": "portfolio_superbrands",
+    "modules": [
+      "general"
+    ],
+    "content": "This project was made for the cover of printed magazine “Superbrands” in Mexico. The butterflies on the image comes to life when its scanned by the AR app; it shows a call to action button and takes customers to a website about how to be part of the community of best brands in Mexico."
   },
   {
     "id": "postsListTitle",
@@ -382,7 +396,7 @@
     "modules": [
       "general"
     ],
-    "content": "Free trial!"
+    "content": "Try it now!"
   },
   {
     "id": "upgrade_text",
