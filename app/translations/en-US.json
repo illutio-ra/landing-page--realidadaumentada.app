@@ -35,6 +35,13 @@
     "content": "campaigns"
   },
   {
+    "id": "contact_us_footer",
+    "modules": [
+      "general"
+    ],
+    "content": "Contact us"
+  },
+  {
     "id": "control_of_your",
     "modules": [
       "general"
