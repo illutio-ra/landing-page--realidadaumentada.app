@@ -1,143 +1,45 @@
 [
   {
-    "id": "marbleseeds",
+    "id": "and",
     "modules": [
       "general"
     ],
-    "content": "Bienvenido a marbleseeds"
+    "content": "y"
   },
   {
-    "id": "welcome",
+    "id": "augmented_reality",
     "modules": [
       "general"
     ],
-    "content": "Bienvenido"
+    "content": "Realidad Aumentada"
   },
   {
-    "id": "home",
+    "id": "awesome_campaigns",
     "modules": [
       "general"
     ],
-    "content": "Inicio"
+    "content": "increibles campañas con {augmented_reality}"
   },
   {
-    "id": "regards",
+    "id": "brand",
     "modules": [
       "general"
     ],
-    "content": "¡Hola {name}!"
+    "content": "RA Cam"
   },
   {
-    "id": "dashboardTitle",
+    "id": "campaigns",
     "modules": [
       "general"
     ],
-    "content": "Dashboard"
+    "content": "campañas"
   },
   {
-    "id": "postsListTitle",
+    "id": "contact_us_footer",
     "modules": [
       "general"
     ],
-    "content": "Lista de posts\n"
-  },
-  {
-    "id": "testLabel",
-    "modules": [
-      "general"
-    ],
-    "content": "Test"
-  },
-  {
-    "id": "profile",
-    "modules": [
-      "general"
-    ],
-    "content": "Perfil"
-  },
-  {
-    "id": "security",
-    "modules": [
-      "general"
-    ],
-    "content": "Seguridad"
-  },
-  {
-    "id": "name",
-    "modules": [
-      "general"
-    ],
-    "content": "Nombre"
-  },
-  {
-    "id": "email",
-    "modules": [
-      "general"
-    ],
-    "content": "Correo"
-  },
-  {
-    "id": "lang",
-    "modules": [
-      "general"
-    ],
-    "content": "Lenguaje"
-  },
-  {
-    "id": "intro",
-    "modules": [
-      "general"
-    ],
-    "content": "Deja que tus clientes <i class=\"fa fa-heart heart margin-sides-icon\"></i>  tu marca"
-  },
-  {
-    "id": "give",
-    "modules": [
-      "general"
-    ],
-    "content": "Regala"
-  },
-  {
-    "id": "your_customers",
-    "modules": [
-      "general"
-    ],
-    "content": "a tus clientes"
-  },
-  {
-    "id": "incredible_experiences",
-    "modules": [
-      "general"
-    ],
-    "content": "experiencias increíbles."
-  },
-  {
-    "id": "upgrade_text",
-    "modules": [
-      "general"
-    ],
-    "content": "Actualice sus campañas tradicionales a la realidad "
-  },
-  {
-    "id": "no_coding",
-    "modules": [
-      "general"
-    ],
-    "content": " No se requieren "
-  },
-  {
-    "id": "it_works",
-    "modules": [
-      "general"
-    ],
-    "content": " Funciona con cualquier etiqueta de "
-  },
-  {
-    "id": "take_back",
-    "modules": [
-      "general"
-    ],
-    "content": "Toma"
+    "content": "Contáctanos"
   },
   {
     "id": "control_of_your",
@@ -147,6 +49,13 @@
     "content": " el control de los"
   },
   {
+    "id": "create",
+    "modules": [
+      "general"
+    ],
+    "content": "Crea"
+  },
+  {
     "id": "customers_data",
     "modules": [
       "general"
@@ -154,25 +63,11 @@
     "content": "datos de tus clientes."
   },
   {
-    "id": "real_information",
+    "id": "dashboardTitle",
     "modules": [
       "general"
     ],
-    "content": "Obtén información real sobre la interacción de los clientes "
-  },
-  {
-    "id": "lets_start",
-    "modules": [
-      "general"
-    ],
-    "content": "Comencemos"
-  },
-  {
-    "id": "reality_panel",
-    "modules": [
-      "general"
-    ],
-    "content": "aumentada utilizando nuestro panel de creación de RA."
+    "content": "Dashboard"
   },
   {
     "id": "desing_skills",
@@ -182,11 +77,354 @@
     "content": "habilidades de codificación o diseño."
   },
   {
+    "id": "detail",
+    "modules": [
+      "general"
+    ],
+    "content": "Detalle"
+  },
+  {
+    "id": "discover",
+    "modules": [
+      "general"
+    ],
+    "content": "Descubre"
+  },
+  {
+    "id": "dont_miss",
+    "modules": [
+      "general"
+    ],
+    "content": "No te pierdas"
+  },
+  {
+    "id": "download_racam",
+    "modules": [
+      "general"
+    ],
+    "content": "Descarga {brand} y explora nuestros ejemplos.\n"
+  },
+  {
+    "id": "email",
+    "modules": [
+      "general"
+    ],
+    "content": "Correo"
+  },
+  {
+    "id": "experiences",
+    "modules": [
+      "general"
+    ],
+    "content": "experiencias"
+  },
+  {
+    "id": "give",
+    "modules": [
+      "general"
+    ],
+    "content": "Regala"
+  },
+  {
+    "id": "home",
+    "modules": [
+      "general"
+    ],
+    "content": "Inicio"
+  },
+  {
+    "id": "incredible_experiences",
+    "modules": [
+      "general"
+    ],
+    "content": "experiencias increíbles."
+  },
+  {
+    "id": "intro",
+    "modules": [
+      "general"
+    ],
+    "content": "Deja que tus clientes {icon}  tu marca"
+  },
+  {
+    "id": "it_works",
+    "modules": [
+      "general"
+    ],
+    "content": " Funciona con cualquier etiqueta de "
+  },
+  {
+    "id": "lang",
+    "modules": [
+      "general"
+    ],
+    "content": "Lenguaje"
+  },
+  {
+    "id": "latest_news",
+    "modules": [
+      "general"
+    ],
+    "content": "nuestras últimas noticias"
+  },
+  {
+    "id": "lets_start",
+    "modules": [
+      "general"
+    ],
+    "content": "Comencemos"
+  },
+  {
+    "id": "link_app",
+    "modules": [
+      "general"
+    ],
+    "content": "AR app"
+  },
+  {
+    "id": "link_blog",
+    "modules": [
+      "general"
+    ],
+    "content": "Blog"
+  },
+  {
+    "id": "link_contact",
+    "modules": [
+      "general"
+    ],
+    "content": "Contacto"
+  },
+  {
+    "id": "link_home",
+    "modules": [
+      "general"
+    ],
+    "content": "Inicio"
+  },
+  {
+    "id": "link_login",
+    "modules": [
+      "general"
+    ],
+    "content": "Iniciar sesión"
+  },
+  {
+    "id": "link_pricing",
+    "modules": [
+      "general"
+    ],
+    "content": "Precios"
+  },
+  {
+    "id": "link_solutions",
+    "modules": [
+      "general"
+    ],
+    "content": "Soluciones"
+  },
+  {
+    "id": "marbleseeds",
+    "modules": [
+      "general"
+    ],
+    "content": "Bienvenido a marbleseeds"
+  },
+  {
+    "id": "measure",
+    "modules": [
+      "general"
+    ],
+    "content": "mide"
+  },
+  {
+    "id": "name",
+    "modules": [
+      "general"
+    ],
+    "content": "Nombre"
+  },
+  {
+    "id": "no_coding",
+    "modules": [
+      "general"
+    ],
+    "content": " No se requieren "
+  },
+  {
     "id": "packaging_printed",
     "modules": [
       "general"
     ],
     "content": "producto, embalaje, anuncios impresos, revistas, carteles y mucho más."
+  },
+  {
+    "id": "play_video",
+    "modules": [
+      "general"
+    ],
+    "content": "Ver video"
+  },
+  {
+    "id": "portfolio_castle",
+    "modules": [
+      "general"
+    ],
+    "content": "Este proyecto se realizó para la portada de una revista impresa “Superbrands” en México. La mariposas cobran vida cuando es escaneada con la app. Muestra un botón “Call to action” y lleva a los clientes al sitio web donde explica cómo ser parte de la comunidad de mejores marcas de México."
+  },
+  {
+    "id": "portfolio_chilis",
+    "modules": [
+      "general"
+    ],
+    "content": "Este proyecto se realizó para publicidad impresa en el periódico \"El País\" en Honduras. La hamburguesa en la imagen despliega una video sobre la publicidad cuando es escaneado por la aplicación AR CAM; muestra un botón “Call to action” y lleva a los clientes al restaurante más nuevo en la ciudad. Esta experiencia se publicó para una campaña semanal en la cual se imprimieron 35 mil ejemplares cada día de la campaña."
+  },
+  {
+    "id": "portfolio_miller",
+    "modules": [
+      "general"
+    ],
+    "content": "Este proyecto se realizó para publicidad impresa en el periódico \"El País\" en Honduras. El fuego en la imagen cobra vida cuando es escaneado por la aplicación AR CAM; muestra un botón “Call to action” y lleva a los clientes a un video sobre ofertas de verano. Esta experiencia se publicó para una campaña semanal en la cual se imprimieron 35 mil ejemplares cada día de la campaña."
+  },
+  {
+    "id": "portfolio_preview",
+    "modules": [
+      "general"
+    ],
+    "content": "{discover} como transformar imágenes en {experiences}."
+  },
+  {
+    "id": "portfolio_superbrands",
+    "modules": [
+      "general"
+    ],
+    "content": "Este proyecto se realizó para la portada de una revista impresa “Superbrands” en México. La mariposas cobran vida cuando es escaneada con la app. Muestra un botón “Call to action” y lleva a los clientes al sitio web donde explica cómo ser parte de la comunidad de mejores marcas de México."
+  },
+  {
+    "id": "profile",
+    "modules": [
+      "general"
+    ],
+    "content": "Perfil"
+  },
+  {
+    "id": "publish",
+    "modules": [
+      "general"
+    ],
+    "content": "publica"
+  },
+  {
+    "id": "real_information",
+    "modules": [
+      "general"
+    ],
+    "content": "Obtén información real sobre la interacción de los clientes "
+  },
+  {
+    "id": "reality_panel",
+    "modules": [
+      "general"
+    ],
+    "content": "aumentada utilizando nuestro panel de creación de RA."
+  },
+  {
+    "id": "regards",
+    "modules": [
+      "general"
+    ],
+    "content": "¡Hola {name}!"
+  },
+  {
+    "id": "register",
+    "modules": [
+      "general"
+    ],
+    "content": "Registrarse"
+  },
+  {
+    "id": "related_articles",
+    "modules": [
+      "general"
+    ],
+    "content": "Artículos relacionados"
+  },
+  {
+    "id": "scan_with_ra-cam",
+    "modules": [
+      "general"
+    ],
+    "content": "Escanea con RA CAM"
+  },
+  {
+    "id": "security",
+    "modules": [
+      "general"
+    ],
+    "content": "Seguridad"
+  },
+  {
+    "id": "see_all",
+    "modules": [
+      "general"
+    ],
+    "content": "Ver todos"
+  },
+  {
+    "id": "see_detail",
+    "modules": [
+      "general"
+    ],
+    "content": "Ver detalle"
+  },
+  {
+    "id": "see_how_works",
+    "modules": [
+      "general"
+    ],
+    "content": "¿Cómo funciona?"
+  },
+  {
+    "id": "subtitle",
+    "modules": [
+      "general"
+    ],
+    "content": "con experiencias en {span}.\n"
+  },
+  {
+    "id": "take_back",
+    "modules": [
+      "general"
+    ],
+    "content": "Toma"
+  },
+  {
+    "id": "try_now",
+    "modules": [
+      "general"
+    ],
+    "content": "¡Probar ahora!"
+  },
+  {
+    "id": "upgrade_text",
+    "modules": [
+      "general"
+    ],
+    "content": "Actualice sus campañas tradicionales a la realidad "
+  },
+  {
+    "id": "welcome",
+    "modules": [
+      "general"
+    ],
+    "content": "Bienvenido"
+  },
+  {
+    "id": "your_customers",
+    "modules": [
+      "general"
+    ],
+    "content": "a tus clientes"
   },
   {
     "id": "your_products",

@@ -1,19 +1,21 @@
 /* eslint-disable eol-last */
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
-
 import Image from '~base/components/image'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const LetsStart = () => (
   <section className="container section" id="lets-start">
     <div className="columns">
       <div className="column">
-        <Image
-          src="../../public/img/incredible_experiences.svg"
-          className="img-centered"
-        />
+        <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft">
+          <Image
+            src="/public/img/incredible_experiences.svg"
+            className="img-centered"
+          />
+        </ScrollAnimation>
       </div>
-      <div className="column is-right vertically-centered">
+      <div className="column is-right vertically-centered" id="solutions">
         <div className="section">
           <p className="title">
             <span className="is-font-blue">
@@ -44,10 +46,9 @@ const LetsStart = () => (
     </div>
     <div className="columns">
       <div className="column is-hidden-desktop">
-        <Image
-          src="../../public/img/customer_data.svg"
-          className="img-centered"
-        />
+        <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutRight">
+          <Image src="/public/img/customer_data.svg" className="img-centered" />
+        </ScrollAnimation>
       </div>
       <div className="column vertically-centered">
         <div className="section">
@@ -67,18 +68,21 @@ const LetsStart = () => (
             <FormattedMessage id="general.your_products" />
           </p>
           <div className="centered-in-touch">
-            <button type="button" className="button is-primary margin-button">
+            <a
+              href="https://realidadaumentada.app/admin/register"
+              type="button"
+              className="button btn-primary margin-button"
+            >
               <FormattedMessage id="general.lets_start" />
               <i className="fa fa-smile-o margin-sides-icon" />
-            </button>
+            </a>
           </div>
         </div>
       </div>
       <div className="column is-hidden-touch">
-        <Image
-          src="../../public/img/customer_data.svg"
-          className="img-centered"
-        />
+        <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutRight">
+          <Image src="/public/img/customer_data.svg" className="img-centered" />
+        </ScrollAnimation>
       </div>
     </div>
   </section>

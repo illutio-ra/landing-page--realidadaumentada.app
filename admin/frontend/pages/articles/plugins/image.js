@@ -37,7 +37,7 @@ class ButtonComponent extends Component {
         className="button is-success is-orbed"
         onClick={() => this.onClick()}
       >
-        <FontAwesome name="file" />
+        <FontAwesome name="image" />
       </button>
     )
   }

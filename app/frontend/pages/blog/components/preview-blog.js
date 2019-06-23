@@ -1,34 +1,25 @@
 import React, { Component } from 'react'
-import 'react-alice-carousel/lib/alice-carousel.css'
 import api from '~base/api'
 import { FormattedMessage, injectIntl } from 'react-intl'
-import Card from './card'
 import Link from '~base/router/link'
+import ScrollAnimation from 'react-animate-on-scroll'
+import CardBlog from './card-blog'
 
 class PreviewBlog extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      itemsTop: [],
       items: [],
     }
   }
 
   async componentDidMount() {
     await this.loadDataTop()
-    await this.loadData()
   }
 
   async loadDataTop() {
-    const { data } = await api.get('/public/blog', { limit: 2, isTop: true })
-
-    this.setState({
-      itemsTop: data,
-    })
-  }
-
-  async loadData() {
-    const { data } = await api.get('/public/blog', { limit: 6 })
+    const { limit } = this.props
+    const { data } = await api.get('/public/blog', { limit: limit || 6 })
 
     this.setState({
       items: data,
@@ -36,38 +27,35 @@ class PreviewBlog extends Component {
   }
 
   render() {
-    const { itemsTop, items } = this.state
+    const { items } = this.state
+    const { seAll } = this.props
     return (
-      <section className="section blog">
-        <div className="columns">
-          <div className="column is-3">
-            <div className="card-content">
-              <p className="is-font-size-32px">
-                <span className="is-font-blue">
-                  <FormattedMessage id="general.dont_miss" />
-                  <br />
-                </span>
-                <span>
-                  <FormattedMessage id="general.latest_news" />
-                </span>
-              </p>
-              <Link className="button is-primary" to="/blog">
-                <FormattedMessage id="general.see_all" />
-                <i className="fa fa-eye margin-sides-icon" />
-              </Link>
+      <section className="section blog" id="blog">
+        {seAll && (
+          <div className="columns">
+            <div className="column has-text-centered">
+              <ScrollAnimation animateIn="fadeIn">
+                <p className="is-font-size-32px">
+                  <span className="is-font-blue">
+                    <FormattedMessage id="general.dont_miss" />
+                  </span>
+                  {' '}
+                  <span>
+                    <FormattedMessage id="general.latest_news" />
+                  </span>
+                </p>
+                <Link className="button btn-primary" to="/blog">
+                  <FormattedMessage id="general.see_all" />
+                  <i className="fa fa-eye margin-sides-icon" />
+                </Link>
+              </ScrollAnimation>
             </div>
           </div>
-          {itemsTop.map((item) => (
-            <div className="column">
-              <Card item={item} />
-            </div>
-          ))}
-        </div>
-
+        )}
         <div className="columns is-multiline">
           {items.map((item) => (
-            <div className="column is-4">
-              <Card item={item} />
+            <div className="column is-4" key={item.id}>
+              <CardBlog showLink item={item} />
             </div>
           ))}
         </div>

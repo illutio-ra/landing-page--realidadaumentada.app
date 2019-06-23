@@ -1,8 +1,11 @@
+$modal-content-width: 900px;
+
 @import 'colors';
 @import 'breakpoints';
 @import 'buttons';
 @import '~bulma';
 @import '~bulma-tooltip';
+@import '~bulma-switch';
 @import '~font-awesome/css/font-awesome.css';
 @import 'base';
 @import 'app';
@@ -10,3 +13,7 @@
 @import 'mq';
 @import '~megadraft/dist/css/megadraft.css';
 @import 'megadraft';
+@import '~bulma-pricingtable';
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "~animate.css/animate.min.css";

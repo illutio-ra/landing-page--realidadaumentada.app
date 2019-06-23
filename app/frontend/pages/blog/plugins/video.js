@@ -1,25 +1,28 @@
 import React, { Component } from 'react'
 import { MegadraftPlugin, insertDataBlock, MegadraftIcons } from 'megadraft'
 import FontAwesome from 'react-fontawesome'
-import ImagePlugin from './image-plugin'
+import VideoPlugin from './video-plugin'
 
 const { CommonBlock } = MegadraftPlugin
 
 const Image = (props) => {
   const blockActions = [
+
   ]
   return (
-    <ImagePlugin {...props} data={props.data} />
-
+    <VideoPlugin {...props} data={props.data} />
   )
 }
 
 class ButtonComponent extends Component {
   onClick() {
-    const src = window.prompt('Enter a URL')
-    const data = { type: 'image', src }
+    const id = window.prompt(
+      'Ingresa el id de video, Ejemplo: https://www.youtube.com/watch?v=dsFpUW48Tnc  => dsFpUW48Tnc',
+    )
+    const data = { type: 'video', id }
+    console.log('id', id)
     const { onChange, editorState } = this.props
-    if (src) {
+    if (id) {
       onChange(insertDataBlock(editorState, data))
     }
   }
@@ -31,14 +34,14 @@ class ButtonComponent extends Component {
         className="button is-success is-orbed"
         onClick={() => this.onClick()}
       >
-        <FontAwesome name="image" />
+        <FontAwesome name="youtube" />
       </button>
     )
   }
 }
 
 export default {
-  type: 'image',
+  type: 'video',
   buttonComponent: ButtonComponent,
   blockComponent: Image,
   options: {

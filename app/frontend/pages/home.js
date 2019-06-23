@@ -4,15 +4,18 @@ import PageComponent from '~base/page-component'
 import { FormattedMessage, injectIntl } from 'react-intl'
 import { forcePublic } from '~base/middlewares/'
 import Image from '~base/components/image'
+import ScrollAnimation from 'react-animate-on-scroll'
 import PreviewPortfolio from './portfolio/preview-portfolio'
 import PreviewBlog from './blog/components/preview-blog'
 import LetsStart from './lets-start'
+import Pricing from './pricing'
 
 class Home extends PageComponent {
   constructor(props) {
     super(props)
     this.state = {
       ...this.baseState,
+      classNameModal: '',
     }
   }
 
@@ -21,30 +24,38 @@ class Home extends PageComponent {
     return (
       <section className="app section">
         <div className="container" align="center">
-          <p className="has-text-black header-title">
-            <FormattedMessage
-              id="general.intro"
-              values={{
-                icon: <i className="fa fa-heart heart margin-sides-icon" />,
-              }}
-            />
-          </p>
-          <p className="has-text-black header-title">
-            <FormattedMessage
-              id="general.subtitle"
-              values={{
-                span: (
-                  <span className="is-font-blue">
-                    {formatMessage({ id: 'general.augmented_reality' })}
-                  </span>
-                ),
-              }}
-            />
-          </p>
-          <button type="button" className="button is-primary margin-button">
+          <ScrollAnimation animateIn="fadeIn">
+            <p className="has-text-black header-title">
+              <FormattedMessage
+                id="general.intro"
+                values={{
+                  icon: <i className="fa fa-heart heart margin-sides-icon" />,
+                }}
+              />
+            </p>
+            <p className="has-text-black header-title">
+              <FormattedMessage
+                id="general.subtitle"
+                values={{
+                  span: (
+                    <span className="is-font-blue">
+                      {formatMessage({ id: 'general.augmented_reality' })}
+                    </span>
+                  ),
+                }}
+              />
+            </p>
+          </ScrollAnimation>
+
+          <a
+            href="https://realidadaumentada.app/admin/register"
+            type="button"
+            target="_blank"
+            className="button btn-primary margin-button"
+          >
             <FormattedMessage id="general.try_now" />
             <i className="fa fa-rocket margin-sides-icon" />
-          </button>
+          </a>
         </div>
         <div className="phone">
           <Image src="/public/img/planets.svg" id="phone" alt="ra cam" />
@@ -58,43 +69,75 @@ class Home extends PageComponent {
         <div className="container section">
           <div className="columns">
             <div className="column">
-              <p className="title">
-                <span className="is-font-blue">
-                  <FormattedMessage id="general.create" />
-                </span>
-                {', '}
-                <span className="is-font-blue">
-                  <FormattedMessage id="general.publish" />
+              <ScrollAnimation animateIn="fadeIn">
+                <p className="title">
+                  <span className="is-font-blue">
+                    <FormattedMessage id="general.create" />
+                  </span>
+                  {', '}
+                  <span className="is-font-blue">
+                    <FormattedMessage id="general.publish" />
+                    {' '}
+                  </span>
+                  <FormattedMessage id="general.and" />
                   {' '}
-                </span>
-                <FormattedMessage id="general.and" />
-                {' '}
-                <span className="is-font-blue">
-                  <FormattedMessage id="general.measure" />
-                </span>
-                <br />
-                <FormattedMessage
-                  id="general.awesome_campaigns"
-                  values={{
-                    augmented_reality: (
-                      <span>
-                        {formatMessage({ id: 'general.augmented_reality' })}
-                      </span>
-                    ),
-                  }}
-                />
-                <br />
-              </p>
+                  <span className="is-font-blue">
+                    <FormattedMessage id="general.measure" />
+                  </span>
+                  <br />
+                  <FormattedMessage
+                    id="general.awesome_campaigns"
+                    values={{
+                      augmented_reality: (
+                        <span className="is-font-blue">
+                          {formatMessage({ id: 'general.augmented_reality' })}
+                        </span>
+                      ),
+                    }}
+                  />
+                  <br />
+                </p>
+              </ScrollAnimation>
             </div>
-            <div className="column video" align="center">
+            <div className="column video" align="right">
               <p className="title is-hidden-touch">
                 <strong className="is-font-blue">
                   <FormattedMessage id="general.see_how_works" />
                 </strong>
               </p>
-              <a href="#">
-                <Image src="../../public/img/video.png" alt="ra cam" />
+              <a
+                href="https://www.youtube.com/watch?v=7T6-XYZdnRc&t=4s"
+                target="_blank"
+              >
+                <Image
+                  src="../../public/img/video.png"
+                  alt="ra cam"
+                  className="is-button-video"
+                />
               </a>
+
+              <div className={`modal ${this.state.classNameModal}`}>
+                <div className="modal-background" />
+                <div className="modal-content">
+                  <div className="box">
+                    <h1 className="has-text-centered title is-2 is-margin-bottom-medium">
+                      Contáctanos
+                    </h1>
+                    {/* <HubspotForm
+                      portalId="2705799"
+                      formId="d8b7a2ac-f5bb-4b7a-9963-d8e30844250a"
+                      onSubmit={() => console.log('Submit!')}
+                      onReady={(form) => console.log('Form ready!')}
+                      loading={<div>Loading...</div>}
+                    /> */}
+                  </div>
+                </div>
+                {/*  <button
+                  className="modal-close is-large"
+                  aria-label="close"
+                  onClick={() => this.setState({ classNameModal: '' })}
+                /> */}
+              </div>
             </div>
           </div>
           <Image
@@ -107,7 +150,12 @@ class Home extends PageComponent {
 
         <LetsStart />
         <PreviewPortfolio />
-        <PreviewBlog />
+        <Pricing />
+        <br />
+        <br />
+        <div className="container">
+          <PreviewBlog seAll />
+        </div>
       </section>
     )
   }

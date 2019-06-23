@@ -6,9 +6,11 @@ import api from '~base/api'
 import tree from '~core/tree'
 import Image from '~base/components/image'
 import { FormattedMessage, injectIntl } from 'react-intl'
+import HubspotForm from 'react-hubspot-form'
+
 const langs = {
   'en-US': 'En',
-  'es-MX': 'Es'
+  'es-MX': 'Es',
 }
 class NavBar extends Component {
   constructor(props) {
@@ -18,6 +20,7 @@ class NavBar extends Component {
       profileDropdown: 'is-hidden',
       dropCaret: 'fa fa-caret-down',
       lang: langs[window.localStorage.getItem('lang')],
+      classNameModal: '',
     }
 
     this.setWrapperRef = this.setWrapperRef.bind(this)
@@ -28,23 +31,24 @@ class NavBar extends Component {
     document.addEventListener('mousedown', this.handleClickOutside)
   }
 
-  languageSettingDispatcher(lang) {
-    this.setState({
-      lang: langs[lang],
-    })
-    window.dispatchEvent(
-      new CustomEvent('lang', {
-        detail: { lang },
-      }),
-    )
-  }
-
   componentWillUnmount() {
     document.removeEventListener('mousedown', this.handleClickOutside)
   }
 
   setWrapperRef(node) {
     this.wrapperRef = node
+  }
+
+  languageSettingDispatcher(lang) {
+    this.setState({
+      lang: langs[lang],
+    })
+    this.handleNavbarBurgerClick()
+    window.dispatchEvent(
+      new CustomEvent('lang', {
+        detail: { lang },
+      }),
+    )
   }
 
   handleClickOutside(event) {
@@ -57,8 +61,9 @@ class NavBar extends Component {
   }
 
   toggleBtnClass() {
+    const { profileDropdown } = this.state
     if (this.wrapperRef) {
-      if (this.state.profileDropdown === 'is-hidden') {
+      if (profileDropdown === 'is-hidden') {
         this.setState({
           profileDropdown: 'is-active',
           dropCaret: 'fa fa-caret-up',
@@ -91,26 +96,30 @@ class NavBar extends Component {
   }
 
   handleNavbarBurgerClick() {
-    if (this.state.mobileMenu === 'open') {
+    const { mobileMenu } = this.state
+    if (mobileMenu === 'open') {
       this.setState({ mobileMenu: 'close' })
     } else {
       this.setState({ mobileMenu: 'open' })
     }
   }
 
+  handleModal() {
+    this.setState({
+      classNameModal: 'is-active',
+    })
+  }
+
   render() {
+    const { mobileMenu } = this.state
     let navbarMenuClassName = 'navbar-menu'
-    if (this.state.mobileMenu === 'open') {
+    if (mobileMenu === 'open') {
       navbarMenuClassName = 'navbar-menu is-active'
     }
 
-    const {
-      lang,
-    } = this.state
+    const { lang, dropCaret, profileDropdown } = this.state
 
-    const {
-      loggedIn,
-    } = this.props
+    const { loggedIn } = this.props
 
     let navButtons
     let navMainLink
@@ -146,11 +155,11 @@ class NavBar extends Component {
                 onClick={() => this.toggleBtnClass()}
               >
                 <span className="icon">
-                  <i className={this.state.dropCaret} />
+                  <i className={dropCaret} />
                 </span>
               </a>
             </div>
-            <div className={this.state.profileDropdown}>
+            <div className={profileDropdown}>
               <div className="dropdown-menu" id="dropdown-menu" role="menu">
                 <div className="dropdown-content">
                   <NavLink
@@ -185,44 +194,82 @@ class NavBar extends Component {
             <NavLink className="navbar-item" exact to="/">
               <FormattedMessage id="general.link_home" />
             </NavLink>
-            <NavLink className="navbar-item" exact to="/#app">
+            <a
+              className="navbar-item"
+              onClick={() => this.handleNavbarBurgerClick()}
+              href="/#portfolio"
+            >
               <FormattedMessage id="general.link_app" />
-            </NavLink>
-            <NavLink className="navbar-item" exact to="/#soluctions">
+            </a>
+            <a
+              className="navbar-item"
+              onClick={() => this.handleNavbarBurgerClick()}
+              href="/#solutions"
+            >
               <FormattedMessage id="general.link_solutions" />
-            </NavLink>
-            <NavLink className="navbar-item" exact to="/#pricing">
+            </a>
+            <a
+              className="navbar-item"
+              onClick={() => this.handleNavbarBurgerClick()}
+              href="/#pricing"
+            >
               <FormattedMessage id="general.link_pricing" />
-            </NavLink>
-            <NavLink className="navbar-item" exact to="/blog">
+            </a>
+            <a
+              className="navbar-item"
+              onClick={() => this.handleNavbarBurgerClick()}
+              href="/#blog"
+            >
               <FormattedMessage id="general.link_blog" />
-            </NavLink>
-            <NavLink className="navbar-item" exact to="/log-in">
-              <FormattedMessage id="general.link_login" />
-            </NavLink>
-
+            </a>
+            <a
+              className="navbar-item"
+              data-target="modal"
+              aria-haspopup="true"
+              onClick={() => this.handleModal()}
+            >
+              <FormattedMessage id="general.link_contact" />
+            </a>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">
-                {lang}
+                <FormattedMessage id="general.link_login" />
               </a>
+              <div className="navbar-dropdown">
+                <a
+                  className="navbar-item"
+                  href="https://realidadaumentada.app/admin/login"
+                  target="_blank"
+                >
+                  <span className="margin-sides-icon">
+                    <FormattedMessage id="general.link_login" />
+                  </span>
+                </a>
+                <a
+                  className="navbar-item"
+                  href="https://realidadaumentada.app/admin/register"
+                  target="_blank"
+                >
+                  <span className="margin-sides-icon">
+                    <FormattedMessage id="general.register" />
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div className="navbar-item has-dropdown is-hoverable">
+              <a className="navbar-link">{lang}</a>
 
               <div className="navbar-dropdown">
                 <a
                   className="navbar-item"
                   onClick={() => this.languageSettingDispatcher('es-MX')}
                 >
-                <span className="margin-sides-icon">
-                  Es
-                </span>
-
+                  <span className="margin-sides-icon">Es</span>
                 </a>
                 <a
                   className="navbar-item"
                   onClick={() => this.languageSettingDispatcher('en-US')}
                 >
-                <span className="margin-sides-icon">
-                  En
-                </span>
+                  <span className="margin-sides-icon">En</span>
                 </a>
               </div>
             </div>
@@ -232,13 +279,13 @@ class NavBar extends Component {
 
       navMainLink = (
         <NavLink className="navbar-item" exact to="/">
-          <Image src="/public/img/racam.png" alt="ra cam" />
+          <Image src="/public/img/racam.svg" alt="ra cam" />
         </NavLink>
       )
     }
 
     return (
-      <nav className="navbar" role="navigation">
+      <nav className="navbar is-fixed-top" role="navigation">
         <div className="navbar-brand">
           {navMainLink}
 
@@ -252,6 +299,28 @@ class NavBar extends Component {
           </div>
         </div>
         <div className={navbarMenuClassName}>{navButtons}</div>
+        <div className={`modal ${this.state.classNameModal}`}>
+          <div className="modal-background" />
+          <div className="modal-content">
+            <div className="box">
+              <h1 className="has-text-centered title is-2 is-margin-bottom-medium">
+                <FormattedMessage id="general.contact_us_footer" />
+              </h1>
+              <HubspotForm
+                portalId="2705799"
+                formId="d8b7a2ac-f5bb-4b7a-9963-d8e30844250a"
+                onSubmit={() => console.log('Submit!')}
+                onReady={(form) => console.log('Form ready!')}
+                loading={<div>Loading...</div>}
+              />
+            </div>
+          </div>
+          <button
+            className="modal-close is-large"
+            aria-label="close"
+            onClick={() => this.setState({ classNameModal: '' })}
+          />
+        </div>
       </nav>
     )
   }

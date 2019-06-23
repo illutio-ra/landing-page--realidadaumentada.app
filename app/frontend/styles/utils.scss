@@ -1,41 +1,136 @@
 .margin-sides-icon {
-  margin-left: 3px;
-  margin-right: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
-.is-border-radius{
+.is-border-radius {
     border-radius: 10px;
 }
 
-.is-margin-left-small{
+.is-margin-left-small {
     margin-left: 1rem;
 }
 
-.is-margin-right-small{
+.is-margin-right-small {
     margin-right: 1rem;
 }
 
-.is-margin-top-medium{
+.is-margin-top-medium {
     margin-top: 2rem;
 }
 
-.is-padding-left-small{
+.is-margin-bottom-medium {
+    margin-bottom: 2rem !important;
+}
+
+.is-margin-bottom-large{
+    margin-bottom: 3rem !important;
+}
+
+.is-padding-left-small {
     padding-left: 1rem;
 }
 
-.is-padding-right-small{
+.is-padding-right-small {
     padding-right: 1rem;
 }
+.is-padding-top-small {
+  padding-top: 1rem;
+}
 
+.is-padding-bottom-small {
+  padding-bottom: 1rem;
+}
 
-.is-font-size-32px{
+.is-font-size-32px {
     font-size: 32px;
 }
-.is-font-size-24px{
+
+.is-font-size-24px {
     font-size: 24px;
 }
 
 .align-self {
     align-self: center;
+}
+
+.is-switch-blue {
+    background: $electric-blue !important;
+}
+
+.is-box-shadowed {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.is-bg-blue {
+    background-color: $electric-blue !important;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+.is-vertical-center {
+   display: flex;
+   align-items: center;
+}
+
+.slick-slide, .slick-slide *{ outline: none !important; }
+
+.slick-slide:hover{
+  img {
+        box-shadow: 0 10px 20px 0 #dee1f1 !important;
+        transition: .4s ease-in;
+
   }
-  
+  .see-detail-portfolio {
+    opacity: 1;
+    transition: opacity 1s;
+  }
+ }
+
+ .see-detail-portfolio {
+   bottom: 45px;
+   left: 13px;
+   opacity: 0;
+ }
+
+ .is-font-bold {
+     font-weight: bold;
+ }
+
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container-img-portfolio {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container-img-portfolio img {
+  width: 100%;
+  height: auto;
+}
+
+.container-img-portfolio .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

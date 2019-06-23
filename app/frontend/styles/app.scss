@@ -1,4 +1,9 @@
 // Add your app styles here
+#app {
+    margin-top: 52px;
+    background-color: white;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     .title {
@@ -17,6 +22,14 @@ body {
             text-align: center;
         }
     }
+}
+
+a.navbar-item:hover,
+a.navbar-item.is-active,
+a.navbar-link:hover,
+a.navbar-link.is-active {
+    background-color: transparent !important;
+    color: #0058ff;
 }
 
 .is-right {
@@ -54,6 +67,15 @@ body {
     .video {
         p {
             margin-bottom: 8px;
+        }
+        .is-button-video {
+            @include from($desktop) {
+                padding-right: 3rem;
+            }
+            @include touch {
+                display: block;
+                margin: auto;
+            }
         }
     }
     .phone {
@@ -144,6 +166,12 @@ body {
 }
 
 .blog {
+    .blog-tags-preview {
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        top: 1rem;
+    }
     .card-shadow {
         box-shadow: 0 23px 41px 0 #dee1f1 !important;
     }
@@ -165,7 +193,7 @@ body {
 }
 
 .footer {
-    background-color: $bg-footer;
+    background-color: $electric-blue;
     color: #ffffff;
     font-weight: 300;
     .directory {
@@ -179,4 +207,122 @@ body {
 
 .margin-button {
     margin-top: 1rem;
+}
+
+.pricing {
+    .main-title {
+        font-family: Lato;
+        font-size: 2.25rem !important;
+        font-weight: bold;
+    }
+    .card-title {
+        font-family: Lato;
+        font-size: 1.5rem !important;
+        font-weight: bold;
+    }
+    .switch-text {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .switch[type=checkbox]+label {
+        position: relative;
+        display: initial;
+        font-size: 1.5rem;
+        line-height: initial;
+        padding-left: 3.5rem;
+        padding-top: -1.9rem;
+        cursor: pointer;
+    }
+    .switch[type=checkbox]:checked+label::before,
+    .switch[type=checkbox]:checked+label:before {
+        background: $electric-blue;
+    }
+    .pricing-secondary {
+        background-color: #f9fbff !important;
+        border: none !important;
+    }
+}
+
+.is-flex-1 {
+    flex: 1 !important;
+}
+
+.vertically-bottom {
+    align-self: flex-end;
+}
+
+.media-links {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.is-link {
+    background-color: transparent !important;
+}
+
+.mail-chimp {
+    padding-left: 5rem;
+
+    /* .free-pricing {
+        background-color: white !important;
+    } */
+
+    
+    /* .pricing-table .pricing-plan .plan-price {
+        background-color: #f9fbff !important;
+    }
+    
+    .pricing-table .pricing-plan .plan-header {
+        background-color: #f9fbff !important;
+    }
+ */
+}
+
+
+
+.btn-primary {
+    box-shadow: 0 16px 41px 0 #dee1f1 !important;
+    background-color: #0058ff;
+    color: white;
+}
+
+.btn-primary-pricing {
+    box-shadow: 0 16px 41px 0 #dee1f1 !important;
+    color: white;
+}
+
+.button.is-info.is-outlined {
+    background-color: transparent;
+    border-color: #0058ff;
+    color: #0058ff;
+}
+
+.button.is-info.is-outlined:hover, .button.is-info.is-outlined:focus {
+    background-color: #0058ff;
+    border-color: #0058ff;
+    color: #fff;
+}
+
+.button.btn-primary:hover, .button.btn-primary.is-hovered {
+    color: #fff;
+    // padding: 1rem 3rem 1rem;
+}
+
+.is-footer-input {
+    color: #ffffff;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ffffff;
+    font-weight: lighter;
+    &::placeholder {
+        color: #ffffff;
+    }
+    &:active,
+    &:focus {
+        border: none;
+        border-bottom: 2px solid #ffffff;
+        box-shadow: none;
+    }
 }
