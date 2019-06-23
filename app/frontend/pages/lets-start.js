@@ -1,17 +1,19 @@
 /* eslint-disable eol-last */
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
-
 import Image from '~base/components/image'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const LetsStart = () => (
   <section className="container section" id="lets-start">
     <div className="columns">
       <div className="column">
-        <Image
-          src="../../public/img/incredible_experiences.svg"
-          className="img-centered"
-        />
+        <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft">
+          <Image
+            src="/public/img/incredible_experiences.svg"
+            className="img-centered"
+          />
+        </ScrollAnimation>
       </div>
       <div className="column is-right vertically-centered" id="solutions">
         <div className="section">
@@ -44,10 +46,9 @@ const LetsStart = () => (
     </div>
     <div className="columns">
       <div className="column is-hidden-desktop">
-        <Image
-          src="../../public/img/customer_data.svg"
-          className="img-centered"
-        />
+        <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutRight">
+          <Image src="/public/img/customer_data.svg" className="img-centered" />
+        </ScrollAnimation>
       </div>
       <div className="column vertically-centered">
         <div className="section">
@@ -79,10 +80,9 @@ const LetsStart = () => (
         </div>
       </div>
       <div className="column is-hidden-touch">
-        <Image
-          src="../../public/img/customer_data.svg"
-          className="img-centered"
-        />
+        <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutRight">
+          <Image src="/public/img/customer_data.svg" className="img-centered" />
+        </ScrollAnimation>
       </div>
     </div>
   </section>

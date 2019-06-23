@@ -5,6 +5,7 @@ import api from '~base/api'
 import { forcePublic } from '~base/middlewares/'
 import { MegadraftEditor, editorStateFromRaw } from 'megadraft'
 
+import { animateScroll as scroll, scroller } from 'react-scroll'
 import PluginImage from './plugins/image'
 import PluginVideo from './plugins/video'
 import PreviewBlog from './components/preview-blog'
@@ -22,6 +23,7 @@ class Blog extends PageComponent {
   }
 
   async componentDidMount() {
+    scroll.scrollToTop()
     await this.loadData()
   }
 
