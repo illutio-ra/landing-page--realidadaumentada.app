@@ -10,6 +10,7 @@ import Loader from '~base/components/spinner'
 
 import NavBar from '~components/navbar'
 import Footer from '~components/footer'
+import { animateScroll as scroll, scroller } from 'react-scroll'
 
 class Layout extends Component {
   constructor(props) {
@@ -20,6 +21,19 @@ class Layout extends Component {
       hasLoadError: false,
       error: '',
     }
+  }
+
+  componentWillReceiveProps() {
+    this.setState({ collapsedSidebar: false })
+    this.scrollTo(window.location.hash.substr(1))
+  }
+
+  componentDidMount() {
+    this.scrollTo(window.location.hash.substr(1))
+  }
+
+  componentDidUpdate() {
+    this.scrollTo(window.location.hash.substr(1))
   }
 
   async componentWillMount() {
@@ -64,6 +78,24 @@ class Layout extends Component {
     tree.set('config', config)
     tree.commit()
     this.setState({ loaded: true })
+  }
+
+  scrollTo(el) {
+    const smoothScrollPages = ['/']
+
+    if (!smoothScrollPages.includes(window.location.pathname)) {
+      return
+    }
+
+    if (el) {
+      scroller.scrollTo(el, {
+        duration: 800,
+        delay: 0,
+        smooth: 'easeInOutQuart',
+      })
+    } else {
+      scroll.scrollToTop()
+    }
   }
 
   render() {

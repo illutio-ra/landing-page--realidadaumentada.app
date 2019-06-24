@@ -7,6 +7,7 @@ import tree from '~core/tree'
 import Image from '~base/components/image'
 import { FormattedMessage, injectIntl } from 'react-intl'
 import HubspotForm from 'react-hubspot-form'
+import classNames from 'classnames'
 
 const langs = {
   'en-US': 'En',
@@ -119,12 +120,41 @@ class NavBar extends Component {
 
     const { lang, dropCaret, profileDropdown } = this.state
 
-    const { loggedIn } = this.props
+    const { loggedIn, history } = this.props
 
     let navButtons
     let navMainLink
     let avatar
     let username
+
+    const links = [
+      {
+        title: 'link_home',
+        to: '/#',
+        className: 'is-primary',
+      },
+      {
+        title: 'link_app',
+        to: '/#portfolio',
+        className: 'is-primary',
+      },
+      {
+        title: 'link_solutions',
+        to: '/#solutions',
+        className: 'is-primary',
+      },
+      {
+        title: 'link_pricing',
+        to: '/#pricing',
+        className: 'is-primary',
+      },
+      {
+        title: 'link_blog',
+        to: '/#blog',
+        className: 'is-primary',
+      },
+    ]
+
     if (loggedIn) {
       avatar = 'http://1bigappstore.com/images/avt-default.jpg'
 
@@ -190,38 +220,18 @@ class NavBar extends Component {
     } else {
       navButtons = (
         <div className="navbar-end">
+          {links.map((link) => {
+            const className = classNames('navbar-item', {
+              active: history.location.hash == link.to.replace('/#', '#'),
+            })
+
+            return (
+              <NavLink to={link.to} className={className} onClick={() => this.handleNavbarBurgerClick()}>
+                <FormattedMessage id={`general.${link.title}`} />
+              </NavLink>
+            )
+          })}
           <div className="navbar-item">
-            <NavLink className="navbar-item" exact to="/">
-              <FormattedMessage id="general.link_home" />
-            </NavLink>
-            <a
-              className="navbar-item"
-              onClick={() => this.handleNavbarBurgerClick()}
-              href="/#portfolio"
-            >
-              <FormattedMessage id="general.link_app" />
-            </a>
-            <a
-              className="navbar-item"
-              onClick={() => this.handleNavbarBurgerClick()}
-              href="/#solutions"
-            >
-              <FormattedMessage id="general.link_solutions" />
-            </a>
-            <a
-              className="navbar-item"
-              onClick={() => this.handleNavbarBurgerClick()}
-              href="/#pricing"
-            >
-              <FormattedMessage id="general.link_pricing" />
-            </a>
-            <a
-              className="navbar-item"
-              onClick={() => this.handleNavbarBurgerClick()}
-              href="/#blog"
-            >
-              <FormattedMessage id="general.link_blog" />
-            </a>
             <a
               className="navbar-item"
               data-target="modal"
@@ -259,18 +269,22 @@ class NavBar extends Component {
               <a className="navbar-link">{lang}</a>
 
               <div className="navbar-dropdown">
-                <a
-                  className="navbar-item"
-                  onClick={() => this.languageSettingDispatcher('es-MX')}
-                >
-                  <span className="margin-sides-icon">Es</span>
-                </a>
-                <a
-                  className="navbar-item"
-                  onClick={() => this.languageSettingDispatcher('en-US')}
-                >
-                  <span className="margin-sides-icon">En</span>
-                </a>
+                {lang === 'En' && (
+                  <a
+                    className="navbar-item"
+                    onClick={() => this.languageSettingDispatcher('es-MX')}
+                  >
+                    <span className="margin-sides-icon">Es</span>
+                  </a>
+                )}
+                {lang === 'Es' && (
+                  <a
+                    className="navbar-item"
+                    onClick={() => this.languageSettingDispatcher('en-US')}
+                  >
+                    <span className="margin-sides-icon">En</span>
+                  </a>
+                )}
               </div>
             </div>
           </div>
