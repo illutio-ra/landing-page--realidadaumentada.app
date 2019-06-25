@@ -1,5 +1,12 @@
 [
   {
+    "id": "about_interaction",
+    "modules": [
+      "general"
+    ],
+    "content": "Obten información real sobre la interacción de los clientes con tus productos y campañas."
+  },
+  {
     "id": "and",
     "modules": [
       "general"
@@ -35,6 +42,13 @@
     "content": "campañas"
   },
   {
+    "id": "comes",
+    "modules": [
+      "general"
+    ],
+    "content": "que toman"
+  },
+  {
     "id": "contact_us_footer",
     "modules": [
       "general"
@@ -42,25 +56,11 @@
     "content": "Contáctanos"
   },
   {
-    "id": "control_of_your",
-    "modules": [
-      "general"
-    ],
-    "content": " el control de los"
-  },
-  {
     "id": "create",
     "modules": [
       "general"
     ],
     "content": "Crea"
-  },
-  {
-    "id": "customers_data",
-    "modules": [
-      "general"
-    ],
-    "content": "datos de tus clientes."
   },
   {
     "id": "dashboardTitle",
@@ -137,7 +137,7 @@
     "modules": [
       "general"
     ],
-    "content": "experiencias memorables."
+    "content": "experiencias increíbles."
   },
   {
     "id": "intro",
@@ -238,6 +238,13 @@
     "content": "mide"
   },
   {
+    "id": "measure_uc",
+    "modules": [
+      "general"
+    ],
+    "content": "Mide"
+  },
+  {
     "id": "name",
     "modules": [
       "general"
@@ -249,7 +256,14 @@
     "modules": [
       "general"
     ],
-    "content": " No se requieren "
+    "content": "No se requieren habilidades de código o diseño."
+  },
+  {
+    "id": "of",
+    "modules": [
+      "general"
+    ],
+    "content": "de"
   },
   {
     "id": "packaging_printed",
@@ -301,6 +315,13 @@
     "content": "Este proyecto se realizó para la portada de una revista impresa “Superbrands” en México. La mariposas cobran vida cuando es escaneada con la app. Muestra un botón “Call to action” y lleva a los clientes al sitio web donde explica cómo ser parte de la comunidad de mejores marcas de México."
   },
   {
+    "id": "printed_images",
+    "modules": [
+      "general"
+    ],
+    "content": "Imagenes impresas"
+  },
+  {
     "id": "profile",
     "modules": [
       "general"
@@ -313,6 +334,13 @@
       "general"
     ],
     "content": "publica"
+  },
+  {
+    "id": "real_impact",
+    "modules": [
+      "general"
+    ],
+    "content": "el impacto real"
   },
   {
     "id": "real_information",
@@ -392,25 +420,25 @@
     "content": "con experiencias en {span}.\n"
   },
   {
-    "id": "take_back",
+    "id": "to_life",
     "modules": [
       "general"
     ],
-    "content": "Toma"
+    "content": "vida"
   },
   {
     "id": "try_now",
     "modules": [
       "general"
     ],
-    "content": "¡Demo gratuita!"
+    "content": "¡Probar ahora!"
   },
   {
     "id": "upgrade_text",
     "modules": [
       "general"
     ],
-    "content": "Actualice sus campañas tradicionales a la realidad "
+    "content": "Crea campañas utilizando Realidad Aumentada. "
   },
   {
     "id": "welcome",
