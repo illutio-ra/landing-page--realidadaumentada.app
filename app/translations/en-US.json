@@ -1,5 +1,12 @@
 [
   {
+    "id": "about_interaction",
+    "modules": [
+      "general"
+    ],
+    "content": "Get real information about interaction of customers with your products and campaigns."
+  },
+  {
     "id": "and",
     "modules": [
       "general"
@@ -35,6 +42,13 @@
     "content": "campaigns"
   },
   {
+    "id": "comes",
+    "modules": [
+      "general"
+    ],
+    "content": "comes"
+  },
+  {
     "id": "contact_us_footer",
     "modules": [
       "general"
@@ -42,25 +56,11 @@
     "content": "Contact us"
   },
   {
-    "id": "control_of_your",
-    "modules": [
-      "general"
-    ],
-    "content": " control of your"
-  },
-  {
     "id": "create",
     "modules": [
       "general"
     ],
     "content": "Create"
-  },
-  {
-    "id": "customers_data",
-    "modules": [
-      "general"
-    ],
-    "content": "customers data."
   },
   {
     "id": "desing_skills",
@@ -130,7 +130,7 @@
     "modules": [
       "general"
     ],
-    "content": "memorable experiences."
+    "content": "incredible experiences."
   },
   {
     "id": "intro",
@@ -231,6 +231,13 @@
     "content": "measure"
   },
   {
+    "id": "measure_uc",
+    "modules": [
+      "general"
+    ],
+    "content": "Measure"
+  },
+  {
     "id": "name",
     "modules": [
       "general"
@@ -242,7 +249,14 @@
     "modules": [
       "general"
     ],
-    "content": " No coding or "
+    "content": "No coding or design skills needed."
+  },
+  {
+    "id": "of",
+    "modules": [
+      "general"
+    ],
+    "content": "of"
   },
   {
     "id": "packaging_printed",
@@ -301,6 +315,13 @@
     "content": "List of posts"
   },
   {
+    "id": "printed_images",
+    "modules": [
+      "general"
+    ],
+    "content": "Printed images"
+  },
+  {
     "id": "profile",
     "modules": [
       "general"
@@ -313,6 +334,13 @@
       "general"
     ],
     "content": "publish"
+  },
+  {
+    "id": "real_impact",
+    "modules": [
+      "general"
+    ],
+    "content": "real impact"
   },
   {
     "id": "real_information",
@@ -392,25 +420,25 @@
     "content": "with {span} experiences."
   },
   {
-    "id": "take_back",
+    "id": "to_life",
     "modules": [
       "general"
     ],
-    "content": "Take back"
+    "content": "to life."
   },
   {
     "id": "try_now",
     "modules": [
       "general"
     ],
-    "content": "Free trial!"
+    "content": "Try it now!"
   },
   {
     "id": "upgrade_text",
     "modules": [
       "general"
     ],
-    "content": "Upgrade your traditional campaigns into augmented "
+    "content": "Create campaigns using Augmented Reality. "
   },
   {
     "id": "welcome",
