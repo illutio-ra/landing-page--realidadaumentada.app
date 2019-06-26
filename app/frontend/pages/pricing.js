@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Image from '~base/components/image'
-import { injectIntl } from 'react-intl'
+import { injectIntl, FormattedMessage } from 'react-intl'
+
 
 class Pricing extends Component {
   state = {
@@ -16,7 +17,7 @@ class Pricing extends Component {
     return (
       <div className="section pricing" id="pricing">
         <div className="has-text-centered is-size-1 is-margin-bottom-large main-title">
-          Choose your plan
+          <FormattedMessage id="general.plan_choose" />
         </div>
 
         <div className="columns">
@@ -39,31 +40,39 @@ class Pricing extends Component {
             </div> */}
             <div className="pricing-table">
               <div className="pricing-plan card-shadow free">
-                <div className="plan-header card-title free-pricing">Basic</div>
+                <div className="plan-header card-title free-pricing">
+                  <FormattedMessage id="general.plan_basic" />
+                </div>
                 <Image src="/public/img/basic.svg" alt="ra cam" />
                 <div className="plan-price">
                   <span className="plan-price-amount price">
                     <span className="plan-price-currency price" />
-                    Free
+                    <FormattedMessage id="general.plan_free" />
                   </span>
                 </div>
                 <div className="has-text-centered">
-                  <div className="is-margin-bottom-small">Max 200 views</div>
-                  <div className="is-margin-bottom-small">2 Targets</div>
-                  <div className="is-margin-bottom-small">Free account</div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_200_views" />
+                  </div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.2_targets" />
+                  </div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_free_account" />
+                  </div>
                 </div>
                 <div className="plan-footer">
                   <a
                     className="button is-fullwidth is-outlined is-info"
                     href="https://realidadaumentada.app/admin/register"
                   >
-                    Create a new account
+                    <FormattedMessage id="general.plan_create_new_account" />
                   </a>
                 </div>
               </div>
               <div className="pricing-plan pricing-secondary">
                 <div className="plan-header pricing-secondary card-title">
-                  Pro
+                  <FormattedMessage id="general.plan_pro" />
                 </div>
                 <Image src="/public/img/pro.svg" alt="ra cam" />
                 <div className="plan-price pricing-secondary">
@@ -73,24 +82,34 @@ $ 199.00
                   </span>
                 </div>
                 <div className="has-text-centered">
-                  <div className="is-margin-bottom-small">Max 2,000 views</div>
-                  <div className="is-margin-bottom-small">20 Targets</div>
-                  <div className="is-margin-bottom-small">Analytics</div>
-                  <div className="is-margin-bottom-small">Tech support</div>
-                  <div className="is-margin-bottom-small">Customer support</div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_2000_views" />
+                  </div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_20_targets" />
+                  </div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_analytics" />
+                  </div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_tech_support" />
+                  </div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_customer_support" />
+                  </div>
                 </div>
                 <div className="plan-footer">
                   <a
                     className="button is-fullwidth is-outlined is-info"
                     href="https://realidadaumentada.app/admin/register"
                   >
-                    Buy it
+                    <FormattedMessage id="general.plan_buy_it" />
                   </a>
                 </div>
               </div>
               <div className="pricing-plan pricing-secondary">
                 <div className="plan-header pricing-secondary card-title">
-                  Business
+                  <FormattedMessage id="general.plan_business" />
                 </div>
                 <Image src="/public/img/bussiness.svg" alt="ra cam" />
                 <div className="plan-price pricing-secondary">
@@ -100,24 +119,34 @@ $ 399.00
                   </span>
                 </div>
                 <div className="has-text-centered">
-                  <div className="is-margin-bottom-small">Max 6,000 views</div>
-                  <div className="is-margin-bottom-small">50 Targets</div>
-                  <div className="is-margin-bottom-small">Analytics</div>
-                  <div className="is-margin-bottom-small">Tech support</div>
-                  <div className="is-margin-bottom-small">Customer support</div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_6000_views" />
+                  </div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_50_targets" />
+                  </div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_analytics" />
+                  </div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_tech_support" />
+                  </div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_customer_support" />
+                  </div>
                 </div>
                 <div className="plan-footer">
                   <a
                     className="button is-fullwidth is-outlined is-info"
                     href="https://realidadaumentada.app/admin/register"
                   >
-                    Buy it
+                    <FormattedMessage id="general.plan_buy_it" />
                   </a>
                 </div>
               </div>
               <div className="pricing-plan pricing-secondary">
                 <div className="plan-header pricing-secondary card-title">
-                  Enterprise
+                  <FormattedMessage id="general.plan_enterprise" />
                 </div>
                 <Image src="/public/img/enterprise.svg" alt="ra cam" />
                 <div className="plan-price pricing-secondary">
@@ -127,18 +156,28 @@ $ 599.00
                   </span>
                 </div>
                 <div className="has-text-centered">
-                  <div className="is-margin-bottom-small">Max 14,000 views</div>
-                  <div className="is-margin-bottom-small">100 Targets</div>
-                  <div className="is-margin-bottom-small">Analytics</div>
-                  <div className="is-margin-bottom-small">Tech support</div>
-                  <div className="is-margin-bottom-small">Customer support</div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_14000_views" />
+                  </div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_100_targets" />
+                  </div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_analytics" />
+                  </div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_tech_support" />
+                  </div>
+                  <div className="is-margin-bottom-small">
+                    <FormattedMessage id="general.plan_customer_support" />
+                  </div>
                 </div>
                 <div className="plan-footer">
                   <a
                     className="button is-fullwidth is-outlined is-info"
                     href="https://realidadaumentada.app/admin/register"
                   >
-                    Buy it
+                    <FormattedMessage id="general.plan_buy_it" />
                   </a>
                 </div>
               </div>

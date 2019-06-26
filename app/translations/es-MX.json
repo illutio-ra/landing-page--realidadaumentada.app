@@ -1,10 +1,10 @@
 [
   {
-    "id": "about_interaction",
+    "id": "2_targets",
     "modules": [
       "general"
     ],
-    "content": "Obten información real sobre la interacción de los clientes con tus productos y campañas."
+    "content": "2 objetivos"
   },
   {
     "id": "and",
@@ -42,11 +42,11 @@
     "content": "campañas"
   },
   {
-    "id": "comes",
+    "id": "contact_navbar",
     "modules": [
       "general"
     ],
-    "content": "que toman"
+    "content": "Contacto"
   },
   {
     "id": "contact_us_footer",
@@ -56,11 +56,25 @@
     "content": "Contáctanos"
   },
   {
+    "id": "control_of_your",
+    "modules": [
+      "general"
+    ],
+    "content": " el control de los"
+  },
+  {
     "id": "create",
     "modules": [
       "general"
     ],
     "content": "Crea"
+  },
+  {
+    "id": "customers_data",
+    "modules": [
+      "general"
+    ],
+    "content": "datos de tus clientes."
   },
   {
     "id": "dashboardTitle",
@@ -137,7 +151,7 @@
     "modules": [
       "general"
     ],
-    "content": "experiencias increíbles."
+    "content": "experiencias memorables."
   },
   {
     "id": "intro",
@@ -238,13 +252,6 @@
     "content": "mide"
   },
   {
-    "id": "measure_uc",
-    "modules": [
-      "general"
-    ],
-    "content": "Mide"
-  },
-  {
     "id": "name",
     "modules": [
       "general"
@@ -256,14 +263,7 @@
     "modules": [
       "general"
     ],
-    "content": "No se requieren habilidades de código o diseño."
-  },
-  {
-    "id": "of",
-    "modules": [
-      "general"
-    ],
-    "content": "de"
+    "content": " No se requieren "
   },
   {
     "id": "packaging_printed",
@@ -273,32 +273,144 @@
     "content": "producto, embalaje, anuncios impresos, revistas, carteles y mucho más."
   },
   {
+    "id": "plan_100_targets",
+    "modules": [
+      "general"
+    ],
+    "content": "100 objetivos"
+  },
+  {
+    "id": "plan_14000_views",
+    "modules": [
+      "general"
+    ],
+    "content": "Máximo 14,000 visitas"
+  },
+  {
+    "id": "plan_2000_views",
+    "modules": [
+      "general"
+    ],
+    "content": "Máximo 200 visitas"
+  },
+  {
+    "id": "plan_200_views",
+    "modules": [
+      "general"
+    ],
+    "content": "Máximo 200 visitas"
+  },
+  {
+    "id": "plan_20_targets",
+    "modules": [
+      "general"
+    ],
+    "content": "20 objetivos"
+  },
+  {
+    "id": "plan_50_targets",
+    "modules": [
+      "general"
+    ],
+    "content": "50 objetivos"
+  },
+  {
+    "id": "plan_6000_views",
+    "modules": [
+      "general"
+    ],
+    "content": "Máximo 6,000 visitas"
+  },
+  {
+    "id": "plan_analytics",
+    "modules": [
+      "general"
+    ],
+    "content": "Analíticas"
+  },
+  {
+    "id": "plan_basic",
+    "modules": [
+      "general"
+    ],
+    "content": "Básico"
+  },
+  {
+    "id": "plan_business",
+    "modules": [
+      "general"
+    ],
+    "content": "Negocio"
+  },
+  {
+    "id": "plan_buy_it",
+    "modules": [
+      "general"
+    ],
+    "content": "Comprar"
+  },
+  {
+    "id": "plan_choose",
+    "modules": [
+      "general"
+    ],
+    "content": "Elige tu plan"
+  },
+  {
+    "id": "plan_create_new_account",
+    "modules": [
+      "general"
+    ],
+    "content": "Crear nueva cuenta"
+  },
+  {
+    "id": "plan_customer_support",
+    "modules": [
+      "general"
+    ],
+    "content": "Soporte al cliente"
+  },
+  {
+    "id": "plan_enterprise",
+    "modules": [
+      "general"
+    ],
+    "content": "Empresa"
+  },
+  {
+    "id": "plan_free",
+    "modules": [
+      "general"
+    ],
+    "content": "Gratuito"
+  },
+  {
+    "id": "plan_free_account",
+    "modules": [
+      "general"
+    ],
+    "content": "Cuenta gratuita"
+  },
+  {
+    "id": "plan_pro",
+    "modules": [
+      "general"
+    ],
+    "content": "Pro"
+  },
+  {
+    "id": "plan_tech_support",
+    "modules": [
+      "general"
+    ],
+    "content": "Soporte técnico"
+  },
+  {
     "id": "play_video",
     "modules": [
       "general"
     ],
     "content": "Ver video"
-  },
-  {
-    "id": "portfolio_castle",
-    "modules": [
-      "general"
-    ],
-    "content": "Este proyecto se realizó para la portada de una revista impresa “Superbrands” en México. La mariposas cobran vida cuando es escaneada con la app. Muestra un botón “Call to action” y lleva a los clientes al sitio web donde explica cómo ser parte de la comunidad de mejores marcas de México."
-  },
-  {
-    "id": "portfolio_chilis",
-    "modules": [
-      "general"
-    ],
-    "content": "Este proyecto se realizó para publicidad impresa en el periódico \"El País\" en Honduras. La hamburguesa en la imagen despliega una video sobre la publicidad cuando es escaneado por la aplicación AR CAM; muestra un botón “Call to action” y lleva a los clientes al restaurante más nuevo en la ciudad. Esta experiencia se publicó para una campaña semanal en la cual se imprimieron 35 mil ejemplares cada día de la campaña."
-  },
-  {
-    "id": "portfolio_miller",
-    "modules": [
-      "general"
-    ],
-    "content": "Este proyecto se realizó para publicidad impresa en el periódico \"El País\" en Honduras. El fuego en la imagen cobra vida cuando es escaneado por la aplicación AR CAM; muestra un botón “Call to action” y lleva a los clientes a un video sobre ofertas de verano. Esta experiencia se publicó para una campaña semanal en la cual se imprimieron 35 mil ejemplares cada día de la campaña."
   },
   {
     "id": "portfolio_preview",
@@ -308,18 +420,11 @@
     "content": "{discover} como transformar imágenes en {experiences}."
   },
   {
-    "id": "portfolio_superbrands",
+    "id": "postsListTitle",
     "modules": [
       "general"
     ],
-    "content": "Este proyecto se realizó para la portada de una revista impresa “Superbrands” en México. La mariposas cobran vida cuando es escaneada con la app. Muestra un botón “Call to action” y lleva a los clientes al sitio web donde explica cómo ser parte de la comunidad de mejores marcas de México."
-  },
-  {
-    "id": "printed_images",
-    "modules": [
-      "general"
-    ],
-    "content": "Imagenes impresas"
+    "content": "Lista de posts\n"
   },
   {
     "id": "profile",
@@ -334,13 +439,6 @@
       "general"
     ],
     "content": "publica"
-  },
-  {
-    "id": "real_impact",
-    "modules": [
-      "general"
-    ],
-    "content": "el impacto real"
   },
   {
     "id": "real_information",
@@ -420,25 +518,39 @@
     "content": "con experiencias en {span}.\n"
   },
   {
-    "id": "to_life",
+    "id": "take_back",
     "modules": [
       "general"
     ],
-    "content": "vida"
+    "content": "Toma"
+  },
+  {
+    "id": "test",
+    "modules": [
+      "general"
+    ],
+    "content": "test"
+  },
+  {
+    "id": "testLabel",
+    "modules": [
+      "general"
+    ],
+    "content": "Test"
   },
   {
     "id": "try_now",
     "modules": [
       "general"
     ],
-    "content": "¡Probar ahora!"
+    "content": "¡Demo gratuita!"
   },
   {
     "id": "upgrade_text",
     "modules": [
       "general"
     ],
-    "content": "Crea campañas utilizando Realidad Aumentada. "
+    "content": "Actualice sus campañas tradicionales a la realidad "
   },
   {
     "id": "welcome",

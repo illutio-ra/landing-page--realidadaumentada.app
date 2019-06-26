@@ -1,10 +1,10 @@
 [
   {
-    "id": "about_interaction",
+    "id": "2_targets",
     "modules": [
       "general"
     ],
-    "content": "Get real information about interaction of customers with your products and campaigns."
+    "content": "2 Targets"
   },
   {
     "id": "and",
@@ -42,11 +42,11 @@
     "content": "campaigns"
   },
   {
-    "id": "comes",
+    "id": "contact_navbar",
     "modules": [
       "general"
     ],
-    "content": "comes"
+    "content": "Contact"
   },
   {
     "id": "contact_us_footer",
@@ -56,11 +56,25 @@
     "content": "Contact us"
   },
   {
+    "id": "control_of_your",
+    "modules": [
+      "general"
+    ],
+    "content": " control of your"
+  },
+  {
     "id": "create",
     "modules": [
       "general"
     ],
     "content": "Create"
+  },
+  {
+    "id": "customers_data",
+    "modules": [
+      "general"
+    ],
+    "content": "customers data."
   },
   {
     "id": "desing_skills",
@@ -130,7 +144,7 @@
     "modules": [
       "general"
     ],
-    "content": "incredible experiences."
+    "content": "memorable experiences."
   },
   {
     "id": "intro",
@@ -231,13 +245,6 @@
     "content": "measure"
   },
   {
-    "id": "measure_uc",
-    "modules": [
-      "general"
-    ],
-    "content": "Measure"
-  },
-  {
     "id": "name",
     "modules": [
       "general"
@@ -249,14 +256,7 @@
     "modules": [
       "general"
     ],
-    "content": "No coding or design skills needed."
-  },
-  {
-    "id": "of",
-    "modules": [
-      "general"
-    ],
-    "content": "of"
+    "content": " No coding or "
   },
   {
     "id": "packaging_printed",
@@ -266,32 +266,144 @@
     "content": "packaging, printed ads, magazines, posters and much more."
   },
   {
+    "id": "plan_100_targets",
+    "modules": [
+      "general"
+    ],
+    "content": "100 Targets"
+  },
+  {
+    "id": "plan_14000_views",
+    "modules": [
+      "general"
+    ],
+    "content": " Max 14,000 views "
+  },
+  {
+    "id": "plan_2000_views",
+    "modules": [
+      "general"
+    ],
+    "content": "Max 2,000 views"
+  },
+  {
+    "id": "plan_200_views",
+    "modules": [
+      "general"
+    ],
+    "content": "Max 200 views"
+  },
+  {
+    "id": "plan_20_targets",
+    "modules": [
+      "general"
+    ],
+    "content": "20 Targets"
+  },
+  {
+    "id": "plan_50_targets",
+    "modules": [
+      "general"
+    ],
+    "content": "50 Targets"
+  },
+  {
+    "id": "plan_6000_views",
+    "modules": [
+      "general"
+    ],
+    "content": "Max 6,000 views"
+  },
+  {
+    "id": "plan_analytics",
+    "modules": [
+      "general"
+    ],
+    "content": "Analytics"
+  },
+  {
+    "id": "plan_basic",
+    "modules": [
+      "general"
+    ],
+    "content": "Basic"
+  },
+  {
+    "id": "plan_business",
+    "modules": [
+      "general"
+    ],
+    "content": "Business"
+  },
+  {
+    "id": "plan_buy_it",
+    "modules": [
+      "general"
+    ],
+    "content": "Buy it"
+  },
+  {
+    "id": "plan_choose",
+    "modules": [
+      "general"
+    ],
+    "content": "Choose your plan"
+  },
+  {
+    "id": "plan_create_new_account",
+    "modules": [
+      "general"
+    ],
+    "content": "Create a new account"
+  },
+  {
+    "id": "plan_customer_support",
+    "modules": [
+      "general"
+    ],
+    "content": "Customer support"
+  },
+  {
+    "id": "plan_enterprise",
+    "modules": [
+      "general"
+    ],
+    "content": "Enterprise"
+  },
+  {
+    "id": "plan_free",
+    "modules": [
+      "general"
+    ],
+    "content": "Free"
+  },
+  {
+    "id": "plan_free_account",
+    "modules": [
+      "general"
+    ],
+    "content": "Free account"
+  },
+  {
+    "id": "plan_pro",
+    "modules": [
+      "general"
+    ],
+    "content": "Pro"
+  },
+  {
+    "id": "plan_tech_support",
+    "modules": [
+      "general"
+    ],
+    "content": "Tech support"
+  },
+  {
     "id": "play_video",
     "modules": [
       "general"
     ],
     "content": "Play video"
-  },
-  {
-    "id": "portfolio_castle",
-    "modules": [
-      "general"
-    ],
-    "content": "This project was made for the cover of printed magazine “Superbrands” in Mexico. The butterflies on the image comes to life when its scanned by the AR app; it shows a call to action button and takes customers to a website about how to be part of the community of best brands in Mexico."
-  },
-  {
-    "id": "portfolio_chilis",
-    "modules": [
-      "general"
-    ],
-    "content": "This project was made for printed advertising on newspaper “El País” in Honduras. The burger on the image displays a video layer when its scanned by the AR app; it shows a call to action button and takes customers to the newest restaurant in the city. This experience was published for a daily campaign for 1 week and printed in 35K copies every day in the country."
-  },
-  {
-    "id": "portfolio_miller",
-    "modules": [
-      "general"
-    ],
-    "content": "This project was made for printed advertising on newspaper “El País” in Honduras. The fire on the image comes to life when its scanned by the AR app; shows a call to action button and takes customers to a video about summer offers. This experience was published for a daily campaign for 1 week and printed in 35K copies every day in the country."
   },
   {
     "id": "portfolio_preview",
@@ -301,25 +413,11 @@
     "content": "{discover} how to transform images into {experiences}."
   },
   {
-    "id": "portfolio_superbrands",
-    "modules": [
-      "general"
-    ],
-    "content": "This project was made for the cover of printed magazine “Superbrands” in Mexico. The butterflies on the image comes to life when its scanned by the AR app; it shows a call to action button and takes customers to a website about how to be part of the community of best brands in Mexico."
-  },
-  {
     "id": "postsListTitle",
     "modules": [
       "general"
     ],
     "content": "List of posts"
-  },
-  {
-    "id": "printed_images",
-    "modules": [
-      "general"
-    ],
-    "content": "Printed images"
   },
   {
     "id": "profile",
@@ -334,13 +432,6 @@
       "general"
     ],
     "content": "publish"
-  },
-  {
-    "id": "real_impact",
-    "modules": [
-      "general"
-    ],
-    "content": "real impact"
   },
   {
     "id": "real_information",
@@ -420,25 +511,25 @@
     "content": "with {span} experiences."
   },
   {
-    "id": "to_life",
+    "id": "take_back",
     "modules": [
       "general"
     ],
-    "content": "to life."
+    "content": "Take back"
   },
   {
     "id": "try_now",
     "modules": [
       "general"
     ],
-    "content": "Try it now!"
+    "content": "Free trial!"
   },
   {
     "id": "upgrade_text",
     "modules": [
       "general"
     ],
-    "content": "Create campaigns using Augmented Reality. "
+    "content": "Upgrade your traditional campaigns into augmented "
   },
   {
     "id": "welcome",
