@@ -311,8 +311,8 @@ a.navbar-link.is-active {
     }
 }
 
-.brand-slider-2 .slick-slide:hover {
+.slick-slide:hover .brand-slider-2  {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
-    box-shadow: none;
+    box-shadow: none !important;
 }
