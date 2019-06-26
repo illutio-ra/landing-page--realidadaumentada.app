@@ -8,8 +8,8 @@ const images = [
   {
     img: '/public/img/logos/1.png',
     imgBig: '/public/img/logos/1.png',
-    width: 440,
-    height: 570,
+    width: 240,
+    height: 270,
   },
   {
     img: '/public/img/logos/2.png',
@@ -68,9 +68,9 @@ class BrandSlider extends Component {
       className: 'center',
       centerMode: true,
       infinite: true,
-      slidesToShow: 4,
+      slidesToShow: 6,
       speed: 500,
-      slidesToScroll: 4,
+      slidesToScroll: 6,
       pauseOnHover: false,
       adaptiveHeight: true,
       arrows: true,
@@ -112,7 +112,7 @@ class BrandSlider extends Component {
         <Slider {...settings}>
           {images.map((item, i) => (
             <div className="container-img-portfolio is-padding-left-small is-padding-right-small is-padding-top-small is-padding-bottom-small">
-              <Image src={item.img} />
+              <Image class="brand-slider-2" src={item.img} />
             </div>
           ))}
         </Slider>

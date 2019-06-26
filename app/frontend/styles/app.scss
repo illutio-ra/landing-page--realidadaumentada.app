@@ -262,23 +262,7 @@ a.navbar-link.is-active {
 
 .mail-chimp {
     padding-left: 5rem;
-
-    /* .free-pricing {
-        background-color: white !important;
-    } */
-
-    
-    /* .pricing-table .pricing-plan .plan-price {
-        background-color: #f9fbff !important;
-    }
-    
-    .pricing-table .pricing-plan .plan-header {
-        background-color: #f9fbff !important;
-    }
- */
 }
-
-
 
 .btn-primary {
     box-shadow: 0 16px 41px 0 #dee1f1 !important;
@@ -325,4 +309,10 @@ a.navbar-link.is-active {
         border-bottom: 2px solid #ffffff;
         box-shadow: none;
     }
+}
+
+.brand-slider-2 .slick-slide:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
