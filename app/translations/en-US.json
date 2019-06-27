@@ -551,5 +551,33 @@
       "general"
     ],
     "content": "with your products, campaigns and printed ads. "
+  },
+  {
+    "id": "monthly",
+    "modules": [
+      "general"
+    ],
+    "content": "Mensual"
+  },
+  {
+    "id": "yearly",
+    "modules": [
+      "general"
+    ],
+    "content": "Anual"
+  },
+  {
+    "id": "monthly",
+    "modules": [
+      "general"
+    ],
+    "content": "Monthly"
+  },
+  {
+    "id": "yearly",
+    "modules": [
+      "general"
+    ],
+    "content": "Yearly"
   }
 ]

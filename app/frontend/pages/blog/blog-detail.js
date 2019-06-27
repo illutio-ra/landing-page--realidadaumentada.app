@@ -60,11 +60,15 @@ class Blog extends PageComponent {
               <h1 className="card-header-title title is-2">{post.title}</h1>
             </div>
             <hr className="divider" />
-            Tags:
-            {' '}
-            {post.tags.map((l) => (
-              <span className=" margin-sides-icon tag is-info">{l}</span>
-            ))}
+            {post.tags.length > 0 && (
+              <div>
+                Tags:
+                {' '}
+                {post.tags.map((l) => (
+                  <span className=" margin-sides-icon tag is-info">{l}</span>
+                ))}
+              </div>
+            )}
             <div className="card-content is-paddingless">
               {content && (
                 <MegadraftEditor

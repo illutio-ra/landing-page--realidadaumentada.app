@@ -13,6 +13,7 @@ class Pricing extends Component {
 
   render() {
     const { checked } = this.state
+    const { intl } = this.props
     return (
       <div className="section pricing" id="pricing">
         <div className="has-text-centered is-size-1 is-margin-bottom-large main-title">
@@ -34,8 +35,9 @@ class Pricing extends Component {
                 htmlFor="switchRoundedInfo switch-text"
                 onClick={() => this.handlerChange()}
               >
-                {checked === false && 'Monthly'}
-                {checked === true && 'Yearly'}
+                {checked
+                  ? intl.formatMessage({ id: 'general.yearly' })
+                  : intl.formatMessage({ id: 'general.monthly' })}
               </label>
             </div>
             <div className="pricing-table">
