@@ -525,20 +525,6 @@
     "content": "Toma"
   },
   {
-    "id": "test",
-    "modules": [
-      "general"
-    ],
-    "content": "test"
-  },
-  {
-    "id": "testLabel",
-    "modules": [
-      "general"
-    ],
-    "content": "Test"
-  },
-  {
     "id": "try_now",
     "modules": [
       "general"
@@ -572,5 +558,19 @@
       "general"
     ],
     "content": "con tus productos, campañas y anuncios impresos."
+  },
+  {
+    "id": "monthly",
+    "modules": [
+      "general"
+    ],
+    "content": "Mensual"
+  },
+  {
+    "id": "yearly",
+    "modules": [
+      "general"
+    ],
+    "content": "Anual"
   }
 ]
