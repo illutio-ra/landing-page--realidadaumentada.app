@@ -2,10 +2,9 @@ import React, { Component } from 'react'
 import Image from '~base/components/image'
 import { injectIntl, FormattedMessage } from 'react-intl'
 
-
 class Pricing extends Component {
   state = {
-    checked: true,
+    checked: false,
   }
 
   handlerChange(e) {
@@ -23,7 +22,7 @@ class Pricing extends Component {
         <div className="columns">
           <div className="column is-1" />
           <div className="column">
-            {/* <div className="field has-text-left">
+            <div className="field has-text-left">
               <input
                 id="switchRoundedInfo"
                 type="checkbox"
@@ -35,9 +34,10 @@ class Pricing extends Component {
                 htmlFor="switchRoundedInfo switch-text"
                 onClick={() => this.handlerChange()}
               >
-                Monthly
+                {checked === false && 'Monthly'}
+                {checked === true && 'Yearly'}
               </label>
-            </div> */}
+            </div>
             <div className="pricing-table">
               <div className="pricing-plan card-shadow free">
                 <div className="plan-header card-title free-pricing">
@@ -78,7 +78,8 @@ class Pricing extends Component {
                 <div className="plan-price pricing-secondary">
                   <span className="plan-price-amount price">
                     <span className="plan-price-currency price" />
-$ 199.00
+                    {checked === false && '$ 199.00 USD'}
+                    {checked === true && '$ 1990.00 USD'}
                   </span>
                 </div>
                 <div className="has-text-centered">
@@ -115,7 +116,8 @@ $ 199.00
                 <div className="plan-price pricing-secondary">
                   <span className="plan-price-amount price">
                     <span className="plan-price-currency price" />
-$ 399.00
+                    {checked === false && '$ 399.00 USD'}
+                    {checked === true && '$ 3990.00 USD'}
                   </span>
                 </div>
                 <div className="has-text-centered">
@@ -152,7 +154,8 @@ $ 399.00
                 <div className="plan-price pricing-secondary">
                   <span className="plan-price-amount price">
                     <span className="plan-price-currency price" />
-$ 599.00
+                    {checked === false && '$ 599.00 USD'}
+                    {checked === true && '$ 5990.00 USD'}
                   </span>
                 </div>
                 <div className="has-text-centered">
