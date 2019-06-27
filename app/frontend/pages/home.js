@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import PageComponent from '~base/page-component'
 import { FormattedMessage, injectIntl } from 'react-intl'
@@ -109,7 +108,7 @@ class Home extends PageComponent {
                 target="_blank"
               >
                 <Image
-                  src="../../public/img/video.png"
+                  src="/public/img/video.png"
                   alt="ra cam"
                   className="is-button-video"
                 />
@@ -122,20 +121,8 @@ class Home extends PageComponent {
                     <h1 className="has-text-centered title is-2 is-margin-bottom-medium">
                       Contáctanos
                     </h1>
-                    {/* <HubspotForm
-                      portalId="2705799"
-                      formId="d8b7a2ac-f5bb-4b7a-9963-d8e30844250a"
-                      onSubmit={() => console.log('Submit!')}
-                      onReady={(form) => console.log('Form ready!')}
-                      loading={<div>Loading...</div>}
-                    /> */}
                   </div>
                 </div>
-                {/*  <button
-                  className="modal-close is-large"
-                  aria-label="close"
-                  onClick={() => this.setState({ classNameModal: '' })}
-                /> */}
               </div>
             </div>
           </div>

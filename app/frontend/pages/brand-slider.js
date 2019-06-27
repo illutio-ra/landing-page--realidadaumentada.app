@@ -74,6 +74,7 @@ class BrandSlider extends Component {
       pauseOnHover: false,
       adaptiveHeight: true,
       arrows: true,
+      autoplay: true,
       responsive: [
         {
           breakpoint: 1024,
@@ -108,7 +109,7 @@ class BrandSlider extends Component {
     } = this.props
 
     return (
-      <div className="section">
+      <div>
         <Slider {...settings}>
           {images.map((item, i) => (
             <div className="container-img-portfolio is-padding-left-small is-padding-right-small is-padding-top-small is-padding-bottom-small">
