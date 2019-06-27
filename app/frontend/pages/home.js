@@ -9,6 +9,7 @@ import PreviewPortfolio from './portfolio/preview-portfolio'
 import PreviewBlog from './blog/components/preview-blog'
 import LetsStart from './lets-start'
 import Pricing from './pricing'
+import BrandSlider from './brand-slider'
 
 class Home extends PageComponent {
   constructor(props) {
@@ -146,6 +147,7 @@ class Home extends PageComponent {
           />
         </div>
 
+        <BrandSlider />
         <LetsStart />
         <PreviewPortfolio />
         <Pricing />
