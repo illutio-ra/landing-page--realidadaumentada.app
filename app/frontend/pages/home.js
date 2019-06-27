@@ -76,11 +76,9 @@ class Home extends PageComponent {
                   </span>
                   {', '}
                   <span className="is-font-blue">
-                    <FormattedMessage id="general.publish" />
-                    {' '}
+                    <FormattedMessage id="general.publish" />{' '}
                   </span>
-                  <FormattedMessage id="general.and" />
-                  {' '}
+                  <FormattedMessage id="general.and" />{' '}
                   <span className="is-font-blue">
                     <FormattedMessage id="general.measure" />
                   </span>
@@ -163,7 +161,7 @@ class Home extends PageComponent {
 
 Home.config({
   path: '/',
-  title: 'RA CAM',
+  title: 'HOME',
   validate: forcePublic,
   exact: true,
 })
