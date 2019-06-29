@@ -7,6 +7,13 @@
     "content": "2 objetivos"
   },
   {
+    "id": "about_interaction",
+    "modules": [
+      "general"
+    ],
+    "content": "Obten información real sobre la interacción de los clientes con tus productos y campañas."
+  },
+  {
     "id": "and",
     "modules": [
       "general"
@@ -40,6 +47,20 @@
       "general"
     ],
     "content": "campañas"
+  },
+  {
+    "id": "catalogs_labels",
+    "modules": [
+      "general"
+    ],
+    "content": "Utilízalo en catálogos, etiquetas, empaques, revistas y más."
+  },
+  {
+    "id": "comes",
+    "modules": [
+      "general"
+    ],
+    "content": "que toman"
   },
   {
     "id": "contact_navbar",
@@ -252,6 +273,20 @@
     "content": "mide"
   },
   {
+    "id": "measure_uc",
+    "modules": [
+      "general"
+    ],
+    "content": "Mide"
+  },
+  {
+    "id": "monthly",
+    "modules": [
+      "general"
+    ],
+    "content": "Mensual"
+  },
+  {
     "id": "name",
     "modules": [
       "general"
@@ -263,7 +298,14 @@
     "modules": [
       "general"
     ],
-    "content": " No se requieren "
+    "content": "No necesitas conocimiento en programación ni diseño."
+  },
+  {
+    "id": "of",
+    "modules": [
+      "general"
+    ],
+    "content": "de"
   },
   {
     "id": "packaging_printed",
@@ -413,6 +455,27 @@
     "content": "Ver video"
   },
   {
+    "id": "portfolio_castle",
+    "modules": [
+      "general"
+    ],
+    "content": "Este proyecto se realizó para la portada de una revista impresa “Superbrands” en México. La mariposas cobran vida cuando es escaneada con la app. Muestra un botón “Call to action” y lleva a los clientes al sitio web donde explica cómo ser parte de la comunidad de mejores marcas de México."
+  },
+  {
+    "id": "portfolio_chilis",
+    "modules": [
+      "general"
+    ],
+    "content": "Este proyecto se realizó para publicidad impresa en el periódico \"El País\" en Honduras. La hamburguesa en la imagen despliega una video sobre la publicidad cuando es escaneado por la aplicación AR CAM; muestra un botón “Call to action” y lleva a los clientes al restaurante más nuevo en la ciudad. Esta experiencia se publicó para una campaña semanal en la cual se imprimieron 35 mil ejemplares cada día de la campaña."
+  },
+  {
+    "id": "portfolio_miller",
+    "modules": [
+      "general"
+    ],
+    "content": "Este proyecto se realizó para publicidad impresa en el periódico \"El País\" en Honduras. El fuego en la imagen cobra vida cuando es escaneado por la aplicación AR CAM; muestra un botón “Call to action” y lleva a los clientes a un video sobre ofertas de verano. Esta experiencia se publicó para una campaña semanal en la cual se imprimieron 35 mil ejemplares cada día de la campaña."
+  },
+  {
     "id": "portfolio_preview",
     "modules": [
       "general"
@@ -420,11 +483,25 @@
     "content": "{discover} como transformar imágenes en {experiences}."
   },
   {
+    "id": "portfolio_superbrands",
+    "modules": [
+      "general"
+    ],
+    "content": "Este proyecto se realizó para la portada de una revista impresa “Superbrands” en México. La mariposas cobran vida cuando es escaneada con la app. Muestra un botón “Call to action” y lleva a los clientes al sitio web donde explica cómo ser parte de la comunidad de mejores marcas de México."
+  },
+  {
     "id": "postsListTitle",
     "modules": [
       "general"
     ],
     "content": "Lista de posts\n"
+  },
+  {
+    "id": "printed_images",
+    "modules": [
+      "general"
+    ],
+    "content": "Imagenes impresas"
   },
   {
     "id": "profile",
@@ -439,6 +516,13 @@
       "general"
     ],
     "content": "publica"
+  },
+  {
+    "id": "real_impact",
+    "modules": [
+      "general"
+    ],
+    "content": "el impacto real"
   },
   {
     "id": "real_information",
@@ -525,6 +609,27 @@
     "content": "Toma"
   },
   {
+    "id": "test",
+    "modules": [
+      "general"
+    ],
+    "content": "test"
+  },
+  {
+    "id": "testLabel",
+    "modules": [
+      "general"
+    ],
+    "content": "Test"
+  },
+  {
+    "id": "to_life",
+    "modules": [
+      "general"
+    ],
+    "content": "vida"
+  },
+  {
     "id": "try_now",
     "modules": [
       "general"
@@ -546,6 +651,13 @@
     "content": "Bienvenido"
   },
   {
+    "id": "yearly",
+    "modules": [
+      "general"
+    ],
+    "content": "Anual"
+  },
+  {
     "id": "your_customers",
     "modules": [
       "general"
@@ -558,19 +670,5 @@
       "general"
     ],
     "content": "con tus productos, campañas y anuncios impresos."
-  },
-  {
-    "id": "monthly",
-    "modules": [
-      "general"
-    ],
-    "content": "Mensual"
-  },
-  {
-    "id": "yearly",
-    "modules": [
-      "general"
-    ],
-    "content": "Anual"
   }
 ]
