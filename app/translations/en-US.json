@@ -1,5 +1,19 @@
 [
   {
+    "id": "2_targets",
+    "modules": [
+      "general"
+    ],
+    "content": "2 Targets"
+  },
+  {
+    "id": "about_interaction",
+    "modules": [
+      "general"
+    ],
+    "content": "Get real information about interaction of customers with your products and campaigns."
+  },
+  {
     "id": "and",
     "modules": [
       "general"
@@ -33,6 +47,27 @@
       "general"
     ],
     "content": "campaigns"
+  },
+  {
+    "id": "catalogs_labels",
+    "modules": [
+      "general"
+    ],
+    "content": "For catalogs, labels, packagins, magazines and much more."
+  },
+  {
+    "id": "comes",
+    "modules": [
+      "general"
+    ],
+    "content": "comes"
+  },
+  {
+    "id": "contact_navbar",
+    "modules": [
+      "general"
+    ],
+    "content": "Contact"
   },
   {
     "id": "contact_us_footer",
@@ -130,7 +165,7 @@
     "modules": [
       "general"
     ],
-    "content": "incredible experiences."
+    "content": "memorable experiences."
   },
   {
     "id": "intro",
@@ -231,6 +266,20 @@
     "content": "measure"
   },
   {
+    "id": "measure_uc",
+    "modules": [
+      "general"
+    ],
+    "content": "Measure"
+  },
+  {
+    "id": "monthly",
+    "modules": [
+      "general"
+    ],
+    "content": "Monthly"
+  },
+  {
     "id": "name",
     "modules": [
       "general"
@@ -242,7 +291,14 @@
     "modules": [
       "general"
     ],
-    "content": " No coding or "
+    "content": " No coding or design skills needed."
+  },
+  {
+    "id": "of",
+    "modules": [
+      "general"
+    ],
+    "content": "of"
   },
   {
     "id": "packaging_printed",
@@ -250,6 +306,139 @@
       "general"
     ],
     "content": "packaging, printed ads, magazines, posters and much more."
+  },
+  {
+    "id": "plan_100_targets",
+    "modules": [
+      "general"
+    ],
+    "content": "100 Targets"
+  },
+  {
+    "id": "plan_14000_views",
+    "modules": [
+      "general"
+    ],
+    "content": " Max 14,000 views "
+  },
+  {
+    "id": "plan_2000_views",
+    "modules": [
+      "general"
+    ],
+    "content": "Max 2,000 views"
+  },
+  {
+    "id": "plan_200_views",
+    "modules": [
+      "general"
+    ],
+    "content": "Max 200 views"
+  },
+  {
+    "id": "plan_20_targets",
+    "modules": [
+      "general"
+    ],
+    "content": "20 Targets"
+  },
+  {
+    "id": "plan_50_targets",
+    "modules": [
+      "general"
+    ],
+    "content": "50 Targets"
+  },
+  {
+    "id": "plan_6000_views",
+    "modules": [
+      "general"
+    ],
+    "content": "Max 6,000 views"
+  },
+  {
+    "id": "plan_analytics",
+    "modules": [
+      "general"
+    ],
+    "content": "Analytics"
+  },
+  {
+    "id": "plan_basic",
+    "modules": [
+      "general"
+    ],
+    "content": "Basic"
+  },
+  {
+    "id": "plan_business",
+    "modules": [
+      "general"
+    ],
+    "content": "Business"
+  },
+  {
+    "id": "plan_buy_it",
+    "modules": [
+      "general"
+    ],
+    "content": "Buy it"
+  },
+  {
+    "id": "plan_choose",
+    "modules": [
+      "general"
+    ],
+    "content": "Choose your plan"
+  },
+  {
+    "id": "plan_create_new_account",
+    "modules": [
+      "general"
+    ],
+    "content": "Create a new account"
+  },
+  {
+    "id": "plan_customer_support",
+    "modules": [
+      "general"
+    ],
+    "content": "Customer support"
+  },
+  {
+    "id": "plan_enterprise",
+    "modules": [
+      "general"
+    ],
+    "content": "Enterprise"
+  },
+  {
+    "id": "plan_free",
+    "modules": [
+      "general"
+    ],
+    "content": "Free"
+  },
+  {
+    "id": "plan_free_account",
+    "modules": [
+      "general"
+    ],
+    "content": "Free account"
+  },
+  {
+    "id": "plan_pro",
+    "modules": [
+      "general"
+    ],
+    "content": "Pro"
+  },
+  {
+    "id": "plan_tech_support",
+    "modules": [
+      "general"
+    ],
+    "content": "Tech support"
   },
   {
     "id": "play_video",
@@ -301,6 +490,13 @@
     "content": "List of posts"
   },
   {
+    "id": "printed_images",
+    "modules": [
+      "general"
+    ],
+    "content": "Printed images"
+  },
+  {
     "id": "profile",
     "modules": [
       "general"
@@ -313,6 +509,13 @@
       "general"
     ],
     "content": "publish"
+  },
+  {
+    "id": "real_impact",
+    "modules": [
+      "general"
+    ],
+    "content": "real impact"
   },
   {
     "id": "real_information",
@@ -399,11 +602,18 @@
     "content": "Take back"
   },
   {
+    "id": "to_life",
+    "modules": [
+      "general"
+    ],
+    "content": "to life."
+  },
+  {
     "id": "try_now",
     "modules": [
       "general"
     ],
-    "content": "Try it now!"
+    "content": "Free trial!"
   },
   {
     "id": "upgrade_text",
@@ -418,6 +628,13 @@
       "general"
     ],
     "content": "Welcome"
+  },
+  {
+    "id": "yearly",
+    "modules": [
+      "general"
+    ],
+    "content": "Yearly"
   },
   {
     "id": "your_customers",

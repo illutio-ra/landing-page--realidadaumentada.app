@@ -184,14 +184,24 @@ class SimpleSlider extends Component {
               </p>
             </ScrollAnimation>
 
-            <Image
-              className="is-border-radius"
-              src="/public/img/android-store.png"
-            />
-            <Image
-              className="is-border-radius"
-              src="/public/img/ios-store.png"
-            />
+            <a
+              href="https://play.google.com/store/apps/details?id=com.illutio.realidadaumentada"
+              target="_blank"
+            >
+              <Image
+                className="is-border-radius"
+                src="/public/img/android-store.png"
+              />
+            </a>
+            <a
+              href="https://apps.apple.com/us/app/ra-cam/id1349482894"
+              target="_blank"
+            >
+              <Image
+                className="is-border-radius"
+                src="/public/img/ios-store.png"
+              />
+            </a>
           </div>
         </div>
 

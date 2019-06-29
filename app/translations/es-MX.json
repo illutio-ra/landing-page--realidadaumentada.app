@@ -1,5 +1,19 @@
 [
   {
+    "id": "2_targets",
+    "modules": [
+      "general"
+    ],
+    "content": "2 objetivos"
+  },
+  {
+    "id": "about_interaction",
+    "modules": [
+      "general"
+    ],
+    "content": "Obten información real sobre la interacción de los clientes con tus productos y campañas."
+  },
+  {
     "id": "and",
     "modules": [
       "general"
@@ -33,6 +47,27 @@
       "general"
     ],
     "content": "campañas"
+  },
+  {
+    "id": "catalogs_labels",
+    "modules": [
+      "general"
+    ],
+    "content": "Utilízalo en catálogos, etiquetas, empaques, revistas y más."
+  },
+  {
+    "id": "comes",
+    "modules": [
+      "general"
+    ],
+    "content": "que toman"
+  },
+  {
+    "id": "contact_navbar",
+    "modules": [
+      "general"
+    ],
+    "content": "Contacto"
   },
   {
     "id": "contact_us_footer",
@@ -137,7 +172,7 @@
     "modules": [
       "general"
     ],
-    "content": "experiencias increíbles."
+    "content": "experiencias memorables."
   },
   {
     "id": "intro",
@@ -238,6 +273,20 @@
     "content": "mide"
   },
   {
+    "id": "measure_uc",
+    "modules": [
+      "general"
+    ],
+    "content": "Mide"
+  },
+  {
+    "id": "monthly",
+    "modules": [
+      "general"
+    ],
+    "content": "Mensual"
+  },
+  {
     "id": "name",
     "modules": [
       "general"
@@ -249,7 +298,14 @@
     "modules": [
       "general"
     ],
-    "content": " No se requieren "
+    "content": "No necesitas conocimiento en programación ni diseño."
+  },
+  {
+    "id": "of",
+    "modules": [
+      "general"
+    ],
+    "content": "de"
   },
   {
     "id": "packaging_printed",
@@ -257,6 +313,139 @@
       "general"
     ],
     "content": "producto, embalaje, anuncios impresos, revistas, carteles y mucho más."
+  },
+  {
+    "id": "plan_100_targets",
+    "modules": [
+      "general"
+    ],
+    "content": "100 objetivos"
+  },
+  {
+    "id": "plan_14000_views",
+    "modules": [
+      "general"
+    ],
+    "content": "Máximo 14,000 visitas"
+  },
+  {
+    "id": "plan_2000_views",
+    "modules": [
+      "general"
+    ],
+    "content": "Máximo 200 visitas"
+  },
+  {
+    "id": "plan_200_views",
+    "modules": [
+      "general"
+    ],
+    "content": "Máximo 200 visitas"
+  },
+  {
+    "id": "plan_20_targets",
+    "modules": [
+      "general"
+    ],
+    "content": "20 objetivos"
+  },
+  {
+    "id": "plan_50_targets",
+    "modules": [
+      "general"
+    ],
+    "content": "50 objetivos"
+  },
+  {
+    "id": "plan_6000_views",
+    "modules": [
+      "general"
+    ],
+    "content": "Máximo 6,000 visitas"
+  },
+  {
+    "id": "plan_analytics",
+    "modules": [
+      "general"
+    ],
+    "content": "Analíticas"
+  },
+  {
+    "id": "plan_basic",
+    "modules": [
+      "general"
+    ],
+    "content": "Básico"
+  },
+  {
+    "id": "plan_business",
+    "modules": [
+      "general"
+    ],
+    "content": "Negocio"
+  },
+  {
+    "id": "plan_buy_it",
+    "modules": [
+      "general"
+    ],
+    "content": "Comprar"
+  },
+  {
+    "id": "plan_choose",
+    "modules": [
+      "general"
+    ],
+    "content": "Elige tu plan"
+  },
+  {
+    "id": "plan_create_new_account",
+    "modules": [
+      "general"
+    ],
+    "content": "Crear nueva cuenta"
+  },
+  {
+    "id": "plan_customer_support",
+    "modules": [
+      "general"
+    ],
+    "content": "Soporte al cliente"
+  },
+  {
+    "id": "plan_enterprise",
+    "modules": [
+      "general"
+    ],
+    "content": "Empresa"
+  },
+  {
+    "id": "plan_free",
+    "modules": [
+      "general"
+    ],
+    "content": "Gratuito"
+  },
+  {
+    "id": "plan_free_account",
+    "modules": [
+      "general"
+    ],
+    "content": "Cuenta gratuita"
+  },
+  {
+    "id": "plan_pro",
+    "modules": [
+      "general"
+    ],
+    "content": "Pro"
+  },
+  {
+    "id": "plan_tech_support",
+    "modules": [
+      "general"
+    ],
+    "content": "Soporte técnico"
   },
   {
     "id": "play_video",
@@ -301,6 +490,20 @@
     "content": "Este proyecto se realizó para la portada de una revista impresa “Superbrands” en México. La mariposas cobran vida cuando es escaneada con la app. Muestra un botón “Call to action” y lleva a los clientes al sitio web donde explica cómo ser parte de la comunidad de mejores marcas de México."
   },
   {
+    "id": "postsListTitle",
+    "modules": [
+      "general"
+    ],
+    "content": "Lista de posts\n"
+  },
+  {
+    "id": "printed_images",
+    "modules": [
+      "general"
+    ],
+    "content": "Imagenes impresas"
+  },
+  {
     "id": "profile",
     "modules": [
       "general"
@@ -313,6 +516,13 @@
       "general"
     ],
     "content": "publica"
+  },
+  {
+    "id": "real_impact",
+    "modules": [
+      "general"
+    ],
+    "content": "el impacto real"
   },
   {
     "id": "real_information",
@@ -399,11 +609,32 @@
     "content": "Toma"
   },
   {
+    "id": "test",
+    "modules": [
+      "general"
+    ],
+    "content": "test"
+  },
+  {
+    "id": "testLabel",
+    "modules": [
+      "general"
+    ],
+    "content": "Test"
+  },
+  {
+    "id": "to_life",
+    "modules": [
+      "general"
+    ],
+    "content": "vida"
+  },
+  {
     "id": "try_now",
     "modules": [
       "general"
     ],
-    "content": "¡Probar ahora!"
+    "content": "¡Demo gratuita!"
   },
   {
     "id": "upgrade_text",
@@ -418,6 +649,13 @@
       "general"
     ],
     "content": "Bienvenido"
+  },
+  {
+    "id": "yearly",
+    "modules": [
+      "general"
+    ],
+    "content": "Anual"
   },
   {
     "id": "your_customers",

@@ -1,17 +1,48 @@
 /* eslint-disable eol-last */
 import React from 'react'
 import { FormattedMessage } from 'react-intl'
-import Image from '~base/components/image'
 import ScrollAnimation from 'react-animate-on-scroll'
+import Lottie from 'react-lottie'
+import animation1 from './animacion-1.json'
+import animation2 from './animacion-2.json'
+import animation3 from './animacion-3.json'
+
+const defaultOptions1 = {
+  loop: true,
+  autoplay: true,
+  animationData: animation1,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice',
+  },
+}
+
+const defaultOptions2 = {
+  loop: true,
+  autoplay: true,
+  animationData: animation2,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice',
+  },
+}
+
+const defaultOptions3 = {
+  loop: true,
+  autoplay: true,
+  animationData: animation3,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice',
+  },
+}
 
 const LetsStart = () => (
   <section className="container section" id="lets-start">
     <div className="columns">
       <div className="column">
         <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft">
-          <Image
-            src="/public/img/incredible_experiences.svg"
-            className="img-centered"
+          <Lottie
+            options={defaultOptions1}
+            isStopped={false}
+            isPaused={false}
           />
         </ScrollAnimation>
       </div>
@@ -31,15 +62,9 @@ const LetsStart = () => (
           <p className="text">
             <FormattedMessage id="general.upgrade_text" />
             <br />
-            <FormattedMessage id="general.reality_panel" />
             <strong>
               <FormattedMessage id="general.no_coding" />
-              <br />
-              <FormattedMessage id="general.desing_skills" />
             </strong>
-            <FormattedMessage id="general.it_works" />
-            <br />
-            <FormattedMessage id="general.packaging_printed" />
           </p>
         </div>
       </div>
@@ -47,25 +72,66 @@ const LetsStart = () => (
     <div className="columns">
       <div className="column is-hidden-desktop">
         <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutRight">
-          <Image src="/public/img/customer_data.svg" className="img-centered" />
+          <Lottie
+            options={defaultOptions3}
+            isStopped={false}
+            isPaused={false}
+          />
         </ScrollAnimation>
       </div>
       <div className="column vertically-centered">
         <div className="section">
           <p className="title">
             <span className="is-font-blue">
-              <FormattedMessage id="general.take_back" />
+              <FormattedMessage id="general.printed_images" />
             </span>
-            <FormattedMessage id="general.control_of_your" />
             <br />
+            <FormattedMessage id="general.comes" />{' '}
             <span className="is-font-blue">
-              <FormattedMessage id="general.customers_data" />
+              <FormattedMessage id="general.to_life" />
             </span>
           </p>
           <p className="text">
-            <FormattedMessage id="general.real_information" />
+            <FormattedMessage id="general.catalogs_labels" />
+          </p>
+        </div>
+      </div>
+      <div className="column is-hidden-touch">
+        <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutRight">
+          <Lottie
+            options={defaultOptions3}
+            isStopped={false}
+            isPaused={false}
+          />
+        </ScrollAnimation>
+      </div>
+    </div>
+
+    <div className="columns">
+      <div className="column">
+        <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft">
+          <Lottie
+            options={defaultOptions2}
+            isStopped={false}
+            isPaused={false}
+          />
+        </ScrollAnimation>
+      </div>
+      <div className="column is-right vertically-centered" id="solutions">
+        <div className="section">
+          <p className="title">
+            <span className="is-font-blue">
+              <FormattedMessage id="general.measure_uc" />
+            </span>{' '}
+            <FormattedMessage id="general.real_impact" />
             <br />
-            <FormattedMessage id="general.your_products" />
+            <FormattedMessage id="general.of" />{' '}
+            <span className="is-font-blue">
+              <FormattedMessage id="general.campaigns" />
+            </span>
+          </p>
+          <p className="text">
+            <FormattedMessage id="general.about_interaction" />
           </p>
           <div className="centered-in-touch">
             <a
@@ -78,11 +144,6 @@ const LetsStart = () => (
             </a>
           </div>
         </div>
-      </div>
-      <div className="column is-hidden-touch">
-        <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutRight">
-          <Image src="/public/img/customer_data.svg" className="img-centered" />
-        </ScrollAnimation>
       </div>
     </div>
   </section>
