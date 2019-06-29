@@ -23,7 +23,7 @@ class Pricing extends Component {
         <div className="columns">
           <div className="column is-1" />
           <div className="column">
-            <div className="field has-text-left">
+            <div className="field has-text-centered">
               <input
                 id="switchRoundedInfo"
                 type="checkbox"
@@ -80,8 +80,8 @@ class Pricing extends Component {
                 <div className="plan-price pricing-secondary">
                   <span className="plan-price-amount price">
                     <span className="plan-price-currency price" />
-                    {checked === false && '$ 199.00 USD'}
-                    {checked === true && '$ 1990.00 USD'}
+                    {checked === false && '$ 199 USD'}
+                    {checked === true && '$ 1990 USD'}
                   </span>
                 </div>
                 <div className="has-text-centered">
@@ -118,8 +118,8 @@ class Pricing extends Component {
                 <div className="plan-price pricing-secondary">
                   <span className="plan-price-amount price">
                     <span className="plan-price-currency price" />
-                    {checked === false && '$ 399.00 USD'}
-                    {checked === true && '$ 3990.00 USD'}
+                    {checked === false && '$ 399 USD'}
+                    {checked === true && '$ 3990 USD'}
                   </span>
                 </div>
                 <div className="has-text-centered">
@@ -156,8 +156,8 @@ class Pricing extends Component {
                 <div className="plan-price pricing-secondary">
                   <span className="plan-price-amount price">
                     <span className="plan-price-currency price" />
-                    {checked === false && '$ 599.00 USD'}
-                    {checked === true && '$ 5990.00 USD'}
+                    {checked === false && '$ 599 USD'}
+                    {checked === true && '$ 5990 USD'}
                   </span>
                 </div>
                 <div className="has-text-centered">
