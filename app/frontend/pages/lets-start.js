@@ -7,7 +7,6 @@ import animation1 from './animacion-1.json'
 import animation2 from './animacion-2.json'
 import animation3 from './animacion-3.json'
 
-
 const defaultOptions1 = {
   loop: true,
   autoplay: true,
@@ -87,11 +86,13 @@ const LetsStart = () => (
               <FormattedMessage id="general.printed_images" />
             </span>
             <br />
-            <FormattedMessage id="general.comes" />
-            {' '}
+            <FormattedMessage id="general.comes" />{' '}
             <span className="is-font-blue">
               <FormattedMessage id="general.to_life" />
             </span>
+          </p>
+          <p className="text">
+            <FormattedMessage id="general.catalogs_labels" />
           </p>
         </div>
       </div>
@@ -121,12 +122,10 @@ const LetsStart = () => (
           <p className="title">
             <span className="is-font-blue">
               <FormattedMessage id="general.measure_uc" />
-            </span>
-            {' '}
+            </span>{' '}
             <FormattedMessage id="general.real_impact" />
             <br />
-            <FormattedMessage id="general.of" />
-            {' '}
+            <FormattedMessage id="general.of" />{' '}
             <span className="is-font-blue">
               <FormattedMessage id="general.campaigns" />
             </span>
