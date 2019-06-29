@@ -241,6 +241,11 @@ a.navbar-link.is-active {
         background-color: #f9fbff !important;
         border: none !important;
     }
+
+    .switch[type=checkbox] + label {
+        
+        padding-top: 0rem !important;
+    }
 }
 
 .is-flex-1 {

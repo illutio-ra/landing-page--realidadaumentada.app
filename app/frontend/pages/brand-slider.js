@@ -109,7 +109,7 @@ class BrandSlider extends Component {
     } = this.props
 
     return (
-      <div>
+      <div classname="section">
         <Slider {...settings}>
           {images.map((item, i) => (
             <div className="container-img-portfolio is-padding-left-small is-padding-right-small is-padding-top-small is-padding-bottom-small">
