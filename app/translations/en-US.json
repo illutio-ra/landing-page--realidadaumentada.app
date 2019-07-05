@@ -595,6 +595,20 @@
     "content": "with {span} experiences."
   },
   {
+    "id": "subscribe",
+    "modules": [
+      "general"
+    ],
+    "content": "Suscribe."
+  },
+  {
+    "id": "subscribed",
+    "modules": [
+      "general"
+    ],
+    "content": "Thanks for subscribing."
+  },
+  {
     "id": "take_back",
     "modules": [
       "general"

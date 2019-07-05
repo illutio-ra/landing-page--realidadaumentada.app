@@ -602,6 +602,20 @@
     "content": "con experiencias en {span}.\n"
   },
   {
+    "id": "subscribe",
+    "modules": [
+      "general"
+    ],
+    "content": "Suscríbete."
+  },
+  {
+    "id": "subscribed",
+    "modules": [
+      "general"
+    ],
+    "content": "Gracias por suscribirte."
+  },
+  {
     "id": "take_back",
     "modules": [
       "general"
