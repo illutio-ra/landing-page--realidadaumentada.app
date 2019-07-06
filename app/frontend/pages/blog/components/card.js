@@ -9,7 +9,7 @@ const Card = ({ item, showLink = true }) => (
       <div className="card-content">
         <div className="columns">
           <div className="column is-paddingless has-text-centered">
-            <Image className="is-border-radius" src={item.imagePreview} />
+            <Image className="is-border-radius" src={item.thumbnail} />
           </div>
           <div className="column">
             <span className="is-font-size-24px">{item.title}</span>
