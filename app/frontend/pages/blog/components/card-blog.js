@@ -15,7 +15,7 @@ const Card = ({ item, isBig = false }) => (
         <Image
           className="is-border-radius is-fullwidth"
           style={{ height: isBig ? 350 : 240 }}
-          src={item.imagePreview}
+          src={item.thumbnail}
         />
       </div>
       <div className="card-content">

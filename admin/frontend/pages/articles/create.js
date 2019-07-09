@@ -9,7 +9,7 @@ import ArticleForm from './form'
 const initialState = {
   title: '',
   description: '',
-  imagePreview: '',
+  thumbnail: '',
 }
 
 class CreateArticle extends Component {
