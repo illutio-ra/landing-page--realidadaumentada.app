@@ -6,6 +6,15 @@ import { forcePublic } from '~base/middlewares/'
 import { MegadraftEditor, editorStateFromRaw } from 'megadraft'
 
 import { animateScroll as scroll, scroller } from 'react-scroll'
+import { Helmet } from 'react-helmet'
+
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  FacebookIcon,
+  TwitterIcon,
+} from 'react-share'
 import PluginImage from './plugins/image'
 import PluginVideo from './plugins/video'
 import PreviewBlog from './components/preview-blog'
@@ -54,6 +63,9 @@ class Blog extends PageComponent {
 
     return (
       <div className="container">
+        <Helmet>
+          <meta property="og:title" content={`RA CAM: ${post.title}`} />
+        </Helmet>
         <div className="section">
           <div className="card is-shadowless">
             <div className="card-header is-shadowless">
@@ -79,6 +91,20 @@ class Blog extends PageComponent {
                 />
               )}
             </div>
+          </div>
+          <div className="is-flex-end">
+            <FacebookShareButton url={window.location.href}>
+              <FacebookIcon
+                size={32}
+                round
+              />
+            </FacebookShareButton>
+            <TwitterShareButton url={window.location.href}>
+              <TwitterIcon
+                size={32}
+                round
+              />
+            </TwitterShareButton>
           </div>
           <hr />
           <p className="is-font-size-24px">

@@ -57,7 +57,7 @@ class ArticleForm extends Component {
         label: 'Descripción',
         required: true,
       },
-      imagePreview: {
+      thumbnail: {
         widget: 'TextWidget',
         label: 'Image preview',
         required: true,
@@ -66,7 +66,7 @@ class ArticleForm extends Component {
     const data = {
       title: formData.title,
       description: formData.description,
-      imagePreview: formData.imagePreview,
+      thumbnail: formData.thumbnail,
     }
 
     return (

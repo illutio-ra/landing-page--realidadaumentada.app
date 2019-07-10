@@ -125,7 +125,7 @@ class ArticlesDetailPage extends PageComponent {
         ],
         required: true,
       },
-      imagePreview: {
+      thumbnail: {
         widget: 'TextWidget',
         label: 'Image preview',
         required: true,
@@ -155,7 +155,7 @@ class ArticlesDetailPage extends PageComponent {
       status: formData.status,
       description: formData.description,
       tags: formData.tags,
-      imagePreview: formData.imagePreview,
+      thumbnail: formData.thumbnail,
       isTop: formData.isTop,
     }
 
