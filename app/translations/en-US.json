@@ -663,5 +663,12 @@
       "general"
     ],
     "content": "with your products, campaigns and printed ads. "
+  },
+  {
+    "id": "placeholder_email",
+    "modules": [
+      "general"
+    ],
+    "content": "Type your email to stay tuned."
   }
 ]

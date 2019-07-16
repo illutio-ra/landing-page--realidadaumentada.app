@@ -684,5 +684,15 @@
       "general"
     ],
     "content": "con tus productos, campañas y anuncios impresos."
+  },
+  {
+    "id": "placeholder_email",
+    "modules": [
+      "general"
+    ],
+    "content": "Ingresa tu email y recibe las últimas noticias "
   }
+
+  
 ]
+

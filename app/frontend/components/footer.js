@@ -39,6 +39,7 @@ class Footer extends Component {
 
   render() {
     const { email, subscribed, classNameModal } = this.state
+    const { intl } = this.props
     return (
       <footer className="footer" id="contact">
         <div className="columns columns-footer">
@@ -91,45 +92,45 @@ class Footer extends Component {
             </div>
           </div>
           <div className="column">
-            {
-              subscribed ? (
-                <div className="has-text-centered">
-                  <h4 className="title is-4 has-text-white">
-                    <FormattedMessage id="general.subscribed" />
-                  </h4>
-                  <br />
-                </div>
-              ) : (
-                <div className="columns">
-                  <div className="column">
-                    <form onSubmit={(e) => this.handleSubmit(e)}>
-                      <div className="content mail-chimp">
-                        <div className="field is-grouped">
-                          <p className="control is-expanded">
-                            <input
-                              onChange={(e) => this.onChange(e)}
-                              value={email}
-                              className="input is-footer-input"
-                              type="text"
-                              name="email"
-                              placeholder="Type your email to stay tuned."
-                            />
-                          </p>
-                          <p className="control">
-                            <button
-                              type="submit"
-                              className="button is-primary is-inverted is-outlined"
-                            >
-                              <FormattedMessage id="general.subscribe" />
-                            </button>
-                          </p>
-                        </div>
+            {subscribed ? (
+              <div className="has-text-centered">
+                <h4 className="title is-4 has-text-white">
+                  <FormattedMessage id="general.subscribed" />
+                </h4>
+                <br />
+              </div>
+            ) : (
+              <div className="columns">
+                <div className="column">
+                  <form onSubmit={(e) => this.handleSubmit(e)}>
+                    <div className="content mail-chimp">
+                      <div className="field is-grouped">
+                        <p className="control is-expanded">
+                          <input
+                            onChange={(e) => this.onChange(e)}
+                            value={email}
+                            className="input is-footer-input"
+                            type="text"
+                            name="email"
+                            placeholder={intl.formatMessage({
+                              id: `general.placeholder_email`,
+                            })}
+                          />
+                        </p>
+                        <p className="control">
+                          <button
+                            type="submit"
+                            className="button is-primary is-inverted is-outlined"
+                          >
+                            <FormattedMessage id="general.subscribe" />
+                          </button>
+                        </p>
                       </div>
-                    </form>
-                  </div>
+                    </div>
+                  </form>
                 </div>
-              )
-            }
+              </div>
+            )}
             <div className="columns">
               <div className="column">
                 <Image
