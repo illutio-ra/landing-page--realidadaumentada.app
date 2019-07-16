@@ -147,6 +147,13 @@
     "content": "experiences"
   },
   {
+    "id": "get_in_touch",
+    "modules": [
+      "general"
+    ],
+    "content": " Get in touch "
+  },
+  {
     "id": "give",
     "modules": [
       "general"
@@ -588,11 +595,39 @@
     "content": "See how it works"
   },
   {
+    "id": "subscribe",
+    "modules": [
+      "general"
+    ],
+    "content": "Suscribe."
+  },
+  {
+    "id": "subscribed",
+    "modules": [
+      "general"
+    ],
+    "content": "Tahnks for subscribing."
+  },
+  {
     "id": "subtitle",
     "modules": [
       "general"
     ],
     "content": "with {span} experiences."
+  },
+  {
+    "id": "subscribe",
+    "modules": [
+      "general"
+    ],
+    "content": "Suscribe."
+  },
+  {
+    "id": "subscribed",
+    "modules": [
+      "general"
+    ],
+    "content": "Thanks for subscribing."
   },
   {
     "id": "take_back",
@@ -649,5 +684,12 @@
       "general"
     ],
     "content": "with your products, campaigns and printed ads. "
+  },
+  {
+    "id": "placeholder_email",
+    "modules": [
+      "general"
+    ],
+    "content": "Type your email to stay tuned."
   }
 ]
