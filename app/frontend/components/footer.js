@@ -1,21 +1,34 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-console */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react'
 import Image from '~base/components/image'
 import { FormattedMessage, injectIntl } from 'react-intl'
 import HubspotForm from 'react-hubspot-form'
+import api from '~base/api'
 
 class Footer extends Component {
   constructor(props) {
     super(props)
     this.state = {
       classNameModal: '',
+      email: '',
+      subscribed: false,
     }
+  }
+
+  onChange(e) {
+    const { target } = e
+    this.setState({ email: target.value })
+  }
+
+  async handleSubmit(e) {
+    e.preventDefault()
+    const { email } = this.state
+    await api.post('/public/subscribe-newsletter', {
+      email_address: email,
+    })
+    this.setState({
+      email: '',
+      subscribed: true,
+    })
   }
 
   handleModal() {
@@ -25,6 +38,8 @@ class Footer extends Component {
   }
 
   render() {
+    const { email, subscribed, classNameModal } = this.state
+    const { intl } = this.props
     return (
       <footer className="footer" id="contact">
         <div className="columns columns-footer">
@@ -76,30 +91,54 @@ class Footer extends Component {
               </div>
             </div>
           </div>
-          <div className="column is-6 vertically-centered">
-            {/* Disabled because we do not have access to mailchimp */}
-            {/* <div className="content mail-chimp">
-              <div className="field is-grouped">
-                <p className="control is-expanded">
-                  <input
-                    className="input is-footer-input"
-                    type="text"
-                    placeholder="Type your email to stay tuned."
-                  />
-                </p>
-                <p className="control">
-                  <a className="button is-primary is-inverted is-outlined">
-                    Suscribe
-                  </a>
-                </p>
+          <div className="column">
+            {subscribed ? (
+              <div className="has-text-centered">
+                <h4 className="title is-4 has-text-white">
+                  <FormattedMessage id="general.subscribed" />
+                </h4>
+                <br />
               </div>
-            </div> */}
-            <div className="vertically-bottom">
-              <Image
-                src="/public/img/ar-footer.svg"
-                alt="arcam"
-                className="img-centered"
-              />
+            ) : (
+              <div className="columns">
+                <div className="column">
+                  <form onSubmit={(e) => this.handleSubmit(e)}>
+                    <div className="content mail-chimp">
+                      <div className="field is-grouped">
+                        <p className="control is-expanded">
+                          <input
+                            onChange={(e) => this.onChange(e)}
+                            value={email}
+                            className="input is-footer-input"
+                            type="text"
+                            name="email"
+                            placeholder={intl.formatMessage({
+                              id: `general.placeholder_email`,
+                            })}
+                          />
+                        </p>
+                        <p className="control">
+                          <button
+                            type="submit"
+                            className="button is-primary is-inverted is-outlined"
+                          >
+                            <FormattedMessage id="general.subscribe" />
+                          </button>
+                        </p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            )}
+            <div className="columns">
+              <div className="column">
+                <Image
+                  src="/public/img/ar-footer.svg"
+                  alt="arcam"
+                  className="img-centered"
+                />
+              </div>
             </div>
           </div>
           <div className="column section">
@@ -200,7 +239,7 @@ class Footer extends Component {
             </div>
           </div>
         </div>
-        <div className={`modal ${this.state.classNameModal}`}>
+        <div className={`modal ${classNameModal}`}>
           <div className="modal-background" />
           <div className="modal-content">
             <div className="box">
@@ -210,13 +249,18 @@ class Footer extends Component {
               <HubspotForm
                 portalId="2705799"
                 formId="d8b7a2ac-f5bb-4b7a-9963-d8e30844250a"
-                onSubmit={() => console.log('Submit!')}
-                onReady={(form) => console.log('Form ready!')}
+                onSubmit={() => {
+                  console.info('Submit!')
+                }}
+                onReady={() => {
+                  console.info('Form ready!')
+                }}
                 loading={<div>Loading...</div>}
               />
             </div>
           </div>
           <button
+            type="button"
             className="modal-close is-large"
             aria-label="close"
             onClick={() => this.setState({ classNameModal: '' })}

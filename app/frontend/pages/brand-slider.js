@@ -73,7 +73,7 @@ class BrandSlider extends Component {
       slidesToScroll: 6,
       pauseOnHover: false,
       adaptiveHeight: true,
-      arrows: true,
+      arrows: false,
       autoplay: true,
       responsive: [
         {

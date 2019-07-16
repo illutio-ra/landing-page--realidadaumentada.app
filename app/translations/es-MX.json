@@ -602,6 +602,20 @@
     "content": "con experiencias en {span}.\n"
   },
   {
+    "id": "subscribe",
+    "modules": [
+      "general"
+    ],
+    "content": "Suscríbete."
+  },
+  {
+    "id": "subscribed",
+    "modules": [
+      "general"
+    ],
+    "content": "Gracias por suscribirte."
+  },
+  {
     "id": "take_back",
     "modules": [
       "general"
@@ -670,5 +684,15 @@
       "general"
     ],
     "content": "con tus productos, campañas y anuncios impresos."
+  },
+  {
+    "id": "placeholder_email",
+    "modules": [
+      "general"
+    ],
+    "content": "Ingresa tu email y recibe las últimas noticias "
   }
+
+  
 ]
+
