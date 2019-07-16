@@ -154,6 +154,13 @@
     "content": "experiencias"
   },
   {
+    "id": "get_in_touch",
+    "modules": [
+      "general"
+    ],
+    "content": " Contáctanos"
+  },
+  {
     "id": "give",
     "modules": [
       "general"
@@ -593,6 +600,20 @@
       "general"
     ],
     "content": "¿Cómo funciona?"
+  },
+  {
+    "id": "subscribe",
+    "modules": [
+      "general"
+    ],
+    "content": "Suscríbete."
+  },
+  {
+    "id": "subscribed",
+    "modules": [
+      "general"
+    ],
+    "content": "Gracias por suscribirte."
   },
   {
     "id": "subtitle",

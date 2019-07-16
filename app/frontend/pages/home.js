@@ -4,6 +4,7 @@ import { FormattedMessage, injectIntl } from 'react-intl'
 import { forcePublic } from '~base/middlewares/'
 import Image from '~base/components/image'
 import ScrollAnimation from 'react-animate-on-scroll'
+import HubspotForm from 'react-hubspot-form'
 import PreviewPortfolio from './portfolio/preview-portfolio'
 import PreviewBlog from './blog/components/preview-blog'
 import LetsStart from './lets-start'
@@ -17,6 +18,12 @@ class Home extends PageComponent {
       ...this.baseState,
       classNameModal: '',
     }
+  }
+
+  handleModal() {
+    this.setState({
+      classNameModal: 'is-active',
+    })
   }
 
   render() {
@@ -94,6 +101,17 @@ class Home extends PageComponent {
                     }}
                   />
                   <br />
+                  <a
+                    data-target="modal"
+                    aria-haspopup="true"
+                    onClick={() => this.handleModal()}
+                    type="button"
+                    className="button btn-primary margin-button"
+                  >
+                    <FormattedMessage id="general.get_in_touch" />
+                    <i className="fa fa-phone margin-sides-icon" />
+                  </a>
+                  <br />
                 </p>
               </ScrollAnimation>
             </div>
@@ -142,6 +160,29 @@ class Home extends PageComponent {
         <br />
         <div className="container">
           <PreviewBlog seAll />
+        </div>
+        <div className={`modal ${this.state.classNameModal}`}>
+          <div className="modal-background" />
+          <div className="modal-content">
+            <div className="box">
+              <h1 className="has-text-centered title is-2 is-margin-bottom-medium">
+                <FormattedMessage id="general.contact_us_footer" />
+              </h1>
+              <HubspotForm
+                portalId="2705799"
+                formId="d8b7a2ac-f5bb-4b7a-9963-d8e30844250a"
+                onSubmit={() => console.info('Submit!')}
+                onReady={() => console.info('Form ready!')}
+                loading={<div>Loading...</div>}
+              />
+            </div>
+          </div>
+          <button
+            type="button"
+            className="modal-close is-large"
+            aria-label="close"
+            onClick={() => this.setState({ classNameModal: '' })}
+          />
         </div>
       </section>
     )

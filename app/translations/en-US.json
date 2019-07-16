@@ -147,6 +147,13 @@
     "content": "experiences"
   },
   {
+    "id": "get_in_touch",
+    "modules": [
+      "general"
+    ],
+    "content": " Get in touch "
+  },
+  {
     "id": "give",
     "modules": [
       "general"
@@ -586,6 +593,20 @@
       "general"
     ],
     "content": "See how it works"
+  },
+  {
+    "id": "subscribe",
+    "modules": [
+      "general"
+    ],
+    "content": "Suscribe."
+  },
+  {
+    "id": "subscribed",
+    "modules": [
+      "general"
+    ],
+    "content": "Tahnks for subscribing."
   },
   {
     "id": "subtitle",
